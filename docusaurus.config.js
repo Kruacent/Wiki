@@ -11,8 +11,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Kruaçent Wiki',
-  tagline: "We dont' like baguette",
-  favicon: 'img/favicon.ico',
+  tagline: "First in Pastries and Wiki",
+  favicon: 'img/logo.png',
 
   // Set the production url of your site here
   url: 'https://teamcroissant.fr',
@@ -43,10 +43,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -54,11 +50,6 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -73,7 +64,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Kruaçent Wiki',
         logo: {
@@ -83,18 +73,13 @@ const config = {
         items: [
           {
             label: 'Articles',
-            to: '/articles',
+            to: '/docs/articles/',
             position: 'left',
           },
           {
             label: 'Vidéos',
             to: '/videos',
             position: 'left',
-          },
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
           },
         ],
       },      
@@ -106,11 +91,24 @@ const config = {
             items: [
               {
                 label: 'Wiki GitHub',
-                href: 'https://github.com/Kruaçent/Wiki',
+                href: 'https://github.com/Kruacent/Wiki',
               },
               {
                 label: 'Plugin GitHub',
-                href: 'https://github.com/Kruaçent/Kruaçent-Exiled',
+                href: 'https://github.com/Kruacent/Kruacent-Exiled',
+              },
+            ],
+          },
+          {
+            title: 'More Game',
+            items: [
+              {
+                label: 'Lethal Company',
+                href: 'https://www.curseforge.com/minecraft/modpacks/lethal-company',
+              },
+              {
+                label: 'Minecraft',
+                href: 'https://www.minecraft.net/',
               },
             ],
           },
