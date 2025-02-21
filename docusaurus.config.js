@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Kruaçent Wiki',
-  tagline: "First in Pastries and Wiki",
+  title: 'Kruaçent',
+  tagline: "",
   favicon: 'img/logo.png',
 
   // Set the production url of your site here
@@ -65,15 +65,29 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Kruaçent Wiki',
+        title: 'Kruaçent',
         logo: {
           alt: 'Kruaçent Logo',
           src: 'img/logo.png',
         },
         items: [
           {
-            label: 'Articles',
-            to: '/docs/articles/',
+            label: 'Nos Plugins',
+            position: 'left',
+            items: [
+              {
+                label: 'Kruaçent-Exiled',
+                to: '/docs/kruacent-exiled/',
+              },
+              {
+                label: 'ServerAchievementFramework',
+                to: '/docs/server-achievement-framework/',
+              },
+            ],
+          },
+          {
+            label: 'Historique des Rounds',
+            to: '/round-history',
             position: 'left',
           },
           {
@@ -82,43 +96,33 @@ const config = {
             position: 'left',
           },
         ],
-      },      
+      },
+           
       footer: {
         style: 'dark',
+        logo: {
+          alt: 'Kruaçent Logo',
+          src: 'img/logo.png',
+          width: 100, 
+          height: 100,
+        },
         links: [
           {
-            title: 'Link',
+            title: 'Réseaux Sociaux',
             items: [
-              {
-                label: 'Wiki GitHub',
-                href: 'https://github.com/Kruacent/Wiki',
-              },
-              {
-                label: 'Plugin GitHub',
-                href: 'https://github.com/Kruacent/Kruacent-Exiled',
-              },
-            ],
-          },
-          {
-            title: 'More Game',
-            items: [
-              {
-                label: 'Lethal Company',
-                href: 'https://www.curseforge.com/minecraft/modpacks/lethal-company',
-              },
-              {
-                label: 'Minecraft',
-                href: 'https://www.minecraft.net/',
-              },
+              { label: 'GitHub', href: 'https://github.com/Kruacent/' },
+              { label: 'Twitch', href: 'https://twitch.tv/teamkruacent/' },
+              { label: 'YouTube', href: 'https://youtube.com/@Kruacent' },
             ],
           },
         ],
+        copyright: `© ${new Date().getFullYear()} Kruaçent. Tous droits réservés.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-    }),
+    }),      
 };
 
 export default config;
