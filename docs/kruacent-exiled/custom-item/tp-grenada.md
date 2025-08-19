@@ -5,7 +5,7 @@ title: TP Grenada
 
 # Teleportation Grenade
 
-![Molotov](@site/static/img/doc/item/molotov.jpg)
+![Molotov](@site/static/img/doc/item/molotov-item.jpg)
 
 ## Description
 

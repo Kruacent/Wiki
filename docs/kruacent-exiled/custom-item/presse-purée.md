@@ -5,7 +5,7 @@ title: Presse Purée
 
 # Presse Purée
 
-![Molotov](@site/static/img/doc/item/molotov.jpg)
+![Molotov](@site/static/img/doc/item/pressePuree.jpg)
 
 ## Description
 

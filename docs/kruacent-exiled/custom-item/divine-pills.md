@@ -5,7 +5,7 @@ title: Divine Pills
 
 # Divine Pills
 
-![Molotov](@site/static/img/doc/item/molotov.jpg)
+![Molotov](@site/static/img/doc/item/trueDivinePills.jpg)
 
 ## Description
 
@@ -20,3 +20,4 @@ Les Divine Pills est un objet lorsque consommées offrant une chance de 25 % de 
 
 ## Obtention
 
+## Utilisation et Effet

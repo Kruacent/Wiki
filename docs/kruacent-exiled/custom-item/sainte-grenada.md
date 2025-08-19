@@ -5,7 +5,7 @@ title: Sainte Grenada
 
 # Sainte Grenade
 
-![Molotov](@site/static/img/doc/item/molotov.jpg)
+![Molotov](@site/static/img/doc/item/sainteGrenada-item.jpg)
 
 ## Description
 

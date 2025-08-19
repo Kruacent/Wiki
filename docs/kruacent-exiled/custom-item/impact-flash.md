@@ -5,7 +5,7 @@ title: Impact Flash
 
 # Impact Flash
 
-![Molotov](@site/static/img/doc/item/molotov.jpg)
+![Molotov](@site/static/img/doc/item/impactFlash.jpg)
 
 ## Description
 L'Impact Flash est une grenade flash spéciale qui explose instantanément au contact. Elle fonctionne comme une grenade flash classique, mais sans délai de détonation.

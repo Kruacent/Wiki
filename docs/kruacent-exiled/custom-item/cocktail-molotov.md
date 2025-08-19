@@ -5,7 +5,7 @@ title: Cocktail Molotov
 
 # Cocktail Molotov
 
-![Molotov](@site/static/img/doc/item/molotov.jpg)
+![Molotov](@site/static/img/doc/item/molotov-item.jpg)
 
 ## Description
 Le Cocktail Molotov est une grenade qui crée une zone de feu après son explosion, infligeant des dégâts progressifs aux joueurs à l'intérieur de cette zone. Il est principalement utilisé pour contrôler des zones, pour empêcher que les joueurs passe par dessus.
