@@ -70,7 +70,7 @@ Contrairement aux grenades frag ou flash classiques qui rebondissent, la Heal Zo
   src={HealZoneDetonated}
   alt="Heal zone"
   width="500px"
-  caption="The zone created by SCP-1051-KR"
+  caption="La zone créer par SCP-1051-KR"
   type="normal"
 />
 
@@ -79,6 +79,7 @@ Contrairement aux grenades frag ou flash classiques qui rebondissent, la Heal Zo
 * **Délai de mèche :** 5 secondes (Si lancée en l'air sans toucher d'obstacle).
 * **Visuel :** Nuage de gaz vert persistant.
 * **Cibles :** Soigne l'utilisateur et ses alliés.
+* **Soins de :** 2 HP/s
 
 ---
 
@@ -112,5 +113,6 @@ Archives vidéo de l'Incident de Confinement 1051-Alpha.
 :::
 
 :::warning AVIS DE MAËL
-"Attention à la gestion de la zone. Le gaz ne fait pas la différence entre un MTF loyal et un Traître. Ne soignez pas l'ennemi par inadvertance lors d'un combat rapproché."
+"Contrairement aux premiers prototypes, cette version finale est tactiquement sûre. Le gaz intègre des nano-marqueurs IFF (Identification Friend or Foe) qui reconnaissent votre faction.
+**Conclusion :** Vous pouvez lancer cette grenade en plein milieu d'une mêlée. Elle soignera votre escouade tout en laissant vos ennemis se vider de leur sang."
 :::
