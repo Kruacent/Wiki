@@ -6,35 +6,29 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Kruaçent',
   tagline: "",
   favicon: 'img/logo.png',
 
-  // Set the production url of your site here
-  url: 'https://teamcroissant.fr',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Kruaçent', // Usually your GitHub org/user name.
-  projectName: 'Wiki', // Usually your repo name.
+  url: 'https://Kruacent.github.io', 
+  baseUrl: '/wiki/',
+  organizationName: 'Kruacent',
+  projectName: 'wiki',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  plugins: [
+    './src/plugins/latest-docs-plugin.js',
+  ],
 
   presets: [
     [
@@ -72,28 +66,12 @@ const config = {
         },
         items: [
           {
-            label: 'Nos Plugins',
-            position: 'left',
-            items: [
-              {
-                label: 'Kruaçent-Exiled',
-                to: '/docs/kruacent-exiled/',
-              },
-              {
-                label: 'ServerAchievementFramework',
-                to: '/docs/server-achievement-framework/',
-              },
-            ],
+            label: 'Kruaçent-Exiled',
+            to: '/docs/kruacent-exiled/',
           },
           {
-            label: 'Historique des Rounds',
-            to: '/round-history',
-            position: 'left',
-          },
-          {
-            label: 'Vidéos',
-            to: '/videos',
-            position: 'left',
+            label: 'ServerAchievementFramework',
+            to: '/docs/server-achievement-framework/',
           },
         ],
       },

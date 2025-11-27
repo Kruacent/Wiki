@@ -1,11 +1,55 @@
 ---
-sidebar_position: 999999999999
+sidebar_position: 0
 title: Liste des Custom Items
-slug: /articles/Custom Item
+slug: /articles/CustomItem
+description: Classification et analyse des objets altérés de type Custom Item.
 ---
 
-import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
-# Liste des Custom Items
+# Protocole des Custom Items
 
-<DocCardList />
+:::danger Avertissement de Sécurité
+L'accès aux données ci-dessous est restreint au personnel de **Niveau Kruaçent**.
+:::
+
+## Définition
+
+Un **Custom Item** n'est pas un artefact créé de toute pièce. Il s'agit d'un objet standard ayant subi une **mutation anormale**.
+
+Cette altération survient généralement suite à :
+1.  Une exposition prolongée à des champs de radiation.
+2.  Un contact direct avec [REDACTED].
+3.  Une corruption des systèmes de fabrication de la Fondation.
+
+### Propriétés
+
+Contrairement aux objets standards, les Custom Items possèdent des attributs qui violent les lois de la physique standard :
+
+* **Efficacité Transcendantale :** Une arme peut tirer sans recul, ou une pilule peut régénérer des tissus nécrosés instantanément.
+* **[REDACTED]**
+
+---
+
+## Inventaire des Objets Anormaux
+
+Ci-dessous se trouve la liste des objets anormaux actuellement répertoriés :
+
+export const SimpleList = () => {
+  const {items} = useCurrentSidebarCategory();
+  return (
+    <ul>
+      {items.map((item, index) => {
+        if (item.label === 'Liste des Custom Items') return null;
+        
+        return (
+          <li key={index} style={{marginBottom: '0.5rem'}}>
+            <a href={item.href}><strong>{item.label}</strong></a>
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
+
+<SimpleList />
