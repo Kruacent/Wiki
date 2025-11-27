@@ -13,9 +13,9 @@ const config = {
   favicon: 'img/logo.png',
 
   url: 'https://Kruacent.github.io', 
-  baseUrl: '/wiki/',
+  baseUrl: '/Wiki/',
   organizationName: 'Kruacent',
-  projectName: 'wiki',
+  projectName: 'Wiki',
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
