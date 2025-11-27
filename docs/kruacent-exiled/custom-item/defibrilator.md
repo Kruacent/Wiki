@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1041
-title: SCP-1041 (Defibrilator)
+title: SCP-1041-KR (Defibrilator)
 tags:
     - SCP-1853
     - Soin
@@ -9,9 +9,20 @@ date: 2025-11-27
 hide_table_of_contents: true
 ---
 
-# Objet #1041 : "Defibrillator"
+import SCPImage from '@site/src/components/docs/SCPImage.tsx'
+import SCPVideo from '@site/src/components/docs/SCPVideo.tsx'
+import DefibrilatorItem from '@site/static/img/doc/sou.jpg'
+import DefibrilatorAction from '@site/static/video/test.mp4'
 
-![Defibrilator](@site/static/img/doc/sou.jpg)
+# SCP-1041-KR : "Defibrillator"
+
+<SCPImage
+  src={DefibrilatorItem}
+  alt="Item Defibrilator"
+  width="500px"
+  caption="Le defibrilator disposé par terre."
+  type="normal"
+/>
 
 <div style={{backgroundColor: '#1b1b1d', borderLeft: '5px solid #e040fb', padding: '15px', marginBottom: '25px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)'}}>
   <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #444', paddingBottom: '10px', marginBottom: '10px'}}>
@@ -49,6 +60,13 @@ Lors de l'activation, l'appareil scanne la zone :
 1.  Il cherche les **positions de mort** (l'endroit exact où le joueur est décédé) autour de vous.
 2.  Il sélectionne le mort dont la position est la **plus proche de vous**.
 3.  Si aucune mort n'est enregistrée, l'objet n'est pas consommé (*Message : "There is no death"*).
+
+<SCPVideo 
+  src={DefibrilatorAction} 
+  title="Test Unité 04" 
+  location="Laboratoire du Micro H.I.D" 
+  caption="Le sujet convulse avant la réanimation."
+/>
 
 ### Effets de la Résurrection
 

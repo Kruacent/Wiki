@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1047
-title: SCP-1047 (Divine Pills)
+title: SCP-1047-KR (Divine Pills)
 tags: 
   - Pillule
   - Soin
@@ -10,9 +10,18 @@ date: 2025-11-27
 hide_table_of_contents: true
 ---
 
-# Objet #1047 : "Divine Pills"
+import SCPImage from '@site/src/components/docs/SCPImage.tsx'
+import DivinePillsItem from '@site/static/img/doc/sou.jpg'
 
-![Divine Pills](@site/static/img/doc/sou.jpg)
+# SCP-1047-KR : "Divine Pills"
+
+<SCPImage
+  src={DivinePillsItem}
+  alt="Divine Pills"
+  width="500px"
+  caption="Divine pills in GR-18 room."
+  type="normal"
+/>
 
 <div style={{backgroundColor: '#1b1b1d', borderLeft: '5px solid #d32f2f', padding: '15px', marginBottom: '25px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)'}}>
   <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #444', paddingBottom: '10px', marginBottom: '10px'}}>

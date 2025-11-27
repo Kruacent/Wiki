@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1042
-title: SCP-1042 (DA-020)
+title: SCP-1042-KR (DA-020)
 tags:
     - Adrenaline
 description: Substance hallucinogène anormale provoquant des déplacements spatiaux et des mutations.
@@ -8,9 +8,18 @@ date: 2025-11-27
 hide_table_of_contents: true
 ---
 
-# Objet #1042 : "DA-020"
+import SCPImage from '@site/src/components/docs/SCPImage.tsx'
+import DA020Item from '@site/static/img/doc/sou.jpg'
 
-![DA-020](@site/static/img/doc/sou.jpg)
+# SCP-1042-KR : "DA-020"
+
+<SCPImage
+  src={DA020Item}
+  alt="DA-020"
+  width="500px"
+  caption="DA-020 disposé dans une armoire."
+  type="normal"
+/>
 
 <div style={{backgroundColor: '#1b1b1d', borderLeft: '5px solid #ab47bc', padding: '15px', marginBottom: '25px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)'}}>
   <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #444', paddingBottom: '10px', marginBottom: '10px'}}>

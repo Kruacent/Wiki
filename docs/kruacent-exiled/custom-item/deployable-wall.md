@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1048
-title: SCP-1048 (Deployable Wall)
+title: SCP-1048-KR (Deployable Wall)
 tags:
     - Keycard
 description: Dispositif de couverture tactique instantanée dissimulé sous la forme d'une carte d'accès.
@@ -8,9 +8,19 @@ date: 2025-11-27
 hide_table_of_contents: true
 ---
 
-# Objet #1048 : "Deployable Wall"
+import SCPImage from '@site/src/components/docs/SCPImage.tsx'
+import DeployableWallsItem from '@site/static/img/doc/sou.jpg'
+import DeployableWalls from '@site/static/img/doc/sou.jpg'
 
-![Deployable Wall](@site/static/img/doc/sou.jpg)
+# SCP-1048-KR : "Deployable Wall"
+
+<SCPImage
+  src={DeployableWallsItem}
+  alt="Deployable Walls item"
+  width="500px"
+  caption="La carte permettant de créer le mur, disposé par terre."
+  type="normal"
+/>
 
 <div style={{backgroundColor: '#1b1b1d', borderLeft: '5px solid #4caf50', padding: '15px', marginBottom: '25px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)'}}>
   <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #444', paddingBottom: '10px', marginBottom: '10px'}}>
@@ -54,6 +64,14 @@ L'objet utilise le lâcher via l'inventaire pour s'activer.
 | :--- | :--- | :--- |
 | **Dropper via l'inventaire** | **ACTIVATION** | L'objet est consommé. Un **MUR** apparaît instantanément devant vous à la position de la carte. |
 | **Lancer la carte** <br/> | **INERTIE** | La carte est simplement jetée au loin. **Aucun mur n'apparaît.** Vous pouvez la ramasser pour réessayer. |
+
+<SCPImage
+  src={DeployableWallsItem}
+  alt="Image du mur"
+  width="500px"
+  caption="Fig 2.B : Enregistrement de sécurité du ██/██/2024. L'agent █████ utilise le dispositif pour bloquer la progression de SCP-096."
+  type="redacted"
+/>
 
 ### Caractéristiques du Mur
 * **Fonction :** Bloque les tirs (balles) et les déplacements (joueurs et SCPs).
