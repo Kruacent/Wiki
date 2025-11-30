@@ -8,9 +8,24 @@ date: 2025-11-27
 hide_table_of_contents: true
 ---
 
+import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
+import SCPVideo from '@site/src/components/docs/SCPVideo.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import DeployableWallsItem from '@site/static/img/doc/sou.jpg'
-import DeployableWalls from '@site/static/img/doc/sou.jpg'
+import DeployableWalls from '@site/static/video/test.mp4'
+
+<ACSHeader 
+  item="SCP-1048-KR" 
+  name="Deployable Wall"
+  ObjectClass="SAFE"
+  Level="2"
+  Disruption="VLAM"
+  itemColor="#4caf50"
+  credits={[
+    { role: "Responsable R&D", name: "Dr. Patrique" },
+    { role: "Validation", name: "Cpt. Romain" },
+  ]}
+/>
 
 # SCP-1048-KR : "Deployable Wall"
 
@@ -22,24 +37,13 @@ import DeployableWalls from '@site/static/img/doc/sou.jpg'
   type="normal"
 />
 
-<div style={{backgroundColor: '#1b1b1d', borderLeft: '5px solid #4caf50', padding: '15px', marginBottom: '25px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)'}}>
-  <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #444', paddingBottom: '10px', marginBottom: '10px'}}>
-    <strong style={{color: '#ccc', fontSize: '1.4em', fontFamily: 'monospace'}}>DOSSIER: SCP-1048</strong>
-    <span style={{color: '#4caf50', fontWeight: 'bold', border: '1px solid #4caf50', padding: '2px 8px', borderRadius: '3px'}}>SAFE</span>
-  </div>
-  <div style={{fontFamily: 'monospace', color: '#ccc'}}>
-    <strong>RESPONSABLE R&D :</strong> Dr. Patrique<br/>
-    <strong>INGÉNIERIE MATÉRIELLE :</strong> Dr. Choco<br/>
-  </div>
-</div>
-
 ## 1. Description Technique
 
-**SCP-1048** apparaît, à l'œil nu, comme une carte d'accès standard de niveau 1 (Janitor Keycard) émettant une légère luminescente <span style={{color: '#4caf50', fontWeight: 'bold'}}>VERTE</span>.
+**SCP-1048-KR** apparaît, à l'œil nu, comme une carte d'accès standard de niveau 1 (Janitor Keycard) émettant une légère luminescente <span style={{color: '#4caf50', fontWeight: 'bold'}}>VERTE</span>.
 
 En réalité, il s'agit d'un conteneur compact de nanobots à déploiement rapide développé par le **Dr. Patrique**. Lorsqu'il est activé, l'objet libère une structure polymère durcie qui s'expanse instantanément pour former une barricade physique capable de stopper les projectiles balistiques et de bloquer le passage de toutes entités.
 
-### Localisation (Armement)
+### Localisation
 
 Cet objet est considéré comme de l'équipement militaire expérimental.
 **Limite :** 2 Unités.
@@ -52,7 +56,7 @@ Cet objet est considéré comme de l'équipement militaire expérimental.
 
 ---
 
-## 2. Manuel de Déploiement (Gameplay)
+## 2. Manuel de Déploiement
 
 :::danger Distinction Critique : JETER vs LÂCHER
 Le mécanisme de déclenchement est sensible. Il existe une différence fondamentale entre **Lancer** l'objet via la touche du clavier et **Lâcher** via l'inventaire (lâcher au pied).
@@ -65,16 +69,15 @@ L'objet utilise le lâcher via l'inventaire pour s'activer.
 | **Dropper via l'inventaire** | **ACTIVATION** | L'objet est consommé. Un **MUR** apparaît instantanément devant vous à la position de la carte. |
 | **Lancer la carte** <br/> | **INERTIE** | La carte est simplement jetée au loin. **Aucun mur n'apparaît.** Vous pouvez la ramasser pour réessayer. |
 
-<SCPImage
-  src={DeployableWallsItem}
-  alt="Image du mur"
-  width="500px"
+<SCPVideo 
+  src={DeployableWalls} 
+  title="Cam_Hallway_SCP173_Vid01.mp4" 
+  location="Ascenseur de SCP-173" 
   caption="Fig 2.B : Enregistrement de sécurité du ██/██/2024. L'agent █████ utilise le dispositif pour bloquer la progression de SCP-096."
-  type="redacted"
 />
 
 ### Caractéristiques du Mur
-* **Fonction :** Bloque les tirs (balles) et les déplacements (joueurs et SCPs).
+* **Fonction :** Bloque les tirs et les déplacements (joueurs et SCPs).
 * **Durabilité :** Indestructible par armes conventionnelles.
 * **Usage :** Idéal pour bloquer une porte, un ascenseur ou se créer une "cover" dans un couloir vide.
 * **Temps :** Le mur semble disparaître à partir de T+10s à partir de sa création.

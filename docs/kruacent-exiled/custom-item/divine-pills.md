@@ -10,8 +10,22 @@ date: 2025-11-27
 hide_table_of_contents: true
 ---
 
+import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import DivinePillsItem from '@site/static/img/doc/sou.jpg'
+
+<ACSHeader 
+  item="SCP-1047-KR" 
+  name="Divine Pills"
+  ObjectClass="SAFE"
+  Level="3"
+  Disruption="VLAM"
+  itemColor="#FFD700"
+  credits={[
+    { role: "Responsable projet", name: "Dr. Patrique" },
+    { role: "Officier de recherche", name: "Chercheur Noé" },
+  ]}
+/>
 
 # SCP-1047-KR : "Divine Pills"
 
@@ -23,27 +37,15 @@ import DivinePillsItem from '@site/static/img/doc/sou.jpg'
   type="normal"
 />
 
-<div style={{backgroundColor: '#1b1b1d', borderLeft: '5px solid #d32f2f', padding: '15px', marginBottom: '25px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)'}}>
-  <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #444', paddingBottom: '10px', marginBottom: '10px'}}>
-    <strong style={{color: '#ccc', fontSize: '1.4em', fontFamily: 'monospace'}}>DOSSIER: SCP-1047</strong>
-    <span style={{color: '#d32f2f', fontWeight: 'bold', border: '1px solid #d32f2f', padding: '2px 8px', borderRadius: '3px'}}>SAFE</span>
-  </div>
-  <div style={{fontFamily: 'monospace', color: '#ccc'}}>
-    <strong>RESPONSABLE DU PROJET :</strong> Dr. Patrique<br/>
-    <strong>OFFICIER DE RECHERCHE :</strong> Chercheur Noé<br/>
-    <strong>LIEU D'ORIGINE :</strong> Site-19 [Laboratoire de Chimie]<br/>
-  </div>
-</div>
-
 ## 1. Description et Obtention
 
-**SCP-1047**, familièrement appelé *"Divine Pills"*, est une capsule pharmaceutique de couleur <span style={{color: '#FFD700', fontWeight: 'bold'}}>jaune luminescent</span>.
+**SCP-1047-KR**, familièrement appelé *"Divine Pills"*, est une capsule pharmaceutique de couleur <span style={{color: '#FFD700', fontWeight: 'bold'}}>jaune luminescent</span>.
 
-Contrairement aux substances médicales standard, cet objet n'a aucune propriété régénératrice sur les tissus vivants. Il agit comme un catalyseur de **réalité quantique**. Lors de sa consommation, l'objet tente de forcer un échange de matière entre l'utilisateur vivant et une conscience désincarnée (Spectateur) située dans la noosphère locale.
+Contrairement aux substances médicales standard, cet objet n'a aucune propriété régénératrice sur les tissus vivants. Il agit comme un catalyseur de **réalité quantique**. Lors de sa consommation, l'objet tente de forcer un échange de matière entre l'utilisateur vivant et une conscience désincarnée située dans la noosphère locale.
 
 ---
 
-### Localisation (Spawn)
+### Localisation
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
@@ -53,7 +55,7 @@ Contrairement aux substances médicales standard, cet objet n'a aucune propriét
 
 ---
 
-## 2. Analyse Statistique (Gameplay)
+## 2. Analyse Statistique
 
 Les tests intensifs menés par le **Dr. Patrique** ont permis d'établir une cartographie précise des risques. L'ingestion de la pilule déclenche immédiatement l'un des deux scénarios suivants :
 

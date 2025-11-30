@@ -9,10 +9,24 @@ date: 2025-11-27
 hide_table_of_contents: true
 ---
 
+import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import SCPVideo from '@site/src/components/docs/SCPVideo.tsx'
 import DefibrilatorItem from '@site/static/img/doc/sou.jpg'
 import DefibrilatorAction from '@site/static/video/test.mp4'
+
+<ACSHeader 
+  item="SCP-1041-KR" 
+  name="Defibrillator"
+  ObjectClass="SAFE"
+  Level="3"
+  Disruption="VLAM"
+  itemColor="#e040fb"
+  credits={[
+    { role: "Responsable Projet", name: "Dr. Omer" },
+    { role: "Analyste Médical", name: "Dr. Patrique" },
+  ]}
+/>
 
 # SCP-1041-KR : "Defibrillator"
 
@@ -24,25 +38,13 @@ import DefibrilatorAction from '@site/static/video/test.mp4'
   type="normal"
 />
 
-<div style={{backgroundColor: '#1b1b1d', borderLeft: '5px solid #e040fb', padding: '15px', marginBottom: '25px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)'}}>
-  <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #444', paddingBottom: '10px', marginBottom: '10px'}}>
-    <strong style={{color: '#ccc', fontSize: '1.4em', fontFamily: 'monospace'}}>DOSSIER: SCP-1041</strong>
-    <span style={{color: '#e040fb', fontWeight: 'bold', border: '1px solid #e040fb', padding: '2px 8px', borderRadius: '3px'}}>SAFE</span>
-  </div>
-  <div style={{fontFamily: 'monospace', color: '#ccc'}}>
-    <strong>RESPONSABLE DU PROJET :</strong> Dr. Omer<br/>
-    <strong>ANALYSTE MÉDICAL :</strong> Dr. Patrique<br/>
-    <strong>ORIGINE :</strong> Récupération Site-19<br/>
-  </div>
-</div>
-
 ## 1. Description Technique
 
-**SCP-1041** est un dispositif médical avancé ressemblant à un injecteur automatique, contenant un fluide luminescent de couleur <span style={{color: '#e040fb', fontWeight: 'bold'}}>MAGENTA</span>.
+**SCP-1041-KR** est un dispositif médical avancé ressemblant à un injecteur automatique, contenant un fluide luminescent de couleur <span style={{color: '#e040fb', fontWeight: 'bold'}}>MAGENTA</span>.
 
-Contrairement à un défibrillateur conventionnel qui relance un cœur arrêté, cet objet agit comme une ancre de réalité. Il localise l'empreinte résiduelle d'un sujet décédé (Spectateur) et force sa conscience à se matérialiser à nouveau dans un corps physique reconstruit instantanément.
+Contrairement à un défibrillateur conventionnel qui relance un cœur arrêté, cet objet agit comme une ancre de réalité. Il localise l'empreinte résiduelle d'un sujet décédé et force sa conscience à se matérialiser à nouveau dans un corps physique reconstruit instantanément.
 
-### Localisation (Spawn)
+### Localisation
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
@@ -51,7 +53,7 @@ Contrairement à un défibrillateur conventionnel qui relance un cœur arrêté,
 
 ---
 
-## 2. Protocole de Réanimation (Gameplay)
+## 2. Protocole de Réanimation
 
 L'utilisation de cet objet ne nécessite pas de cibler un corps au sol.
 
@@ -75,9 +77,9 @@ Lors de l'activation, l'appareil scanne la zone :
   <div style={{flex: '1', backgroundColor: 'rgba(224, 64, 251, 0.1)', border: '1px solid #e040fb', borderRadius: '8px', padding: '15px'}}>
     <h4 style={{marginTop: 0, color: '#ea80fc'}}>CONDITION DU SUJET</h4>
     <ul style={{paddingLeft: '20px', margin: 0}}>
-      <li><strong>Santé :</strong> Revient avec <span style={{color: '#ff5252', fontWeight: 'bold'}}>40 HP</span> (État critique).</li>
+      <li><strong>Santé :</strong> Revient avec <span style={{color: '#ff5252', fontWeight: 'bold'}}>40 HP</span></li>
       <li><strong>Position :</strong> Téléporté directement <strong>sur l'utilisateur</strong>.</li>
-      <li><strong>Protection :</strong> Invulnérabilité (GodMode) de 1 seconde.</li>
+      <li><strong>Protection :</strong> Invulnérabilité de 1 seconde.</li>
     </ul>
   </div>
 

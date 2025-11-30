@@ -9,9 +9,23 @@ date: 2025-11-27
 hide_table_of_contents: true
 ---
 
+import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import HealZoneItem from '@site/static/img/doc/sou.jpg'
 import HealZoneDetonated from '@site/static/img/doc/sou.jpg'
+
+<ACSHeader 
+  item="SCP-1051-KR" 
+  name="Heal Zone"
+  ObjectClass="SAFE"
+  Level="2"
+  Disruption="VLAM"
+  itemColor="#66bb6a"
+  credits={[
+    { role: "Chimiste en chef", name: "Dr. Omer" },
+    { role: "Supervision", name: "Dr. Patrique" },
+  ]}
+/>
 
 # SCP-1051-KR : "Heal Zone"
 
@@ -23,20 +37,9 @@ import HealZoneDetonated from '@site/static/img/doc/sou.jpg'
   type="normal"
 />
 
-<div style={{backgroundColor: '#1b1b1d', borderLeft: '5px solid #66bb6a', padding: '15px', marginBottom: '25px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)'}}>
-  <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #444', paddingBottom: '10px', marginBottom: '10px'}}>
-    <strong style={{color: '#ccc', fontSize: '1.4em', fontFamily: 'monospace'}}>DOSSIER: SCP-1051</strong>
-    <span style={{color: '#66bb6a', fontWeight: 'bold', border: '1px solid #66bb6a', padding: '2px 8px', borderRadius: '3px'}}>SAFE</span>
-  </div>
-  <div style={{fontFamily: 'monospace', color: '#ccc'}}>
-    <strong>CHIMISTE EN CHEF :</strong> Dr. Omer<br/>
-    <strong>SUPERVISION :</strong> Dr. Patrique<br/>
-  </div>
-</div>
-
 ## 1. Description et Obtention
 
-**SCP-1051** se présente sous la forme d'une grenade flash modifiée, peinte d'une bande <span style={{color: '#66bb6a', fontWeight: 'bold'}}>VERTE</span> distinctive.
+**SCP-1051-KR** se présente sous la forme d'une grenade flash modifiée, peinte d'une bande <span style={{color: '#66bb6a', fontWeight: 'bold'}}>VERTE</span> distinctive.
 
 Il ne s'agit pas d'un explosif conventionnel. Le **Dr. Omer** a remplacé la charge pyrotechnique par un composé gazeux régénérateur expérimental (le "bacta-gaz"). Lors de la détonation, l'objet libère un nuage dense qui accélère la mitose cellulaire, soignant instantanément les tissus organiques des sujets présents dans le rayon d'action.
 
@@ -55,7 +58,7 @@ Cet objet est largement distribué dans les zones de haute sécurité pour soute
 
 ---
 
-## 2. Manuel de Déploiement (Gameplay)
+## 2. Manuel de Déploiement
 
 :::danger Distinction Critique : IMPACT
 Contrairement aux grenades frag ou flash classiques qui rebondissent, la Heal Zone est équipée d'un **détonateur à impact**. Elle s'active dès qu'elle touche une surface (sol, mur ou joueur).

@@ -8,8 +8,22 @@ date: 2025-11-27
 hide_table_of_contents: true
 ---
 
+import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import DA020Item from '@site/static/img/doc/sou.jpg'
+
+<ACSHeader 
+  item="SCP-1042-KR" 
+  name="DA-020"
+  ObjectClass="SAFE"
+  Level="3"
+  Disruption="VLAM"
+  itemColor="#ab47bc"
+  credits={[
+    { role: "Reponsable projet", name: "Dr. Omer" },
+    { role: "Chimiste", name: "Dr. Patrique" },
+  ]}
+/>
 
 # SCP-1042-KR : "DA-020"
 
@@ -21,25 +35,13 @@ import DA020Item from '@site/static/img/doc/sou.jpg'
   type="normal"
 />
 
-<div style={{backgroundColor: '#1b1b1d', borderLeft: '5px solid #ab47bc', padding: '15px', marginBottom: '25px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)'}}>
-  <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #444', paddingBottom: '10px', marginBottom: '10px'}}>
-    <strong style={{color: '#ccc', fontSize: '1.4em', fontFamily: 'monospace'}}>DOSSIER: SCP-1042</strong>
-    <span style={{color: '#ab47bc', fontWeight: 'bold', border: '1px solid #ab47bc', padding: '2px 8px', borderRadius: '3px'}}>SAFE</span>
-  </div>
-  <div style={{fontFamily: 'monospace', color: '#ccc'}}>
-    <strong>RESPONSABLE DU PROJET :</strong> Dr. Omer<br/>
-    <strong>CHIMISTE EN CHEF :</strong> Dr. Patrique<br/>
-    <strong>LIEU DE STOCKAGE :</strong> Armoires Médicales de Site-19<br/>
-  </div>
-</div>
-
 ## 1. Description et Obtention
 
-**SCP-1042**, étiqueté **DA-020**, est une seringue contenant un composé liquide jaune fluorescent. L'analyse du **Dr. Patrique** suggère qu'il s'agit d'un mélange instable d'adrénaline et de [DONNÉES SUPPRIMÉES] récupéré dans la Dimension de Poche.
+**SCP-1042-KR**, étiqueté **DA-020**, est une seringue contenant un composé liquide jaune fluorescent. L'analyse du **Dr. Patrique** suggère qu'il s'agit d'un mélange instable d'adrénaline et de ██████████ récupéré dans la Dimension de Poche.
 
-L'injection provoque une accélération synaptique telle que le sujet traverse plusieurs états de réalité (téléportations) et subit des modifications physiologiques drastiques.
+L'injection provoque une accélération synaptique telle que le sujet traverse plusieurs états de réalité et subit des modifications physiologiques drastiques.
 
-### Localisation (Spawn)
+### Localisation
 
 Cet objet est unique (Limite : 1 par partie).
 
@@ -52,7 +54,7 @@ Cet objet est unique (Limite : 1 par partie).
 
 ---
 
-## 2. Chronologie des Effets (Le "Trip")
+## 2. Chronologie des Effets
 
 L'utilisation de l'objet lance une séquence inarrêtable d'environ **3 minutes**. Voici les phases exactes que traversera l'utilisateur.
 
@@ -90,7 +92,7 @@ Dès l'injection :
 
 ## 3. Effets Finaux (La Roulette Russe)
 
-Entre **60 et 120 secondes** après la Phase 6, un effet secondaire permanent (Random Event) se déclenche aléatoirement parmi ces 5 possibilités :
+Entre **60 et 120 secondes** après la Phase 6, un effet secondaire permanent se déclenche aléatoirement parmi ces 5 possibilités :
 
 | Type d'Effet | Description Technique | Note Tactique |
 | :--- | :--- | :--- |
