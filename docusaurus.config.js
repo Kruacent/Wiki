@@ -21,8 +21,8 @@ const config = {
   onBrokenLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'fr',
-    locales: ['fr'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   plugins: [
