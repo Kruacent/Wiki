@@ -1,11 +1,112 @@
 ---
 sidebar_position: -1
-title: Liste des Articles
+title: Accueil Kruaçent-Exiled
 slug: /kruacent-exiled/
+description: Présentation des modules du plugin.
+hide_table_of_contents: true
 ---
 
 import DocCardList from '@theme/DocCardList';
 
-# Liste des Articles
+# Kruaçent-Exiled
 
-<DocCardList />
+Ce plugin est une suite complète de modifications pour vos serveurs SCP: Secret Laboratory. Il est divisé en 4 modules principaux.
+
+<div className="row" style={{marginTop: '2rem'}}>
+
+  {/* 1. CUSTOM ROLES */}
+  <div className="col col--6" style={{marginBottom: '20px'}}>
+    <div style={{
+      padding: '20px', height: '100%', border: '1px solid #333', borderRadius: '8px', backgroundColor: '#151515'
+    }}>
+      <h3 style={{color: '#ff9800', display:'flex', alignItems:'center', gap:'10px'}}>
+        <span>🎭</span> Custom Roles
+      </h3>
+      <p style={{color: '#ccc', fontSize: '0.9rem'}}>
+        De nouvelles classes jouables qui s'ajoutent aux rôles existants (Humains et SCP).
+      </p>
+      <ul style={{paddingLeft: '20px', color: '#888', fontSize: '0.85rem'}}>
+        <li><strong>Humains :</strong> Le Russe, L'Enfant, Hitman...</li>
+        <li><strong>SCPs :</strong> Paper (2D), Ultra (Radar), Small...</li>
+        <li><strong>Global :</strong> Ajout de pathologies (Asthme, Alzheimer).</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* 2. CUSTOM ITEMS */}
+  <div className="col col--6" style={{marginBottom: '20px'}}>
+    <div style={{
+      padding: '20px', height: '100%', border: '1px solid #333', borderRadius: '8px', backgroundColor: '#151515'
+    }}>
+      <h3 style={{color: '#2196f3', display:'flex', alignItems:'center', gap:'10px'}}>
+        <span>🔫</span> Custom Items
+      </h3>
+      <p style={{color: '#ccc', fontSize: '0.9rem'}}>
+        Un arsenal d'objets anormaux et d'équipements tactiques.
+      </p>
+      <ul style={{paddingLeft: '20px', color: '#888', fontSize: '0.85rem'}}>
+        <li>Armes modifiées et gadgets tactiques.</li>
+        <li>Objets SCP utilisables (Seringues, Pilules...).</li>
+        <li>Système de craft via SCP-914.</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* 3. GLOBAL EVENTS */}
+  <div className="col col--6" style={{marginBottom: '20px'}}>
+    <div style={{
+      padding: '20px', height: '100%', border: '1px solid #333', borderRadius: '8px', backgroundColor: '#151515'
+    }}>
+      <h3 style={{color: '#d32f2f', display:'flex', alignItems:'center', gap:'10px'}}>
+        <span>🎲</span> Global Events
+      </h3>
+      <p style={{color: '#ccc', fontSize: '0.9rem'}}>
+        Des modificateurs de règles qui changent à chaque manche pour briser la routine.
+      </p>
+      <ul style={{paddingLeft: '20px', color: '#888', fontSize: '0.85rem'}}>
+        <li>Révélation de l'événement au début du round.</li>
+        <li>Impact sur la map, les spawns ou les mécaniques.</li>
+        <li>Framework simple pour créer les vôtres.</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* 4. AUTRES PLUGINS */}
+  <div className="col col--6" style={{marginBottom: '20px'}}>
+    <div style={{
+      padding: '20px', height: '100%', border: '1px solid #333', borderRadius: '8px', backgroundColor: '#151515'
+    }}>
+      <h3 style={{color: '#9e9e9e', display:'flex', alignItems:'center', gap:'10px'}}>
+        <span>⚙️</span> Modules & Divers
+      </h3>
+      <p style={{color: '#ccc', fontSize: '0.9rem'}}>
+        Des ajustements techniques pour améliorer la qualité de vie du serveur.
+      </p>
+      <ul style={{paddingLeft: '20px', color: '#888', fontSize: '0.85rem'}}>
+        <li><strong>BlackoutNDoor :</strong> Gestion aléatoire des lumières et portes.</li>
+        <li><strong>Misc :</strong> Ascenseurs autonomes, annonces de mort custom.</li>
+        <li>Paramètres de 914 étendus.</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+---
+
+<div style={{
+  marginTop: '3rem', 
+  padding: '2rem', 
+  backgroundColor: '#1b1b1b', 
+  border: '1px solid #444', 
+  borderRadius: '8px',
+  textAlign: 'center'
+}}>
+  <h2 style={{margin: '0 0 1rem 0'}}>Installation</h2>
+  <p style={{marginBottom: '1.5rem', color: '#aaa'}}>
+    Placez la DLL dans le dossier <code>Exiled/Plugins</code> et redémarrez le serveur.
+  </p>
+  <a href="https://github.com/Kruacent/Kruacent-Exiled/releases" className="button button--primary button--lg">
+    📥 Télécharger la dernière Release
+  </a>
+</div>

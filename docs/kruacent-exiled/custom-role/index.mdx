@@ -1,11 +1,83 @@
 ---
-sidebar_position: 99999
+sidebar_position: 0
 title: Liste des Custom Roles
-slug: /articles/Custom Role
+slug: /articles/CustomRole
+description: Index des rôles personnalisés, leurs statistiques et compétences.
 ---
 
-import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 # Liste des Custom Roles
 
-<DocCardList />
+:::info Information Gameplay
+Les rôles listés ci-dessous sont des modifications serveur (Plugins) appliquées aux classes standards de SCP: Secret Laboratory. Ils ne font pas partie du jeu de base.
+:::
+
+## Fonctionnement des Rôles
+
+Sur le serveur Kruaçent, un **Custom Role** est une variation d'une classe existante (Humain ou SCP). Lorsqu'un joueur obtient un rôle personnalisé, ses caractéristiques changent radicalement.
+
+Ces modifications incluent généralement :
+1.  **Statistiques :** Changement des PV Max, de la Vitesse ou de la Taille (Scale).
+2.  **Inventaire :** Apparition avec des objets spécifiques ou modifiés.
+3.  **Compétences :** Ajout de pouvoirs actifs ou passifs.
+
+### Attribution
+
+Selon le rôle, l'attribution se fait **aléatoirement** au début de la manche.
+
+---
+
+## Liste des Classes Disponibles
+
+Ci-dessous se trouve la liste des rôles actuellement actifs sur le serveur :
+
+export const RoleList = () => {
+  const {items} = useCurrentSidebarCategory();
+
+  return (
+    <div>
+      {items.map((item, index) => {
+        
+        if (item.type === 'category') {
+          return (
+            <div key={index} style={{marginBottom: '2rem'}}>
+              {/* Titre du dossier */}
+              <h3 style={{
+                  borderBottom: '2px solid var(--ifm-color-primary)', 
+                  paddingBottom: '0.5rem',
+                  textTransform: 'uppercase',
+                  color: 'var(--ifm-color-emphasis-900)'
+              }}>
+                {item.label}
+              </h3>
+              
+              {/* Liste des rôles dans ce dossier */}
+              <ul style={{listStyle: 'none', paddingLeft: '0'}}>
+                {item.items.map((subItem, subIndex) => (
+                  <li key={subIndex} style={{marginBottom: '0.5rem', paddingLeft: '1rem', borderLeft: '3px solid #333'}}>
+                    <a href={subItem.href} style={{fontSize: '1.1rem', fontWeight: 'bold', textDecoration: 'none'}}>
+                      {subItem.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        }
+
+        if (item.href && item.label !== 'Liste des Custom Roles') {
+           return (
+             <div key={index} style={{marginBottom: '0.5rem'}}>
+                <a href={item.href}><strong>{item.label}</strong></a>
+             </div>
+           );
+        }
+        
+        return null;
+      })}
+    </div>
+  );
+};
+
+<RoleList />

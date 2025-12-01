@@ -17,13 +17,16 @@
     "@docusaurus/core": "latest",
     "@docusaurus/preset-classic": "latest",
     "@mdx-js/react": "latest",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^8.18.0",
     "clsx": "latest",
     "fast-glob": "^3.3.3",
     "fs-extra": "^11.3.2",
     "gray-matter": "^4.0.3",
     "prism-react-renderer": "latest",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "three": "^0.181.2"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.7.0",
