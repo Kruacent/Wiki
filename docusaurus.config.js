@@ -19,11 +19,10 @@ const config = {
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'fr',
+    locales: ['fr'],
   },
 
   plugins: [
@@ -71,7 +70,7 @@ const config = {
           },
           {
             label: 'ServerAchievementFramework',
-            to: '/docs/server-achievement-framework/',
+            to: '/SAF',
           },
         ],
       },

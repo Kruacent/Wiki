@@ -10,36 +10,32 @@ module.exports = function (context, options) {
     name: 'custom-latest-docs-plugin',
 
     async loadContent() {
-      console.log('--- [PLUGIN] Démarrage du scan des fichiers ---');
-
       const files = await glob('docs/**/*.{md,mdx}', {
         cwd: context.siteDir,
         ignore: ['**/node_modules/**']
       });
-
-      console.log(`--- [PLUGIN] Fichiers trouvés dans docs: ${files.length} ---`);
 
       const articles = files.map((file) => {
         const filePath = path.join(context.siteDir, file);
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         const { data } = matter(fileContent);
 
-        if (!data.date) {
-             console.log(`[PLUGIN] Ignoré (pas de date): ${file}`);
-             return null;
-        }
+        if (!data.date) return null;
+
+        const pathParts = file.split('/');
+        const category = pathParts.length > 1 ? pathParts[pathParts.length - 2] : 'Uncategorized';
 
         return {
           title: data.title || 'Sans titre',
-          link: file.replace(/\.(md|mdx)$/, '').replace('/index', ''),
+          link: '/' + file.replace(/\.(md|mdx)$/, '').replace('/index', ''),
           excerpt: data.description || 'Aucune description disponible.',
           date: new Date(data.date),
+          category: category,
         };
       }).filter(Boolean);
 
-      console.log(`--- [PLUGIN] Articles valides retenus: ${articles.length} ---`);
-
       articles.sort((a, b) => b.date - a.date);
+
       return articles.slice(0, maxDisplayedArticles);
     },
 
