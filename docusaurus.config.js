@@ -27,6 +27,7 @@ const config = {
 
   plugins: [
     './src/plugins/latest-docs-plugin.js',
+    './src/plugins/docusaurus-3d-asset-plugin',
   ],
 
   presets: [

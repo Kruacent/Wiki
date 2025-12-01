@@ -30,7 +30,8 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/types": "3.7.0"
+    "@docusaurus/types": "3.7.0",
+    "file-loader": "^6.2.0"
   },
   "browserslist": {
     "production": [

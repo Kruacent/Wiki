@@ -5,11 +5,11 @@ const FACTIONS = {
   classd:      { color: '#ff9800', label: 'CLASSE-D', bg: '#3e2723' },
   scientist:   { color: '#ffeb3b', label: 'SCIENTIFIQUE', bg: '#333300' },
   mtf:         { color: '#2196f3', label: 'NINE-TAILED FOX', bg: '#0d47a1' },
-  chaos:       { color: '#1b5e20', label: 'CHAOS INSURGENCY', bg: '#003300' },
+  chaos:       { color: '#1b5e20', label: 'CHAOS INSURGENCY', bg: '#008400ff' },
   guard:       { color: '#78909c', label: 'GARDE DU SITE', bg: '#263238' },
-  scp:         { color: '#d32f2f', label: 'SCP', bg: '#3e0a0a' },
+  scp:         { color: '#d32f2f', label: 'SCP', bg: '#c30606ff' },
   tutorial:    { color: '#e91e63', label: 'TUTORIAL', bg: '#4a0a25' },
-  human:       { color: '#9e9e9e', label: 'CIVIL', bg: '#212121' }
+  human:       { color: '#b700ffff', label: 'CIVIL', bg: '#212121' }
 };
 
 const getInventoryIcon = (item) => {
@@ -138,7 +138,7 @@ export default function RoleProfile({
              border: '1px solid #333', borderRadius: '6px', overflow: 'hidden', 
              backgroundColor: '#000', height: '250px' 
           }}>
-             <ScaleViewer scaleVector={vectorScale} roleColor={faction.color} />
+             <ScaleViewer scaleVector={vectorScale} role={faction} />
           </div>
           <div style={{textAlign: 'right', fontSize: '0.7rem', color: '#555', marginTop: '5px', fontFamily: 'monospace'}}>
              TARGET SCALE: [{vectorScale.x}, {vectorScale.y}, {vectorScale.z}]
