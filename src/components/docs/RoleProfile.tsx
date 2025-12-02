@@ -7,7 +7,10 @@ const FACTIONS = {
   mtf:         { color: '#2196f3', label: 'NINE-TAILED FOX', bg: '#0d47a1' },
   chaos:       { color: '#1b5e20', label: 'CHAOS INSURGENCY', bg: '#008400ff' },
   guard:       { color: '#78909c', label: 'GARDE DU SITE', bg: '#263238' },
-  scp:         { color: '#d32f2f', label: 'SCP', bg: '#c30606ff' },
+  scp:         { color: '#d32f2f', label: 'Global SCP', bg: '#c30606ff' },
+  scp106:         { color: '#d32f2f', label: 'SCP-106', bg: '#c30606ff' },
+  scp939:         { color: '#d32f2f', label: 'SCP-939', bg: '#c30606ff' },
+  scp049:         { color: '#d32f2f', label: 'SCP-049', bg: '#c30606ff' },
   tutorial:    { color: '#e91e63', label: 'TUTORIAL', bg: '#4a0a25' },
   human:       { color: '#b700ffff', label: 'CIVIL', bg: '#212121' }
 };
@@ -36,7 +39,8 @@ export default function RoleProfile({
   roleColor, 
   spawnLocation = "Inconnu",
   keepRoleOnDeath = false,
-  keepRoleOnChangingRole = false
+  keepRoleOnChangingRole = false,
+  modelAuraColor
 }) {
   
   const faction = FACTIONS[type.toLowerCase()] || FACTIONS.human;
@@ -71,7 +75,7 @@ export default function RoleProfile({
               color: faction.color, fontWeight: '800', fontSize: '0.75rem', 
               letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '5px' 
            }}>
-              {faction.label} UNIT
+              {faction.label}
            </div>
            <h1 style={{ margin: 0, fontSize: '2.2rem', textTransform: 'uppercase', color: '#fff', lineHeight: '1' }}>{name}</h1>
            <p style={{ color: '#888', margin: '10px 0 0 0', fontSize: '1rem', maxWidth: '600px' }}>
@@ -138,7 +142,7 @@ export default function RoleProfile({
              border: '1px solid #333', borderRadius: '6px', overflow: 'hidden', 
              backgroundColor: '#000', height: '250px' 
           }}>
-             <ScaleViewer scaleVector={vectorScale} role={faction} />
+             <ScaleViewer scaleVector={vectorScale} role={faction} auraColor={modelAuraColor}/>
           </div>
           <div style={{textAlign: 'right', fontSize: '0.7rem', color: '#555', marginTop: '5px', fontFamily: 'monospace'}}>
              TARGET SCALE: [{vectorScale.x}, {vectorScale.y}, {vectorScale.z}]

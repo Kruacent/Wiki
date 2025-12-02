@@ -4,7 +4,7 @@ import DummyModel from './Dummy';
 import RoleModel from './RoleModel';
 import { roleModelMap } from '../../../data/models/roleModel';
 
-export default function ScaleViewer({ scaleVector, role }) {  
+export default function ScaleViewer({ scaleVector, role, auraColor }) {  
   const s = scaleVector || { x: 1, y: 1, z: 1 };
   
   const targetModelPath = role && role.label ? roleModelMap[role.label] : null;
@@ -71,6 +71,7 @@ export default function ScaleViewer({ scaleVector, role }) {
             position={[0.8, 0, 0]}
             scale={[s.x, s.y, s.z]} 
             color={targetColor}
+            auraColor={auraColor}
         />
 
       </Canvas>
