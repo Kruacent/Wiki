@@ -1,0 +1,29 @@
+scp:
+  label: SCP
+  permalink: /scp
+  description: SCP tag description
+
+custom-role:
+  label: Custom Role
+  permalink: /custom-role
+  description: Custom role tag description
+
+custom-item:
+  label: Custom Item
+  permalink: /custom-item
+  description: Custom item tag description
+
+global-event:
+  label: Global Event
+  permalink: /global-event
+  description: Global event tag description
+
+bug-fix:
+  label: Bug Fix
+  permalink: /bug-fix
+  description: Bug fix tag description
+
+rebalance:
+  label: Rebalance
+  permalink: /rebalance
+  description: Rebalance tag description

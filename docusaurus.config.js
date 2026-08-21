@@ -28,6 +28,18 @@ const config = {
   plugins: [
     './src/plugins/latest-docs-plugin.js',
     './src/plugins/docusaurus-3d-asset-plugin',
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'patchnotes',
+        routeBasePath: 'patchnotes',
+        path: './patchnotes',
+        blogTitle: 'Patchnotes Kruaçent',
+        blogSidebarTitle: 'Toutes les mises à jour',
+        blogSidebarCount: 'ALL',
+        showReadingTime: false,
+      },
+    ],
   ],
 
   presets: [
@@ -68,6 +80,10 @@ const config = {
           {
             label: 'Kruaçent-Exiled',
             to: '/docs/kruacent-exiled/',
+          },
+          {
+            label: 'Patchnotes',
+            to: '/patchnotes/',
           },
           {
             label: 'ServerAchievementFramework',
