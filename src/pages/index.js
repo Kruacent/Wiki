@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import { LatestArticles } from '../components/Articles/LatestArticle';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -28,7 +27,6 @@ export default function Home() {
       description="Bienvenue sur le Wiki de Kruaçent">
       <HomepageHeader />
       <main>
-        <LatestArticles />
       </main>
     </Layout>
   );

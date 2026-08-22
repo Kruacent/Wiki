@@ -21,8 +21,8 @@ const config = {
   onBrokenLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'fr',
+    locales: ['fr'],
   },
 
   plugins: [
@@ -82,12 +82,12 @@ const config = {
             to: '/docs/kruacent-exiled/',
           },
           {
-            label: 'Patchnotes',
-            to: '/patchnotes/',
+            label: 'Succès',
+            to: '/SAF',
           },
           {
-            label: 'ServerAchievementFramework',
-            to: '/SAF',
+            label: 'Patchnotes',
+            to: '/patchnotes/',
           },
         ],
       },
