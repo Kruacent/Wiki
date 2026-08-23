@@ -3,10 +3,11 @@ title: Negotiator
 description: Who knew zombies could be such great listeners?
 date: 2025-12-01
 hide_table_of_contents: true
+abilities: ["Immunité Diplomatique"]
 ---
 
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 
 <RoleProfile 
   name="Negotiator" 
@@ -25,13 +26,9 @@ import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
   ]}
 />
 
-## Compétences
+### Compétences
 
-Le Négociateur est une unité de soutien stratégique capable de renverser le cours d'une bataille en récupérant des effectifs perdus.
-
-<AbilityLoader id="Diplomatie" />
-
-<AbilityLoader id="Convert" />
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
 
 ---
 

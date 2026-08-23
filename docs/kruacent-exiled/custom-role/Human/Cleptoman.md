@@ -3,10 +3,11 @@ title: Le Cleptomane
 description: Un trouble obsessionnel poussant au vol d'objets.
 date: 2025-12-01
 hide_table_of_contents: true
+abilities: ["Thief"]
 ---
 
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 
 <RoleProfile 
   name="Cleptomane" 
@@ -21,6 +22,6 @@ import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
   inventory={['Inventaire de la Classe de base']}
 />
 
-## Mécanique de Vol
+### Compétences
 
-<AbilityLoader id="Thief" />
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />

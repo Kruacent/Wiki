@@ -1,0 +1,38 @@
+---
+title: Lourd
+description: Ralenti proportionnellement à la quantité de balles qu'on a
+keywords: [lourd, logicer, tank]
+sidebar_custom_props:
+  type: passive
+---
+
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import PatchNoteBanner from '@site/src/components/docs/PatchNoteBanner';
+
+# Lourd
+
+**Lourd** est une abilité **passive** conçue pour éviter que le (Tank)[Tank] soit trop fort. Il réduit la vitesse du joueur proportionnellement à la quantité de balles de logicer que le joueur à sur lui.
+
+---
+
+## Mécanique détaillée
+
+Vous subissez un effet **Slowness** proportionnel à la quantité de balles de **7.62 munition de [Logicer](https://en.scpslgame.com/index.php?title=Logicer)** que vous portez. Le niveau de ralentissement est effectué par tranche de 100 balles.
+
+| Balles | Ralentissement |
+| :--- | :--- |
+| 200 Balles | Slowness II |
+| 100 Balles | Slowness I |
+| 0 Balle | Vitesse normale |
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette abilité :
+
+<SearchRolesByAbility ability="Lourd" />
+
+---
+
+<PatchNoteBanner name="Lourd" tag="lourd" />

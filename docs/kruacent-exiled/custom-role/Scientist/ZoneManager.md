@@ -6,7 +6,6 @@ hide_table_of_contents: true
 ---
 
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 
 <RoleProfile 
   name="Zone Manager" 
@@ -28,5 +27,3 @@ import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 ## Mission Prioritaire
 
 Contrairement aux autres scientifiques qui cherchent juste à fuir, vous avez un travail à faire. Vous commencez déjà avec une carte capable d'ouvrir les Checkpoints, mais elle ne suffit pas pour ouvrir les Gates ou l'Intercom.
-
-<AbilityLoader id="Promotion" />

@@ -1,0 +1,67 @@
+---
+title: Thief
+description: Permet de voler un objet à un joueur situé dans la même pièce.
+image: /static/img/doc/abilities/thief.png
+keywords: [vol, voleur, steal, thief, objet, inventaire, item]
+sidebar_custom_props:
+  type: active
+---
+
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import AbilityIcon from '@site/src/components/docs/AbilityIcon';
+import PatchNoteBanner from '@site/src/components/docs/PatchNoteBanner';
+import Icone from '@site/static/img/doc/abilities/thief.png';
+
+# Thief
+
+<AbilityIcon src={Icone} alt="Icône Thief" />
+
+**Thief** est une capacité **active** permettant de subtiliser un objet directement dans l'inventaire d'un autre joueur, à condition que celui-ci se trouve dans la même pièce.
+
+---
+
+## Caractéristiques
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Description (Français)** | Vole un objet aléatoire à un joueur dans la même pièce. |
+| **Description (Anglais)** | Steal a random item from a player in the same room. |
+| **Temps de recharge** | 60 secondes |
+
+---
+
+## Mécanique détaillée
+
+L'utilisation de cette capacité ne nécessite pas de viser un joueur précis. L'item est volé selon les conditions ci-dessous.
+
+### 1. Conditions
+Pour que le vol s'effectue, il faut :
+* **Proximité :** Une victime potentielle doit se trouver dans la **même salle**.
+* **Inventaire :** La victime doit posséder au moins un objet dans son inventaire. S'il est vide, la cible est ignorée.
+* Si personne ne correspond à ces critères, l'action échoue et affiche le message : *"Personne à qui voler"*.
+
+### 2. Cible
+S'il y a plusieurs joueurs dans la pièce, la capacité choisira toujours le joueur **le plus proche** de l'utilisateur en respectant cet ordre de priorité d'équipe :
+1. **SCPs :** S'il y a un joueur SCP dans la pièce, il sera ciblé en priorité absolue.
+2. **Ennemis :** S'il n'y a pas de SCP, le vol ciblera l'ennemi le plus proche.
+3. **Alliés :** En dernier recours, si seuls des alliés sont présents, l'objet sera volé au collègue le plus proche.
+
+### 3. Quel objet est volé ?
+L'objet dérobé à la victime dépend de ce que le **voleur** tient en main au moment de l'activation :
+
+* **Si le voleur a les mains vides :** L'objet volé est choisi **100% au hasard** parmi tout l'inventaire de la victime.
+* **Si le voleur tient déjà un objet en main :** C'est à pile ou face (50/50). 
+  * Il a **50% de chances** de voler un objet au hasard.
+  * Il a **50% de chances** de voler spécifiquement **l'objet que la victime tient en main**.
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette capacité :
+
+<SearchRolesByAbility ability="Thief" />
+
+---
+
+<PatchNoteBanner name="Thief" tag="thief" />

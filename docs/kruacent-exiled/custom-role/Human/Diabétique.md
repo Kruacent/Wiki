@@ -3,10 +3,11 @@ title: Le Diabétique
 description: T'as mangé le crambleu au pomme de mael
 date: 2025-12-01
 hide_table_of_contents: true
+abilities: ["Diabète"]
 ---
 
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 import StatusEffect from '@site/src/components/docs/StatusEffect.tsx';
 
 <RoleProfile 
@@ -22,18 +23,9 @@ import StatusEffect from '@site/src/components/docs/StatusEffect.tsx';
   inventory={['Inventaire de la Classe de base']}
 />
 
-## État de Santé
+### Compétences
 
-Ce rôle transforme votre barre de vie en fuel.
-
-<AbilityLoader id="Crambleux" />
-
-<StatusEffect 
-  name="SCP-207" 
-  type="buff" 
-  intensity="x1 (Permanent)"
-  description="Vous permet de distancer n'importe quel humain ou SCP, mais vous tue à petit feu si vous ne vous soignez pas." 
-/>
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
 
 ---
 

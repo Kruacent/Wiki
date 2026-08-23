@@ -3,10 +3,11 @@ title: Le Vieux
 description: Un état pathologique causant des téléportations aléatoires.
 date: 2025-12-01
 hide_table_of_contents: true
+abilities: ["Alzheimer"]
 ---
 
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 import StatusEffect from '@site/src/components/docs/StatusEffect.tsx';
 
 <RoleProfile 
@@ -22,11 +23,10 @@ import StatusEffect from '@site/src/components/docs/StatusEffect.tsx';
   inventory={['Inventaire de la Classe de base']}
 />
 
-## Symptômes
 
-Ce rôle n'est pas une classe à part entière, mais une **maladie** qui peut toucher n'importe quel humain.
+### Compétences
 
-<AbilityLoader id="Alzheimer" />
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
 
 ---
 

@@ -1,0 +1,47 @@
+---
+title: SetPosition
+description: Permet de poser un point
+image: /static/img/doc/abilities/set-position.png
+keywords: [position, point]
+sidebar_custom_props:
+  type: active
+---
+
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import AbilityIcon from '@site/src/components/docs/AbilityIcon';
+import PatchNoteBanner from '@site/src/components/docs/PatchNoteBanner';
+import Icone from '@site/static/img/doc/abilities/set-position.png';
+
+# Set Position
+
+<AbilityIcon src={Icone} alt="Icône Set Position" />
+
+Set Position est une abilité **active** conçue pour selectionné une zone.
+
+---
+
+## Caractéristiques
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Description (Français)** | Selectionne la position pour une autre abilité |
+| **Description (Anglais)** | Select the current position for another ability |
+| **Temps de recharge** | 5 secondes |
+
+---
+
+## Mécanique détaillée
+
+La position selectionné est valable uniquement 25 mètres, si le joueur s'éloigne à plus de 25 mètres la position est supprimé.
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette abilité :
+
+<SearchRolesByAbility ability="SetPosition" />
+
+---
+
+<PatchNoteBanner name="SetPosition" tag="setposition" />

@@ -3,10 +3,11 @@ title: Mime
 description: Un Class-D muet, silencieux et plat comme une feuille.
 date: 2025-12-01
 hide_table_of_contents: true
+abilities: ["Simulate Death"]
 ---
 
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 import StatusEffect from '@site/src/components/docs/StatusEffect.tsx';
 
 <RoleProfile 
@@ -21,7 +22,9 @@ import StatusEffect from '@site/src/components/docs/StatusEffect.tsx';
   spawnLocation="Cellule des Class-D"
 />
 
-## Passifs & Malus
+### Compétences
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
 
 <StatusEffect 
   name="Silent Walk" 
@@ -40,5 +43,3 @@ import StatusEffect from '@site/src/components/docs/StatusEffect.tsx';
 ---
 
 ## Compétences
-
-<AbilityLoader id="SimulateDeath" />

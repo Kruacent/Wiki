@@ -6,7 +6,6 @@ hide_table_of_contents: true
 ---
 
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 
 <RoleProfile 
   name="Small" 
@@ -24,5 +23,3 @@ import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 ## La Menace Compacte
 
 Ce rôle s'applique aléatoirement sur les SCP. Il ne change pas vos PV ni vos dégâts, mais il change la façon dont les humains doivent vous viser.
-
-<AbilityLoader id="SmallSize" />

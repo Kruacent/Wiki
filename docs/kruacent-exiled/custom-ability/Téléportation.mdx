@@ -1,0 +1,62 @@
+---
+title: Téléportation
+description: Permet de se téléporter au dernier point sélectionné.
+image: /static/img/doc/abilities/teleportation.png
+keywords: [teleportation, tp, position]
+sidebar_custom_props:
+  type: active
+---
+
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import AbilityIcon from '@site/src/components/docs/AbilityIcon';
+import PatchNoteBanner from '@site/src/components/docs/PatchNoteBanner';
+import Icone from '@site/static/img/doc/abilities/teleportation.png';
+
+# Téléportation
+
+<AbilityIcon src={Icone} alt="Icône Téléportation" />
+
+La **Téléportation** est une capacité **active** qui permet à l'utilisateur de se téléporter au dernier point enregistré. Cette technologie est cependant instable : elle enlève la vie de l'utilisateur et n'est pas disponible partout.
+
+---
+
+## Caractéristiques
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Description (Français)** | Tu perds 60 HP/téléportation, ne peux pas être utilisé dans les ascenseurs |
+| **Description (Anglais)** | You lose 60 HP per teleportation, can't be used in lifts | 
+| **Coût d'activation** | 60 PV |
+| **Temps de recharge** | 130 secondes |
+
+---
+
+## Mécanique détaillée
+
+L'utilisation de la téléportation est très strict.
+
+### 1. Conditions de téléportation
+Pour que l'abilité s'active, il faut que les points si dessous soient valide (sinon la téléportation n'a pas lieu) :
+* **Point Sélectionné :** Une position valide doit avoir été préalablement définie via [SetPosition](SetPosition).
+* **Téléportation inter-zone interdite :** L'utilisateur doit se trouver dans la **même zone** que son point de sauvegarde (il est impossible de se téléporter depuis la *Heavy Containment Zone* vers *Light Containment Zone*).
+* **Ascenceur interdit :** La position du point de téléportation ne peut pas se trouver à l'intérieur d'un ascenseur.
+* **Post-Décontamination :** Il est impossible de se téléporter vers la *Light Containment Zone* si la décontamination a déjà eu lieu.
+
+### 2. Téléportation
+Si les conditions sont valides, alors la téléportation a lieu. L'utilisateur subit **60 points de dégâts** dus au voyage (si le joueur possède moins de 60 PV, cela lui sera fatale).
+
+:::warning Attention
+La téléportation comporte un risque, à chaque utilisation, il y a **5% de chances** que les coordonnées soient corrompues. Dans ce cas, le joueur ne retourne pas à la position selectionné, mais est téléporté sur la position d'**un autre joueur aléatoire** en vie (SCP inclue).
+:::
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette capacité :
+
+<SearchRolesByAbility ability="Téléportation" />
+
+---
+
+<PatchNoteBanner name="Téléportation" tag="teleportation" />

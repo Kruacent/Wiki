@@ -1,0 +1,54 @@
+---
+title: Trade
+description: Permet d'échanger l'objet tenu en main contre une pièce.
+image: /static/img/doc/abilities/trade.png
+keywords: [trade, échange, casino, coin, pièce]
+sidebar_custom_props:
+  type: active
+---
+
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import AbilityIcon from '@site/src/components/docs/AbilityIcon';
+import PatchNoteBanner from '@site/src/components/docs/PatchNoteBanner';
+import Icone from '@site/static/img/doc/abilities/trade.png';
+
+# Trade
+
+<AbilityIcon src={Icone} alt="Icône Trade" />
+
+**Trade** est une capacité **active** permettant de capitaliser sur ses relations avec les casinos. Elle permet de convertir instantanément n'importe quel équipement en pièce.
+
+---
+
+## Caractéristiques
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Description (Français)** | Tes liens avec le casino t'ont permis d'obtenir des pièces en échange d'un objet. |
+| **Description (Anglais)** | Your link with casinos permit your to gain more coins in exchange of items. |
+| **Temps de recharge** | 1 seconde |
+
+---
+
+## Mécanique détaillée
+
+### 1. Conditions
+Pour que l'échange s'effectue, le joueur doit obligatoirement **tenir un objet en main** au moment de l'activation.
+* Si le joueur a les mains vides, l'action échoue, la capacité n'entre pas en temps de recharge, et le message *"Pas d'objet"* s'affiche à l'écran.
+
+### 2. Conversion
+Si la condition est respectée :
+1. **Destruction :** L'objet actuellement tenu en main est supprimé de l'inventaire du joueur.
+2. **Récompense :** Une pièce est ajoutée dans l'inventaire du joueur.
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette capacité :
+
+<SearchRolesByAbility ability="Trade" />
+
+---
+
+<PatchNoteBanner name="Trade" tag="trade" />

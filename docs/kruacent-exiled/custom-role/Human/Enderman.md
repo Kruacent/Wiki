@@ -3,10 +3,11 @@ title: Enderman
 description: Un rôle capable de se téléporter au prix de sa santé vitale.
 date: 2025-12-01
 hide_table_of_contents: true
+abilities: ["SetPosition", "Téléportation"]
 ---
 
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 
 <RoleProfile 
   name="Enderman" 
@@ -21,13 +22,14 @@ import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
   inventory={['Inventaire de la Classe de base']}
 />
 
+### Compétences
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
 ## Maîtrise de l'Espace
 
 L'Enderman possède un kit de deux compétences qui fonctionnent ensemble. Vous devez d'abord **Marquer** une position pour pouvoir vous y **Téléporter** plus tard.
 
-<AbilityLoader id="SetPosition" />
-
-<AbilityLoader id="Teleportation" />
 
 :::warning RESTRICTIONS DE TÉLÉPORTATION
 * Vous ne pouvez vous téléporter que si le point marqué est dans la **même Zone** que vous (ex: LCZ ➔ LCZ).

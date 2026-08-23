@@ -1,0 +1,58 @@
+---
+title: AirStrike
+description: Permet de bombarder une zone selectionnée
+image: /static/img/doc/abilities/airstrike.png
+keywords: [bombe, bombardement, explosion]
+sidebar_custom_props:
+  type: active
+---
+
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import AbilityIcon from '@site/src/components/docs/AbilityIcon';
+import PatchNoteBanner from '@site/src/components/docs/PatchNoteBanner';
+import Icone from '@site/static/img/doc/abilities/airstrike.png';
+
+# AirStrike
+
+<AbilityIcon src={Icone} alt="Icône AirStrike" />
+
+L'AirStrike est une abilité **active** conçue pour bombarder une zone. Lors de son activation, une lumière rouge simulant du fumigène apparaît dans la zone de bombardement puis au bout de 10 secondes une explosion a lieu dans la zone.
+
+---
+
+## Caractéristiques
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Description (Français)** | Ne l'utilise pas trop sinon ton coop sera pas content |
+| **Description (Anglais)** | Don't overuse it or your co-op will not be happy |
+| **Temps de recharge** | 60 secondes |
+
+---
+
+## Mécanique détaillée
+
+L'utilisation de cette abilité se décompose en plusieurs phases :
+
+1. **Pré-requis :** L'utilisation de l'abilité [SetPosition](SetPosition) est requise pour sélectionner la zone de bombardement.
+2. **Activation :** Une fois que la position est sauvegardée, vous pouvez désormais utiliser AirStrike.
+3. **Pré-Impact :** Une lumière rouge simulant du fumigène apparaît durant 10 secondes (la lumière est visible pour tout le monde).
+4. **Explosion :** Après 10 secondes, le bombardement a lieu.
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette abilité :
+
+<SearchRolesByAbility ability="AirStrike" />
+
+---
+
+<PatchNoteBanner name="AirStrike" tag="airstrike" />
+
+---
+
+## Trivia
+
+- Airstrike est une référence au fait qu'on peut bombarder son coéquipier dans [Rebel Inc](https://store.steampowered.com/app/1088790/Rebel_Inc_Escalation/?l=french).

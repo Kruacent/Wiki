@@ -3,10 +3,11 @@ title: Tank
 description: Un capitaine MTF lourdement armé avec 200 HP.
 date: 2025-12-01
 hide_table_of_contents: true
+abilities: ["Lourd"]
 ---
 
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 import StatusEffect from '@site/src/components/docs/StatusEffect.tsx';
 
 <RoleProfile 
@@ -35,17 +36,8 @@ import StatusEffect from '@site/src/components/docs/StatusEffect.tsx';
 
 Le Tank est la seule classe à apparaître avec **deux armes lourdes** (LMG) et une Armure Lourde dès le début. Avec **200 HP**, il peut encaisser deux fois plus de dégâts qu'un soldat normal.
 
-<AbilityLoader id="Lourd" />
-
 ---
 
-## Gestion de la Mobilité
+### Compétences
 
-Votre survie dépend de votre gestion des munitions. Vous êtes une tourelle mobile.
-
-<StatusEffect 
-  name="Slowness" 
-  type="debuff" 
-  intensity="Variable"
-  description="Appliqué automatiquement si vous avez plus de 100 balles de 7.62 dans votre inventaire." 
-/>
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />

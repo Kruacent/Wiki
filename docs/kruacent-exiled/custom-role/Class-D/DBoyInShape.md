@@ -3,10 +3,11 @@ title: DBoyInShape
 description: Dammmmnnnnnnn les gates.
 date: 2025-12-01
 hide_table_of_contents: true
+abilities: ["Force Open"]
 ---
 
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 import StatusEffect from '@site/src/components/docs/StatusEffect.tsx';
 
 <RoleProfile 
@@ -33,6 +34,6 @@ Sa masse musculaire excessive le rend moins agile que les autres.
 
 ---
 
-## Compétences
+### Compétences
 
-<AbilityLoader id="ForceOpen" />
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />

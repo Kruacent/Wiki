@@ -1,0 +1,47 @@
+---
+title: SimulateDeath
+description: Permet de simuler sa mort
+image: /static/img/doc/abilities/simulate-death.png
+keywords: [simulation, mort, mime]
+sidebar_custom_props:
+  type: active
+---
+
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import AbilityIcon from '@site/src/components/docs/AbilityIcon';
+import PatchNoteBanner from '@site/src/components/docs/PatchNoteBanner';
+import Icone from '@site/static/img/doc/abilities/simulate-death.png';
+
+# Simulate Death
+
+<AbilityIcon src={Icone} alt="Icône Simulate Death" />
+
+Simulate Death est une abilité **active** conçue pour tromper les personnes autour de soi. Lorsqu'on l'active un ragdoll apparaît au sol avec un message de mort aléatoire.
+
+---
+
+## Caractéristiques
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Description (Français)** | T'es talent de mime te permettent de simuler la mort |
+| **Description (Anglais)** | Simulate your own death |
+| **Temps de recharge** | 60 secondes |
+
+---
+
+## Mécanique détaillée
+
+Lors de l'activation de cette abilité, un ragdoll est créer avec les mêmes caractéristiques que le joueur pour la durée de 10 secondes. Durant ce temps, le joueur est au centre du ragdoll, invisible et très petit. Le joueur ne peut utiliser aucun objet et ne peut bouger durant ce temps.
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette abilité :
+
+<SearchRolesByAbility ability="Simulate Death" />
+
+---
+
+<PatchNoteBanner name="SimulateDeath" tag="simulatedeath" />

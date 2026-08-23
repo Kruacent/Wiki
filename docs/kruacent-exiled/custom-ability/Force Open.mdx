@@ -1,0 +1,62 @@
+---
+title: Force Open
+description: Permet de bombarder une zone selectionnée
+image: /static/img/doc/abilities/force-open.png
+keywords: [force, ouvrir]
+sidebar_custom_props:
+  type: active
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import AbilityIcon from '@site/src/components/docs/AbilityIcon';
+import PatchNoteBanner from '@site/src/components/docs/PatchNoteBanner';
+import Icone from '@site/static/img/doc/abilities/force-open.png';
+
+# Force Open
+
+<AbilityIcon src={Icone} alt="Icône Force Open" />
+
+Force Open est une abilité **active** conçue pour forcer l'ouverture des portes. Lors de son utilisation, le joueur peut prendre des dégats s'il échoue l'ouverture.
+
+---
+
+## Caractéristiques
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Description (Français)** | Force une porte (grosse description) |
+| **Description (Anglais)** | Force open a door |
+| **Temps de recharge** | 30 secondes |
+
+---
+
+## Mécanique détaillée
+
+<Tabs>
+  <TabItem value="porte" label="Porte" default>
+    - 100% de succès d'ouverture
+    - 20 HP de dégats subis
+  </TabItem>
+  <TabItem value="checkpoint" label="Checkpoint">
+    - 50% de succès d'ouverture
+    - 10 HP de dégats subis
+  </TabItem>
+  <TabItem value="gate" label="Gate">
+    - 50% de succès d'ouverture
+    - 5 HP de dégats subis
+  </TabItem>
+</Tabs>
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette abilité :
+
+<SearchRolesByAbility ability="Force Open" />
+
+---
+
+<PatchNoteBanner name="Force Open" tag="forceopen" />

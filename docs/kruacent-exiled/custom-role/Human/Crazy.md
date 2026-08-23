@@ -6,7 +6,6 @@ hide_table_of_contents: true
 ---
 
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 
 <RoleProfile 
   name="Le Fou de la facilité" 
@@ -24,5 +23,3 @@ import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 ## Symptômes
 
 Ce rôle est une malédiction. Vous ne contrôlez pas toujours votre corps ni vos sens.
-
-<AbilityLoader id="CrazyEffect" />

@@ -1,0 +1,47 @@
+---
+title: Ceinture Explosive
+description: Permet d'exploser
+image: /static/img/doc/abilities/explode.png
+keywords: [bombe, terroriste, explosion]
+sidebar_custom_props:
+  type: active
+---
+
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import AbilityIcon from '@site/src/components/docs/AbilityIcon';
+import PatchNoteBanner from '@site/src/components/docs/PatchNoteBanner';
+import Icone from '@site/static/img/doc/abilities/explode.png';
+
+# Ceinture Explosive
+
+<AbilityIcon src={Icone} alt="Icône Explode" />
+
+L'Explosion est une abilité **active** conçue pour exploser une zone. Lors de son activation la ceinture explose.
+
+---
+
+## Caractéristiques
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Description (Français)** | Tu as une ceinture d'explosif autour de toi |
+| **Description (Anglais)** | You got an explosive belt |
+| **Temps de recharge** | 4 minutes |
+
+---
+
+## Mécanique détaillée
+
+Une lumière rouge est collé au dos du joueur permettant de le distinguer au loin. L'explosion de la ceinture explosive fait 3 fois moins de dégats qu'une grenade classique.
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette abilité :
+
+<SearchRolesByAbility ability="Explode" />
+
+---
+
+<PatchNoteBanner name="Explode" tag="explode" />

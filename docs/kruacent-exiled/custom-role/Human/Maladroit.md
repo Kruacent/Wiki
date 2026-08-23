@@ -6,7 +6,6 @@ hide_table_of_contents: true
 ---
 
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 
 <RoleProfile 
   name="Maladroit" 
@@ -24,5 +23,3 @@ import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 ## (In)Compétence
 
 Ce rôle ne vous apporte aucun avantage, c'est un défi de survie supplémentaire.
-
-<AbilityLoader id="MainsDeBeurre" />

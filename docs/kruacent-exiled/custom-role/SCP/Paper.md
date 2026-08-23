@@ -6,7 +6,6 @@ hide_table_of_contents: true
 ---
 
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 
 <RoleProfile 
   name="Paper" 
@@ -24,5 +23,3 @@ import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 ## Anomalie 2D
 
 Ce rôle transforme un SCP terrifiant en une version "Cartoon" plate.
-
-<AbilityLoader id="PaperJam" />

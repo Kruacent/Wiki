@@ -6,7 +6,6 @@ hide_table_of_contents: true
 ---
 
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 
 <RoleProfile 
   name="Ultra" 
@@ -24,5 +23,3 @@ import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 ## Le Traqueur Absolu
 
 L'Ultra ne gagne pas de puissance brute, mais une information capitale : **La Position**. Il empêche les derniers humains de se cacher indéfiniment dans un coin de la carte.
-
-<AbilityLoader id="UltraSense" />

@@ -6,7 +6,6 @@ hide_table_of_contents: true
 ---
 
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 
 <RoleProfile 
   name="Terroriste" 
@@ -33,7 +32,6 @@ import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 
 Ce rôle est conçu pour le **Sacrifice**. Avec 4 grenades HE dès le spawn, vous pouvez nettoyer une vague entière de Chaos Insurgency ou piéger un SCP dans un ascenseur.
 
-<AbilityLoader id="Explode" />
 
 :::danger UTILISATION DU SUICIDE
 Votre capacité **Ceinture Explosive** a un temps de fusible quasi-nul (0.2s).

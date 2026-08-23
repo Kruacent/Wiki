@@ -3,10 +3,11 @@ title: Gamble Addict
 description: Un scientifique accro au jeu qui a vendu son équipement.
 date: 2025-12-01
 hide_table_of_contents: true
+abilities: ["Trade"]
 ---
 
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
 import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
 
 <RoleProfile 
   name="Gamble Addict" 
@@ -20,6 +21,6 @@ import AbilityLoader from '@site/src/components/docs/AbilityLoader.tsx';
   inventory={['Coin', 'Coin']}
 />
 
-## Le Casino Gagne Toujours
+### Compétences
 
-<AbilityLoader id="Trade" />
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
