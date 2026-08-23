@@ -3,7 +3,7 @@ interface Props {
   tag: string;
 }
 
-export default function PatchNoteBanner({ name, tag }: Props) {
+export default function PatchnoteBanner({ name, tag }: Props) {
   return (
     <a 
       href={`/Wiki/patchnotes/tags/${tag}`} 
