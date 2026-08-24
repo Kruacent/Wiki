@@ -1,0 +1,52 @@
+---
+title: Gamble Lootbox
+description: Gagne des lootbox en infligeant des dégâts aux adversaires.
+keywords: [gamble, lootbox, rng, russe, recompense]
+sidebar_custom_props:
+  type: passive
+---
+
+import ItemLink from '@site/src/components/docs/ItemLink';
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import PatchnoteBanner from '@site/src/components/docs/PatchnoteBanner';
+
+# Gamble Lootbox
+
+**Gamble Lootbox** est une abilité **passive** conçue pour récompenser l'agressivité et la prise de risque. Elle permet de générer de l'équipement supplémentaire en plein combat, en fonction des dégâts infligés.
+
+---
+
+## Mécanique détaillée
+
+Le joueur possède un compteur qui additionne tous les dégâts qu'il inflige aux joueurs. Chaque fois que ce compteur atteint **500 points de dégâts**, il se réinitialise et fait apparaître une lootbox.
+
+### Animation et butin
+
+La caisse est sous la forme d'un cube émettant des flashs lumineux pendant 2 secondes avant de s'ouvrir. 
+
+L'objet obtenu est pioché parmi :
+1. **[Les Objets Personnalisés](/Wiki/docs/articles/CustomItem)**.
+2. **Les Objets Standards** du jeu, à l'exclusion des objets jugés trop puissants :
+
+| Catégorie exclue | Objets impossibles à obtenir |
+| :--- | :--- |
+| **Arme spéciale** | <ItemLink name="Micro HID" wikiId="Micro_H.I.D." />, <ItemLink name="Particle Disruptor" wikiId="3-X_Particle_Disruptor" />, <ItemLink name="Jailbird" wikiId="Jailbird" />, <ItemLink name="SCP-127" wikiId="SCP-127" /> |
+| **Munitions** | Tous les types de munitions |
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette abilité :
+
+<SearchRolesByAbility ability="Gamble Lootbox" />
+
+---
+
+<PatchnoteBanner name="Gamble Lootbox" tag="gamble-lootbox" />
+
+---
+
+## Trivia
+
+- L'abilité est inspiré des "Crates" de Counter-Strike.

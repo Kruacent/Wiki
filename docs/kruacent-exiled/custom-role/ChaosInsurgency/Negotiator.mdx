@@ -10,7 +10,7 @@ abilities: ["Immunité Diplomatique", "Convert"]
 import ItemLink from '@site/src/components/docs/ItemLink';
 import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
 import PatchNoteBanner from '@site/src/components/docs/PatchnoteBanner';
-import SpawnImg from '@site/static/img/doc/spawns/chaos_car.gif';
+import SpawnImg from '@site/static/img/doc/facility/surface/chaos_car.gif';
 
 # Négociateur
 
@@ -32,13 +32,15 @@ Le **Negotiator** est une unité appartenant à l'Insurrection du Chaos. Contrai
 | Paramètre | Valeur |
 | :--- | :--- |
 | **Points de vie** | 100 HP |
-| **Taille** | 1.0x (Standard) |
+| **Morphologie** | 1.0x (Standard) |
+| **Conservation du rôle lors échappement** | Non |
+| **Conservation du rôle lors décès** | Non |
 ---
 
 ## Apparition
 
 <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', backgroundColor: 'var(--ifm-background-surface-color)', padding: '1rem', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-200)', marginTop: '1rem' }}>
-  <img src={SpawnImg} alt="Zone de spawn" style={{ width: '220px', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-300)' }} />
+  <img src={SpawnImg} alt="Zone de spawn" style={{ width: '440px', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-300)' }} />
   <div>
     <strong style={{ fontSize: '1.1rem', color: 'var(--ifm-color-primary)' }}>Véhicule des Chaos</strong><br/>
     **Zone :** Surface<br/>
@@ -69,3 +71,9 @@ Le **Negotiator** est une unité appartenant à l'Insurrection du Chaos. Contrai
 ---
 
 <PatchNoteBanner name="Négociateur" tag="negotiator" />
+
+---
+
+## Trivia
+
+- Le rôle est inspiré des [Advisors](https://rebelinc.wiki.gg/wiki/Advisors) de Rebel Inc.

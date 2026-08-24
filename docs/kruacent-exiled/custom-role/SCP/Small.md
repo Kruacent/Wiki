@@ -1,25 +1,43 @@
 ---
-title: Small
-description: Une variante SCP de petite taille, plus difficile à toucher.
-date: 2025-12-01
-hide_table_of_contents: true
+title: Petit
+description: t poti. Un rôle qui réduit la taille des SCP.
+date: 2026-08-24
+keywords: [scp, petit, small, taille, scale, hitbox]
 ---
 
-import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
+import PatchNoteBanner from '@site/src/components/docs/PatchnoteBanner';
 
-<RoleProfile 
-  name="Small" 
-  type="scp"
-  description="U smoll. Une version compacte et furtive d'un SCP standard."
-  hp="Variable (Selon le SCP)"
-  roleColor="#b71c1c"
-  scale={{ x: 1, y: 0.75, z: 1 }} 
-  spawnLocation="Spawn de base du SCP"
-  keepRoleOnDeath={false}
-  keepRoleOnChangingRole={false}
-  inventory={[]}
-/>
+# Petit
 
-## La Menace Compacte
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#FF0000', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>SCP</span>
+  </div>
+</div>
 
-Ce rôle s'applique aléatoirement sur les SCP. Il ne change pas vos PV ni vos dégâts, mais il change la façon dont les humains doivent vous viser.
+> **FR :** *"t poti"*
+
+> **EN :** *"u smoll"*
+
+Le **Petit** est un rôle exclusif aux entités SCP. Ce rôle n'affecte ni les capacités anormales ni les points de vie, mais réduit considérablement sa taille.
+
+---
+
+## Profil
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Points de vie** | Inchangés |
+| **Morphologie** | 1.0x, **0.75x**, 1.0x *(Taille réduite)* |
+| **Conservation du rôle lors échappement** | Non |
+| **Conservation du rôle lors décès** | Non |
+
+---
+
+## Apparition
+
+Étant un rôle global modifiant un SCP, le Petit apparaît au point d'apparition naturel de sa classe SCP sous-jacente (SCP-173, SCP-049, SCP-939, etc.), en conservant les mécaniques d'origine de son rôle.
+
+---
+
+<PatchNoteBanner name="Petit" tag="petit" />

@@ -1,0 +1,49 @@
+---
+title: Intuition
+description: Le sixième sens des anciens. Permet de ressentir la présence des anomalies en début de partie.
+keywords: [sage, sagesse, intuition, devinette, scp, vieux, old man, vision]
+sidebar_custom_props:
+  type: passive
+---
+
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import PatchnoteBanner from '@site/src/components/docs/PatchnoteBanner';
+
+# Intuition
+
+**Intuition** est une abilité **passive** qui permet au joueur de ressentir quelles menaces anormales rôdent dans la facilité.
+
+---
+
+## Caractéristiques
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Condition d'activation** | Apparaître dans les 20 premières secondes de la manche |
+| **Durée de l'affichage** | 10 secondes |
+| **Zone d'affichage** | Au centre de l'écran |
+
+---
+
+## Mécanique détaillée
+
+Si le joueur obtient un rôle possédant cette abilité dès le début de la partie (le temps écoulé de la manche doit être inférieur à 20 secondes), son "sixième sens" s'active. 
+
+Il reçoit un avertissement visuel sur son écran contenant une liste de **3 SCP probables**. Cette liste est générée selon les règles suivantes :
+* **1** de ces SCP est **réellement** présent et contrôlé par un joueur dans la partie.
+* Les **2** autres sont de fausses pistes.
+* L'ordre d'affichage des 3 noms est mélangé aléatoirement.
+
+*(Note : Si le joueur obtient cette classe plus tard dans la partie, cette vision ne se déclenche pas).*
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette abilité :
+
+<SearchRolesByAbility ability="Intuition" />
+
+---
+
+<PatchnoteBanner name="Intuition" tag="intuition" />

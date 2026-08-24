@@ -1,51 +1,54 @@
 ---
 title: Asthmatique
-description: Une condition médicale affectant l'endurance mais augmentant la concentration.
-date: 2025-12-01
-hide_table_of_contents: true
+description: Un humain souffrant de problèmes respiratoires. Son endurance est réduite, mais sa concentration au tir est accrue.
+date: 2026-08-24
+keywords: [humain, asthmatique, asthme, stamina, endurance, scp-1853]
+abilities: ["Asthme"]
 ---
 
-import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
-import StatusEffect from '@site/src/components/docs/StatusEffect.tsx';
+import ItemLink from '@site/src/components/docs/ItemLink';
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
+import PatchNoteBanner from '@site/src/components/docs/PatchnoteBanner';
 
-<RoleProfile 
-  name="Asthmatique" 
-  type="human"
-  description="Ton endurance est réduite de moitié, mais tu vise mieux."
-  hp={100}
-  roleColor="rgba(191, 255, 0, 1)"
-  scale={1.0} 
-  spawnLocation="Spawn de la classe de base"
-  keepRoleOnDeath={false}
-  keepRoleOnChangingRole={true}
-  inventory={['Inventaire de la Classe de base']}
-/>
+# Asthmatique
 
-## Symptômes & Avantages
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#707070', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Personnel Humain</span>
+  </div>
+</div>
 
-<StatusEffect 
-  name="Exhausted" 
-  type="debuff" 
-  intensity="Permanent"
-  description="Votre endurance maximale et sa régénération sont drastiquement réduites."
-/>
+> **FR :** *"T'as stamina est réduit de moitié. Mais tu vises mieux"*
 
-<StatusEffect 
-  name="SCP-1853" 
-  type="buff" 
-  intensity="x2"
-  description="Augmente la vitesse de maniement des armes, réduit le recul et améliore la précision." 
-/>
+> **EN :** *"Stamina halfed but better accuracy"*
+
+L'**Asthmatique** est un rôle humain global qui modifie les capacités physiques du joueur. Handicapé par une insuffisance respiratoire chronique, il se fatigue beaucoup plus vite que les autres membres du personnel. Cependant, son habitude à contrôler sa respiration lui confère une précision chirurgicale lors du maniement des armes à feu.
 
 ---
 
-## Traitement
+## Profil
 
-Comme pour la plupart des afflictions physiques, il existe un remède miracle.
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Points de vie** | 100 HP |
+| **Morphologie** | 1.0x (Standard) |
+| **Conservation du rôle lors échappement** | Non |
+| **Conservation du rôle lors décès** | Non |
 
-<StatusEffect 
-  name="Guérison 500" 
-  type="neutral" 
-  icon="💊"
-  description="Consommer un SCP-500 soigne immédiatement votre asthme, retirant à la fois le malus d'endurance et le bonus de visée." 
-/>
+---
+
+## Inventaire et Apparition
+
+Étant un rôle global modifiant un humain, l'Astmathique apparaît avec l'inventaire et le point d'apparition de sa classe humaine sous-jacente (Classe-D, Scientifique, etc.), sans modification d'équipement.
+
+---
+
+## Compétences et Mécaniques
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+:::info Information 
+Le métabolisme de l'Asthmatique lui offre une résistance à **l'effet d'empoisonnement**.
+:::
+
+<PatchNoteBanner name="Asthmatique" tag="asthmatique" />

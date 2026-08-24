@@ -1,0 +1,61 @@
+---
+title: Le Vieux
+description: Un humain âgé souffrant d'Alzheimer, sujet à des pertes de mémoire le téléportant aléatoirement, mais doté d'une forte intuition.
+date: 2026-08-24
+keywords: [humain, vieux, old man, alzheimer, teleportation, memoire]
+abilities: ["Alzheimer", "Intuition"]
+---
+
+import Spoiler from '@site/src/components/docs/Antispoil.tsx';
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
+import ItemLink from '@site/src/components/docs/ItemLink';
+import PatchNoteBanner from '@site/src/components/docs/PatchnoteBanner';
+
+# Le Vieux
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#707070', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Personnel Humain</span>
+  </div>
+</div>
+
+> **FR :** *"Je suis vieux"*
+
+> **EN :** *"I'm old"*
+
+Le **Vieux** est un rôle humain unique affecté par une condition mentale sévère. Totalement désorienté, il a tendance à s'égarer et à "oublier" comment il est arrivé d'un point A à un point B. En contrepartie, son ancienneté lui octroie une intuition unique sur les menaces en début de partie.
+
+---
+
+## Profil
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Points de vie** | 100 HP |
+| **Morphologie** | 1.0x (Standard) |
+| **Conservation du rôle lors échappement** | Non |
+| **Conservation du rôle lors décès** | Non |
+
+---
+
+## Inventaire et Apparition
+
+Étant un rôle global modifiant un humain, le Vieux apparaît avec l'inventaire et le point d'apparition de sa classe humaine sous-jacente (Classe-D, Scientifique, etc.), sans modification d'équipement.
+
+---
+
+## Compétences
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+<PatchNoteBanner name="Le Vieux" tag="vieux" />
+
+--- 
+
+## Trivia
+
+- La description française est une référence à la vidéo [Pokémon Go de MisterJDay](https://youtu.be/EQRToposZuA?si=BHu9VADAO20ZZUxX)
+- Au tout début la description était "Mishima is old", une référence à [Mishima de Your Turn To Die](https://yourturntodie.fandom.com/wiki/Kazumi_Mishima)
+- <Spoiler from=" de Deltarune (Chapitre 4)">La description anglaise est une référence à [Gerson Boom](https://deltarune.wiki/w/Gerson) avec son dialogue "**I'm Old !**" </Spoiler>

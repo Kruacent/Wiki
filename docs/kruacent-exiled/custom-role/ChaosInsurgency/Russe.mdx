@@ -1,0 +1,82 @@
+---
+title: Le Russe
+description: Classe de l'Insurrection du Chaos capable de générer des lootbox en infligeant des dégâts.
+date: 2026-08-24
+image: /img/doc/teams/chaos-insurgency.png
+keywords: [chaos, russe, lootbox, gamble]
+abilities: ["Gamble Lootbox"]
+---
+
+import ItemLink from '@site/src/components/docs/ItemLink';
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
+import PatchNoteBanner from '@site/src/components/docs/PatchnoteBanner';
+import SpawnImg from '@site/static/img/doc/facility/surface/chaos_car.gif';
+
+# Le Russe
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#008F1C', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Insurrection du Chaos</span>
+  </div>
+</div>
+
+> **FR :** *"RUSH B or A, i dont rember sooo good luck"*
+
+> **EN :** *"RUSH B or A, i dont rember sooo good luck"*
+
+Le **Russe** est une unité de l'Insurrection du Chaos. Doté d'un arsenal particulièrement offensif, il se distingue par sa mécanique de "Gamble", récompensant son agressivité sur le terrain.
+
+---
+
+## Profil
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Points de vie** | 100 HP |
+| **Morphologie** | 1.0x (Standard) |
+| **Conservation du rôle lors échappement** | Non |
+| **Conservation du rôle lors décès** | Non |
+
+---
+
+## Apparition
+
+<div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', backgroundColor: 'var(--ifm-background-surface-color)', padding: '1rem', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-200)', marginTop: '1rem' }}>
+  <img src={SpawnImg} alt="Zone de spawn" style={{ width: '440px', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-300)' }} />
+  <div>
+    <strong style={{ fontSize: '1.1rem', color: 'var(--ifm-color-primary)' }}>Véhicule des Chaos</strong><br/>
+    **Zone :** Surface<br/>
+  </div>
+</div>
+
+---
+
+## Inventaire
+
+| Équipement | Détails et Quantité |
+| :--- | :--- |
+| <ItemLink name="Fusil A7" wikiId="A7" /> | 1x |
+| <ItemLink name="Revolver" wikiId="Revolver" /> | 1x |
+| <ItemLink name="Munitions 7.62x39mm" wikiId="Ammo" /> | 60x |
+| <ItemLink name="Munitions .44 Mag" wikiId="Ammo" /> | 19x |
+| <ItemLink name="Armure lourde" wikiId="Heavy_Armor" /> | 1x |
+| <ItemLink name="Grenade Explosive (HE)" wikiId="High-Explosive_Grenade" /> | 1x |
+| <ItemLink name="Grenade Flash" wikiId="Flashbang_Grenade" /> | 1x |
+| <ItemLink name="Keycard Chaos Insurgency" wikiId="Chaos_Insurgency_Access_Device" /> | 1x |
+| <ItemLink name="Radio" /> | 1x |
+
+---
+
+## Compétences
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+<PatchNoteBanner name="Le Russe" tag="russe" />
+
+---
+
+## Trivia
+
+- L'inspiration du rôle provient de Counter Strike avec beaucoup de russe qui ont des gameplay offensif.

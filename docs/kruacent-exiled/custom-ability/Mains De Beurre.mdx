@@ -1,0 +1,46 @@
+---
+title: Mains de beurre
+description: Une maladresse chronique qui vous force à lâcher involontairement l'objet que vous tenez.
+keywords: [maladresse, maladroit, drop, lacher, objet, item]
+sidebar_custom_props:
+  type: passive
+---
+
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import PatchnoteBanner from '@site/src/components/docs/PatchnoteBanner';
+
+# Mains de beurre
+
+**Mains de beurre** est une abilité **passive** (et très handicapante) qui force le joueur à faire tomber l'objet qu'il a actuellement équipé en main, et ce de manière totalement aléatoire.
+
+---
+
+## Caractéristiques
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Intervalle de déclenchement** | Toutes les 90 à 120 secondes |
+| **Probabilité de chute** | 50% de chance à chaque intervalle |
+
+---
+
+## Mécanique détaillée
+
+Toutes les 90 à 120 secondes :
+* Le jeu tire à pile ou face (50% de chance).
+* Si le tirage est "perdant", le joueur lâche instantanément l'objet qu'il tient dans ses mains (arme, carte d'accès, soin, etc.). L'objet tombe au sol.
+* Si le joueur ne tenait rien en main à ce moment précis, rien ne se passe.
+
+Le compte à rebours recommence ensuite indéfiniment tant que le joueur est en vie avec ce rôle. Cela peut s'avérer catastrophique en plein milieu d'une fusillade ou en tentant d'ouvrir une porte avec une carte !
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette abilité :
+
+<SearchRolesByAbility ability="Mains de beurre" />
+
+---
+
+<PatchnoteBanner name="Mains de beurre" tag="mainsdebeurre" />

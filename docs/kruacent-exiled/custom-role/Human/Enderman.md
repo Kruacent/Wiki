@@ -1,37 +1,59 @@
 ---
 title: Enderman
-description: Un rôle capable de se téléporter au prix de sa santé vitale.
-date: 2025-12-01
-hide_table_of_contents: true
-abilities: ["SetPosition", "Téléportation"]
+description: Un humain aux capacités anormales, capable de manipuler l'espace pour se téléporter.
+date: 2026-08-24
+image: /img/doc/teams/human.png
+keywords: [humain, enderman, teleportation, setposition, tp, espace]
+abilities: ["Téléportation", "SetPosition"]
 ---
 
+import ItemLink from '@site/src/components/docs/ItemLink';
 import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
-import RoleProfile from '@site/src/components/docs/RoleProfile.tsx';
+import PatchNoteBanner from '@site/src/components/docs/PatchnoteBanner';
 
-<RoleProfile 
-  name="Enderman" 
-  type="human"
-  description="Tu peux te téléporter ! T tro for enféte."
-  hp={100}
-  roleColor="rgba(142, 37, 190, 1)"
-  scale={1.0} 
-  spawnLocation="Spawn de la classe de base"
-  keepRoleOnDeath={false}
-  keepRoleOnChangingRole={true}
-  inventory={['Inventaire de la Classe de base']}
-/>
+# Enderman
 
-### Compétences
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#707070', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Personnel Humain</span>
+  </div>
+</div>
+
+> **FR :** *"Tu peux te téléporter ! T tro for enféte"*
+
+> **EN :** *"Great job you're now overpowered"*
+
+L'**Enderman** est un rôle humain global doté de capacités anormales. Il possède une mobilité sans précédent grâce à sa maîtrise de la téléportation instantanée.
+
+---
+
+## Profil
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Points de vie** | 100 HP |
+| **Morphologie** | 1.0x (Standard) |
+| **Conservation du rôle lors échappement** | **Oui** |
+| **Conservation du rôle lors décès** | Non |
+
+---
+
+## Inventaire et Apparition
+
+Étant un rôle global modifiant un humain, l'Enderman apparaît avec l'inventaire et le point d'apparition de sa classe humaine sous-jacente (Classe-D, Scientifique, etc.), sans modification d'équipement.
+
+---
+
+## Compétences et Mécaniques
 
 <GenerateLinksToAbilities abilities={frontMatter.abilities} />
 
-## Maîtrise de l'Espace
+---
 
-L'Enderman possède un kit de deux compétences qui fonctionnent ensemble. Vous devez d'abord **Marquer** une position pour pouvoir vous y **Téléporter** plus tard.
+<PatchNoteBanner name="Enderman" tag="enderman" />
 
+---
 
-:::warning RESTRICTIONS DE TÉLÉPORTATION
-* Vous ne pouvez vous téléporter que si le point marqué est dans la **même Zone** que vous (ex: LCZ ➔ LCZ).
-* Si la LCZ est décontaminée, vous ne pourrez pas y retourner.
-:::
+## Trivia
+
+- Référence aux Endermans dans le jeu Minecraft.
