@@ -9,18 +9,14 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 # Liste des Custom Roles
 
-:::info Information Gameplay
-Les rôles listés ci-dessous sont des modifications serveur (Plugins) appliquées aux classes standards de SCP: Secret Laboratory. Ils ne font pas partie du jeu de base.
-:::
-
 ## Fonctionnement des Rôles
 
-Sur le serveur Kruaçent, un **Custom Role** est une variation d'une classe existante (Humain ou SCP). Lorsqu'un joueur obtient un rôle personnalisé, ses caractéristiques changent radicalement.
+Les **Custom Role** sont des variations d'une classe existante (MTF, Classe-D, ...). Lorsqu'un joueur obtient un rôle personnalisé, ses caractéristiques changent.
 
-Ces modifications incluent généralement :
-1.  **Statistiques :** Changement des PV Max, de la Vitesse ou de la Taille (Scale).
-2.  **Inventaire :** Apparition avec des objets spécifiques ou modifiés.
-3.  **Compétences :** Ajout de pouvoirs actifs ou passifs.
+Ces modifications peuvent-être :
+1.  **Statistiques :** Changement des PV max, de la vitesse ou de la taille.
+2.  **Inventaire :** Apparition avec des [objets modifiés](CustomItem).
+3.  **Compétences :** Ajout d'[abilités](CustomAbility) actifs ou passifs.
 
 ### Attribution
 
@@ -30,7 +26,7 @@ Selon le rôle, l'attribution se fait **aléatoirement** au début de la manche.
 
 ## Liste des Classes Disponibles
 
-Ci-dessous se trouve la liste des rôles actuellement actifs sur le serveur :
+Ci-dessous se trouve la liste des rôles présent sur le serveur :
 
 export const RoleList = () => {
   const {items} = useCurrentSidebarCategory();

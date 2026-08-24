@@ -1,0 +1,71 @@
+---
+title: Negotiator
+description: Classe de l'Insurrection du Chaos immunisée aux tirs alliés et capable de recruter les zombies.
+date: 2025-12-01
+image: /img/doc/teams/chaos-insurgency.png
+keywords: [chaos, negotiator, negociateur, zombie, scp-049]
+abilities: ["Immunité Diplomatique", "Convert"]
+---
+
+import ItemLink from '@site/src/components/docs/ItemLink';
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
+import PatchNoteBanner from '@site/src/components/docs/PatchNoteBanner';
+import SpawnImg from '@site/static/img/doc/spawns/chaos_car.gif';
+
+# Négociateur
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#008F1C', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Insurrection du Chaos</span>
+  </div>
+</div>
+
+> **Description (Français) :** *"T'es immunisé au tire allié et tu peux convertir des zombies"*
+
+> **Description (Anglais) :** *"You're immune to friendly fire and you can convert zombie into your team, isn't that nice?"*
+
+Le **Negotiator** est une unité appartenant à l'Insurrection du Chaos. Contrairement aux autres unités de sa faction, son objectif principal est le recrutement des anomalies biologiques ennemies au profit de son escouade.
+
+---
+
+## Profil
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Points de vie** | 100 HP |
+| **Taille** | 1.0x (Standard) |
+---
+
+## Apparition
+
+<div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', backgroundColor: 'var(--ifm-background-surface-color)', padding: '1rem', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-200)', marginTop: '1rem' }}>
+  <img src={SpawnImg} alt="Zone de spawn" style={{ width: '220px', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-300)' }} />
+  <div>
+    <strong style={{ fontSize: '1.1rem', color: 'var(--ifm-color-primary)' }}>Véhicule des Chaos</strong><br/>
+    **Zone :** Surface<br/>
+  </div>
+</div>
+
+---
+
+## Inventaire
+
+| Équipement | Détails et Quantité |
+| :--- | :--- |
+| <ItemLink name="AK" /> | 1x |
+| **Munitions 7.62x39mm** | 90x |
+| **Munitions Calibre 12** | 7x |
+| <ItemLink name="Armure de combat" wikiId="Combat_Armor" /> | 1x |
+| <ItemLink name="Keycard Chaos Insurgency" wikiId="Keycard" /> | 1x |
+| <ItemLink name="Medkit" wikiId="First_Aid_Kit" /> | 1x |
+| <ItemLink name="Painkillers" /> | 1x |
+| <ItemLink name="Radio" /> | 1x |
+
+---
+
+## Compétences
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+<PatchNoteBanner name="Négociateur" tag="negotiator" />

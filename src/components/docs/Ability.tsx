@@ -78,28 +78,58 @@ function getRolesWithAbility(targetAbility: string): RoleData[] {
 }
 
 /**
+ * Va chercher la description d'une abilité directement dans son fichier .mdx
+ */
+function getAbilityDescription(targetAbility: string): string {
+  try {
+    const abilityFiles = require.context('@site/docs/kruacent-exiled/custom-ability', true, /\.mdx?$/);
+    
+    for (const key of abilityFiles.keys()) {
+      const module = abilityFiles<any>(key);
+      const frontMatter = module.frontMatter || {};
+      
+      if (frontMatter.title && frontMatter.title.toLowerCase() === targetAbility.toLowerCase()) {
+        return frontMatter.description || "Aucune description disponible.";
+      }
+    }
+  } catch (error) {
+    console.error("Erreur de récupération de la description :", error);
+  }
+  
+  return "Description introuvable.";
+}
+
+/**
  * Affiche les abilités d'un rôle.
  */
 export function GenerateLinksToAbilities({ abilities }: GenerateLinksProps) {
   if (!abilities || abilities.length === 0) {
-    return <p style={styles.emptyText}>Ce rôle ne possède aucune abilités.</p>;
+    return <p style={styles.emptyText}>Ce rôle ne possède aucune abilité.</p>;
   }
 
   return (
-    <ul style={styles.list}>
+    <dl style={{ margin: '1rem 0' }}>
       {abilities.map((ability, index) => {
+        const description = getAbilityDescription(ability);
+
         return (
-          <li key={index} style={styles.listItem}>
-            <Link 
-              to={`/docs/kruacent-exiled/custom-ability/${ability}`} 
-              style={styles.link}
-            >
-              {ability}
-            </Link>
-          </li>
+          <React.Fragment key={index}>
+            <dt style={{ fontSize: '1.1rem', marginTop: '1rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', paddingBottom: '0.2rem' }}>
+              <span style={{ marginRight: '8px', color: 'var(--ifm-color-emphasis-500)' }}>▪</span>
+              <Link 
+                to={`/docs/kruacent-exiled/custom-ability/${ability}`} 
+                style={{ fontWeight: 'bold', textDecoration: 'none', color: 'var(--ifm-color-primary)' }}
+              >
+                {ability}
+              </Link>
+            </dt>
+            <dd style={{ margin: '0.4rem 0 0 1.5rem', color: 'var(--ifm-color-emphasis-700)', lineHeight: '1.5' }}>
+              {description}
+            </dd>
+          </React.Fragment>
         );
       })}
-    </ul>
+    </dl>
   );
 }
 
