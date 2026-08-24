@@ -41,3 +41,9 @@ Le **Paper** est un rôle exclusif aux entités SCP. Ce rôle n'affecte ni les c
 ---
 
 <PatchNoteBanner name="Paper" tag="paper" />
+
+---
+
+## Trivia
+
+- "**uh oh. paper jam**" est une référence à [ce meme](https://packaged-media.redd.it/ptmmxcs6w9ld1/pb/m2-res_854p.mp4?m=DASHPlaylist.mpd&var=sgpssan&v=1&e=1787612400&s=a3a7ad6c90495d7862ab3d65129456648a372969)

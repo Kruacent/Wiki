@@ -4,7 +4,7 @@ description: Un Classe-D silencieux, capable de simuler sa propre mort et qui po
 date: 2026-08-24
 image: /img/doc/teams/class-d.png
 keywords: [class-d, mime, silentwalk, furtif, simulatedeath]
-abilities: ["SimulateDeath"]
+abilities: ["Simulate Death"]
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';
@@ -25,7 +25,7 @@ import SpawnImg2 from '@site/static/img/doc/facility/lcz/cd01/inside-cell.png';
 
 > **EN :** *"you make almost no sound while walking and you're flat"*
 
-Le **Mime** possède une anomalie physique les Classe-D. De par sa constitution extrêmement fine, il se déplace dans un silence quasi complet. Toujours dans son rôle, il est même capable de faire le mort pour tromper ses assaillants.
+Le **Mime** possède une anomalie physique par rapport aux autres Classe-D. De par sa constitution extrêmement fine, il se déplace dans un silence quasi complet. Toujours dans son rôle, il est même capable de faire le mort pour tromper ses assaillants.
 
 ---
 

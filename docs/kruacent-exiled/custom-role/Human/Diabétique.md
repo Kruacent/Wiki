@@ -56,3 +56,4 @@ Cependant, la Fondation (ou le hasard) lui accorde une chance de survie : à son
 ## Trivia
 
 - Référence au cramble aux pommes qu'on a mangé chez [Maël](https://fr.linkedin.com/in/ma%C3%ABl-coignard-14612129a).
+- La description anglaise est une référence à un post [Reddit](https://i.redd.it/4k2vyhmx11w91.jpg)

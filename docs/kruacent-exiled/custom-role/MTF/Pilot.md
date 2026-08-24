@@ -82,5 +82,5 @@ Le Pilote dispose de capacités uniques pour marquer des cibles et faire pleuvoi
 ## Trivia
 
 - Le rôle du Pilote est inspiré du conseiller "Pilote" de *Rebel Inc.*
-- La description française ("*Je suis pilote!*") est une référence à une [vidéo de JDG](https://youtu.be/PwWbpWitqrY?si=-Iu0f6BaN5xzRRYo&t=1330). 
+- La description française ("*Je suis pilote!*") est une référence à une [vidéo de JDG](https://www.youtube.com/shorts/PjWFifzknos). 
 - <Spoiler from=" de Deltarune (Chapitre 3)"> *So I haveth a Laser Pointere* est une référence à [**Rouxls Kaard**](https://www.youtube.com/shorts/4nId4appWbU) dans *Deltarune*. </Spoiler>

@@ -53,3 +53,9 @@ Le **Pacifiste** est un rôle exclusif aux classes civiles (Classe-D et Scientif
 ---
 
 <PatchNoteBanner name="Pacifiste" tag="pacifiste" />
+
+---
+
+## Trivia
+
+- "Incapable of violence" est une référence à RimWorld.
