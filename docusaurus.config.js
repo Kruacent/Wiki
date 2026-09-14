@@ -12,8 +12,8 @@ const config = {
   tagline: "",
   favicon: 'img/logo.png',
 
-  url: 'https://Kruacent.github.io', 
-  baseUrl: '/Wiki/',
+  url: 'https://wiki.teamcroissant.fr', 
+  baseUrl: '/',
   organizationName: 'Kruacent',
   projectName: 'Wiki',
   trailingSlash: false,
