@@ -2,14 +2,77 @@
 sidebar_position: 1
 title: Liste des Global Events
 slug: /articles/global-events
+description: Index des Global Event et leurs fonctionnement
 ---
 
-# Liste des Global Events
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
-Bienvenue sur la documentation des événements globaux.
-Ici vous trouverez les détails sur :
+# Fonctionnement des Global Event
 
-* **[Impostor](./impostor)** : Un mode de jeu style Among Us.
-* **[GasGasGas](./gasgasgas)** : Tout le monde court vite.
+Les **Global Event** sont des mutateurs qui s'active à chaque début de partie. Ils peuvent changer des statistiques des joueurs, du SCP ou ajouter des d'autres événements dans la partie.
 
-(Tu peux écrire ton texte normalement ici, ajouter des images, etc.)
+Chaque Global Event possède un niveau d'impact qui mesure l'impact du Global Event sur la partie :
+1.  **Very Low :** Impact très legers sur la partie, signalé par le préfixe **[VL]**
+2.  **Low :** Légèr impact au déroulement de la partie, signalé par le préfixe **[L]**
+3.  **Medium :** Impact moyen sur la partie, signalé par le préfixe **[M]**
+4.  **High :** Impact élevé sur la partie, signalé par le préfixe **[H]**
+5.  **Very High :** Global Event ayant un impact très élevé sur la partie, signalé par le préfixe **[VH]**
+6.  **Insane :** Global Event changeant completement le cours d'une partie, signalé par le préfixe **[I]**
+
+### Selection du Global Event
+
+Un ou deux Global Event sont tirés au sort à chaque début de partie, les global event actifs sont alors affiché aux joueurs. Il y a 10% de chance qu'il y ai affiché **[REDACTED]** à la place du nom du Global Event au début de partie
+
+---
+
+## Liste des Global Events Disponibles
+
+Ci-dessous se trouve la liste des Global Events présent sur le serveur :
+
+export const RoleList = () => {
+  const {items} = useCurrentSidebarCategory();
+
+  return (
+    <div>
+      {items.map((item, index) => {
+        
+        if (item.type === 'category') {
+          return (
+            <div key={index} style={{marginBottom: '2rem'}}>
+              <h3 style={{
+                  borderBottom: '2px solid var(--ifm-color-primary)', 
+                  paddingBottom: '0.5rem',
+                  textTransform: 'uppercase',
+                  color: 'var(--ifm-color-emphasis-900)'
+              }}>
+                {item.label}
+              </h3>
+              
+              <ul style={{listStyle: 'none', paddingLeft: '0'}}>
+                {item.items.map((subItem, subIndex) => (
+                  <li key={subIndex} style={{marginBottom: '0.5rem', paddingLeft: '1rem', borderLeft: '3px solid #333'}}>
+                    <a href={subItem.href} style={{fontSize: '1.1rem', fontWeight: 'bold', textDecoration: 'none'}}>
+                      {subItem.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        }
+
+        if (item.href && item.label !== 'Liste des Custom Roles') {
+           return (
+             <div key={index} style={{marginBottom: '0.5rem'}}>
+                <a href={item.href}><strong>{item.label}</strong></a>
+             </div>
+           );
+        }
+        
+        return null;
+      })}
+    </div>
+  );
+};
+
+<RoleList />

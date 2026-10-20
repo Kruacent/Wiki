@@ -13,6 +13,11 @@ custom-item:
   permalink: /custom-item
   description: Custom item tag description
 
+misc:
+  label: Miscellanous
+  permalink: /misc
+  description: Miscellanous tag description
+
 global-event:
   label: Global Event
   permalink: /global-event

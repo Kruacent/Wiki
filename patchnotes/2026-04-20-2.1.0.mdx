@@ -1,0 +1,87 @@
+---
+slug: v2.1.0
+title: Version 2.1.0
+authors: [patrique, omergs]
+tags: [rebalance, bug-fix, SCP, misc]
+
+---
+
+## Custom Roles
+    - Enderman :
+        - L'abilité "Teleport" n'enlève plus de vie
+        - L'abilité "Teleport" joue un son directionnel d'Ender Pearl entendable jusqu'à 40m
+        - L'abilité "Teleport" a son cooldown réduit (130s -> 90s)
+    - Enderman/Pilot :
+        - L'abilité "SetPosition" met une sphère visible uniquement par l'utilisateur
+    - MaladroitVoleur :
+        - Ne peux plus faire tomber son arme
+    - Asthmatique :
+        - Commence avec une adrénaline
+    - Crazy :
+        - Peut être soigné avec un SCP-500
+    - Tank :
+        - N'a plus de Logicer
+    - Russe :
+        - Remplacé L'A7 par le Logicer
+        - Commence avec plus de balle de 7.62 (80->200)
+        - Ses loot boxes n'ont plus de collision
+    - SCP-035 :
+        - Ne peux plus utiliser les armes lourdes (Logicer,Shotgun,FR-MG-0,AK)
+        - Spawn avec une carte de garde, une armure légère et un FSP-9
+        - Vie augmenté (1200 -> 1600)
+    - Fix SCP-035 qui ne pouvait pas parler à intercom
+    - Fix un bug de duplication avec le MaladroitVoleur
+    - Fix "SetPosition" qui ne fonctionnait pas correctement
+    - Fix Negotiator qui ne pouvait faire de dégât à soi-même
+    - non pas de Red Mist revenez plus tard
+## Pièce
+    - Ajout de l'effet "Ball" (Poids : 15)
+    - Ajout de l'effet "GiveCom45" (P : 5)
+    - Ajout de l'effet "InstantDecontamination" (P : 1)
+    - Ajout de l'effet "BigJump" (P : 5)
+    - Ajout d'un message quand un joueur meurt de "Vaporize" (moss)
+
+    - Fix "TeleportToEnemy" qui ne téléportait pas
+    - Fix "EmptyMicro" qui n’était pas vide
+    - Fix "RandomItem" qui donnait des objets interdit
+    - Fix "RandomizeInventory" qui fonctionnait pas
+
+    - Changer le poids de "AutoDoor" 5 -> 10
+    - Changer le poids de "EatingStar" 2 -> 7
+    - Changer le poids de "FakeNuke" 5 -> 10
+    - Changer le poids de "FlipPlayerRole" 10 -> 6
+    - Changer le poids de "Reversed" 5 -> 10
+    - Changer le durée de "Reversed" 30s -> 40s
+    - Changer le poids de "Warhead" 10 -> 5
+    - Changer le poids de "EmptyMicro" 5 -> 10
+    - Changer le poids de "NightVision" 5 -> 10
+    - Changer le durée de "NightVision" 30s -> 120s
+    - Changer le poids de "RandomizeInventory" 5 -> 10
+    - "RandomizeInventory" est maintenant positif
+    - Les joueurs qui ont 1HP et ont l'effet "MakeOneHp" explosent
+    - "TeleportToDBoyCell" n'enlève plus systématiquement la pièce de l'inventaire
+
+## Autres
+    - Le Global Event "Y'a R" ne peut que apparaître seul
+    - Les salles ont plusieurs point de téléportation (utilisé par "Random Spawn", "Teleportation Grenade", etc.), la chance de se téléporter dans une salle plutôt qu'une autre est inchangé.
+    - Les Global Events "Blitz" et "Item Rain" utilise ces points de téléportation pour faire spawn leur effets (donc oui "Blitz" va faire apparaître 5 grenades dans une pièce s'il y a 5 point de téléportation).
+
+    - "System Malfunction" a été refait:
+        - Toute les minutes la nuke peut être activé
+        - Les checkpoints s'ouvre tout seul aléatoirement
+        - BlackoutNDoor vise TOUTE la facilité
+    - Ajout d'un nouvel effet de BlackoutNDoor "Elevator Stuck" : verrouille tous les ascenseurs de la zone
+    
+    - Fix SCP-914 qui ne téléportait plus en coarse/fine
+    - Fix "Kaboom" qui faisait spawn des grenades alors que le joueur ne pouvait pas ouvrir la porte
+    - Custom Items:
+        - Ajout d'un hologramme visible uniquement à l'utilisateur pour le Deployable Wall
+        - Ajout d'une carte personnaliser au Deployable Wall
+        - Ajout du Flower Stick (Remplace le jailbird dans le casier d'arme expérimentale)
+        
+        - Le Cocktail Molotov ne peut plus être utilisé par le Pacifiste
+        - Les Divines Pills ne tombe plus des stockages de medkit
+        
+        - Fix True Divine Pills qui ne faisait pas respawn les joueurs au bon endroit
+        - Fix Sainte Grenade qui n'avait pas de son
+        - Fix MScan qui n'affichait pas le temps de sa batterie
