@@ -1,0 +1,59 @@
+---
+title: Toggle E.G.O.
+description: Manifestez votre E.G.O pour bénéficier de bonus puissants au prix d'un drain de santé continu.
+image: /img/doc/abilities/toggleego.png
+keywords: [toggleego, ego, redmist, buff]
+sidebar_custom_props:
+  type: active
+---
+
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+import AbilityIcon from '@site/src/components/docs/AbilityIcon';
+import PatchnoteBanner from '@site/src/components/docs/PatchnoteBanner';
+
+# Toggle E.G.O.
+
+**Toggle E.G.O.** est une capacité **active basculable** qui permet à la Red Mist de manifester ou de désactiver son armure E.G.O. Lorsqu'elle est active, l'utilisateur gagne un bonus de vitesse important et une résistance accrue, mais subit une perte continue de points de vie qui ne peut être compensée qu'en infligeant des dégâts.
+
+---
+
+## Caractéristiques
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Description (Français)** | Manifeste ton E.G.O, gagne de puissants bonus mais draine rapidement ta santé. Peut être désactivé à tout moment. |
+| **Description (Anglais)** | Manifest your E.G.O, gain powerful buff but rapid health drain. Can be deactivated anytime. |
+| **Dégâts de drain** | 2 HP toutes les 0.2s |
+| **Temps de recharge** | 0 seconde |
+
+---
+
+## Mécanique détaillée
+
+La manifestation de l'E.G.O altère directement les états physiques du joueur et exige un rythme de combat agressif.
+
+### 1. Effets appliqués
+Lorsque la capacité est activée :
+- **Augmentation de vitesse**
+- **Effet de SCP-1853**
+- **Immunité au poison**
+
+Lorsque la capacité est désactivée, les intensités d'effets sont retirées.
+
+### 2. Drainage de santé et Vol de vie
+- **Drain passif :** Tant que l'E.G.O est actif, le joueur subit **2 HP de dégâts brut** toutes les **0.2 secondes**.
+- **Pause du drain via dégâts :** À chaque fois que le joueur blesse un ennemi, l'objectif du timer de dégâts augmente. Cela repousse le prochain tic de drain et permet au joueur de maintenir son E.G.O actif sans perdre de santé tant qu'il reste en combat.
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette capacité :
+
+<SearchRolesByAbility ability="ToggleEGO" />
+
+---
+
+<PatchnoteBanner name="Toggle E.G.O." tag="toggleego" />
+
+---
