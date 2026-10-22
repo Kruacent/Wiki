@@ -32,3 +32,8 @@ rebalance:
   label: Rebalance
   permalink: /rebalance
   description: Rebalance tag description
+
+features:
+  label: Features
+  permalink: /features
+  description: Other features tag
