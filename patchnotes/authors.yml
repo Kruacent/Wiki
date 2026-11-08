@@ -13,3 +13,11 @@ omergs:
   image_url: https://github.com/omergs.png
   socials:
     github: omergs
+
+delecons:
+  name: Delecons
+  title: Developer
+  url: https://github.com/delecons
+  image_url: https://github.com/delecons.png
+  socials:
+    github: delecons
