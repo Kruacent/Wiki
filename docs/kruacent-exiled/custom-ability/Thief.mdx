@@ -38,7 +38,7 @@ L'utilisation de cette capacité ne nécessite pas de viser un joueur précis. L
 Pour que le vol s'effectue, il faut :
 * **Proximité :** Une victime potentielle doit se trouver dans la **même salle**.
 * **Inventaire :** La victime doit posséder au moins un objet dans son inventaire. S'il est vide, la cible est ignorée.
-* Si personne ne correspond à ces critères, l'action échoue et affiche le message : *"Personne à qui voler"*.
+* Si personne ne correspond à ces critères, l'action échoue et affiche le message : *"Wow faut get good là"*.
 
 ### 2. Cible
 S'il y a plusieurs joueurs dans la pièce, la capacité choisira toujours le joueur **le plus proche** de l'utilisateur en respectant cet ordre de priorité d'équipe :
@@ -47,10 +47,10 @@ S'il y a plusieurs joueurs dans la pièce, la capacité choisira toujours le jou
 3. **Alliés :** En dernier recours, si seuls des alliés sont présents, l'objet sera volé au collègue le plus proche.
 
 ### 3. Quel objet est volé ?
-L'objet dérobé à la victime dépend de ce que le **voleur** tient en main au moment de l'activation :
+L'objet dérobé dépend de ce que la **victime** tient en main au moment de l'activation :
 
-* **Si le voleur a les mains vides :** L'objet volé est choisi **100% au hasard** parmi tout l'inventaire de la victime.
-* **Si le voleur tient déjà un objet en main :** C'est à pile ou face (50/50). 
+* **Si la victime a les mains vides :** L'objet volé est choisi **100% au hasard** parmi tout son inventaire.
+* **Si la victime tient un objet en main :** C'est à pile ou face (50/50). 
   * Il a **50% de chances** de voler un objet au hasard.
   * Il a **50% de chances** de voler spécifiquement **l'objet que la victime tient en main**.
 

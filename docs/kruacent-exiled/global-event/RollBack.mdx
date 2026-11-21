@@ -1,0 +1,38 @@
+---
+title: RollBack
+description: Shit the server is lagging
+date: 2026-11-21
+keywords: [lag, retour, position, téléportation, rollback]
+impact: High
+weight: 1
+---
+
+# RollBack
+
+Le serveur fait semblant de « laguer ». Toutes les 30 secondes, le jeu enregistre la position et l'orientation de chaque joueur. À chacun de ces moments, il y a aussi **5 % de chances** que tout le monde soit renvoyé à la position enregistrée la fois précédente, comme si le serveur avait perdu les 30 dernières secondes.
+
+Une position n'est enregistrée que si le joueur est vivant, n'est pas dans un ascenseur et se trouve dans une zone sûre. Une zone n'est plus sûre quand :
+
+* la décontamination de la Light Containment Zone a commencé son compte à rebours (pour la LCZ) ;
+* l'ogive Alpha a explosé (pour la LCZ, la HCZ et l'Entrance Zone).
+
+Si la position n'est pas mise à jour, le joueur garde l'ancienne : un retour en arrière peut donc le ramener plus loin dans le passé.
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Description** | Shit the server is lagging |
+| **Description alternative** | Pov Omer |
+| **Niveau d'impact** | High **[H]** |
+| **Poids** | 1 |
+| **Intervalle d'enregistrement** | 30 secondes |
+| **Chance de retour en arrière** | 5 % toutes les 30 secondes |
+
+### Conseils
+
+- Un retour en arrière concerne tout le monde à la fois : un SCP qui vous poursuivait revient lui aussi en arrière.
+
+---
+
+## Note de la Fondation
+
+Des boucles temporelles de trente secondes sont signalées dans tout le Site. Les témoins décrivent une sensation de déjà-vu, puis un retour brutal à leur position précédente. Le service informatique affirme que ce n'est pas de sa faute.

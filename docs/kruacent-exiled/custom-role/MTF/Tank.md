@@ -57,7 +57,6 @@ Le Tank transporte un arsenal impressionnant qui le prépare à des affrontement
 
 | Équipement | Détails et Quantité |
 | :--- | :--- |
-| <ItemLink name="Logicer" /> | 1x |
 | <ItemLink name="FR-MG-0" /> | 1x |
 | **Munitions 7.62x39mm** | 200x |
 | **Munitions 5.56x45mm** | 200x |

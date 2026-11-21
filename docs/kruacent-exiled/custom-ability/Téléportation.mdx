@@ -26,8 +26,8 @@ La **Téléportation** est une capacité **active** qui permet à l'utilisateur 
 | :--- | :--- |
 | **Description (Français)** | Tu perds 60 HP/téléportation, ne peux pas être utilisé dans les ascenseurs |
 | **Description (Anglais)** | You lose 60 HP per teleportation, can't be used in lifts | 
-| **Coût d'activation** | 60 PV |
-| **Temps de recharge** | 130 secondes |
+| **Coût d'activation** | Aucun dégât appliqué actuellement (la description en jeu annonce 60 PV) |
+| **Temps de recharge** | 90 secondes |
 
 ---
 
@@ -43,10 +43,10 @@ Pour que l'abilité s'active, il faut que les points si dessous soient valide (s
 * **Post-Décontamination :** Il est impossible de se téléporter vers la *Light Containment Zone* si la décontamination a déjà eu lieu.
 
 ### 2. Téléportation
-Si les conditions sont valides, alors la téléportation a lieu. L'utilisateur subit **60 points de dégâts** dus au voyage (si le joueur possède moins de 60 PV, cela lui sera fatale).
+Si les conditions sont valides, alors la téléportation a lieu. La description en jeu annonce une perte de **60 PV** par téléportation, mais cette perte n'est pas appliquée dans la version actuelle.
 
 :::warning Attention
-La téléportation comporte un risque, à chaque utilisation, il y a **5% de chances** que les coordonnées soient corrompues. Dans ce cas, le joueur ne retourne pas à la position selectionné, mais est téléporté sur la position d'**un autre joueur aléatoire** en vie (SCP inclue).
+La téléportation comporte un risque : à chaque utilisation, s'il y a au moins un autre joueur sur le serveur, il y a environ **4 % de chances** (le code vise 5 %) que les coordonnées soient corrompues. Dans ce cas, le joueur ne va pas à la position sélectionnée : il est téléporté sur la position d'**un autre joueur choisi au hasard**, qui peut être un SCP ou un membre de n'importe quel camp.
 :::
 
 ---

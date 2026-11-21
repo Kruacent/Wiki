@@ -77,7 +77,8 @@ Contrairement aux gardes standards, il possède un armement avancé et une carte
 | Équipement | Détails et Quantité |
 | :--- | :--- |
 | <ItemLink name="Crossvec" /> | 1x |
-| **Munitions 5.56x45mm** | 120x |
+| **Munitions 9x19mm** | 70x |
+| **Munitions 5.56x45mm** | 40x |
 | <ItemLink name="Armure légère" wikiId="Light_Armor" /> | 1x |
 | <ItemLink name="Carte d'accès MTF Private" wikiId="keycard" /> | 1x |
 | <ItemLink name="Medkit" wikiId="First_Aid_Kit" /> | 1x |

@@ -16,7 +16,7 @@ import Icone from '@site/static/img/doc/abilities/airstrike.png';
 
 <AbilityIcon src={Icone} alt="Icône AirStrike" />
 
-L'AirStrike est une abilité **active** conçue pour bombarder une zone. Lors de son activation, une lumière rouge simulant du fumigène apparaît dans la zone de bombardement puis au bout de 10 secondes une explosion a lieu dans la zone.
+L'AirStrike est une abilité **active** conçue pour bombarder une zone. Lors de son activation, une lumière rouge simulant du fumigène apparaît dans la zone de bombardement puis, au bout de 1,5 seconde, une explosion a lieu dans la zone.
 
 ---
 
@@ -36,8 +36,8 @@ L'utilisation de cette abilité se décompose en plusieurs phases :
 
 1. **Pré-requis :** L'utilisation de l'abilité [SetPosition](SetPosition) est requise pour sélectionner la zone de bombardement.
 2. **Activation :** Une fois que la position est sauvegardée, vous pouvez désormais utiliser AirStrike.
-3. **Pré-Impact :** Une lumière rouge simulant du fumigène apparaît durant 10 secondes (la lumière est visible pour tout le monde).
-4. **Explosion :** Après 10 secondes, le bombardement a lieu.
+3. **Pré-Impact :** Une lumière rouge simulant du fumigène apparaît durant 1,5 seconde (la lumière est visible pour tout le monde). Si un obstacle se trouve à moins d'un mètre au-dessus du point, l'abilité échoue avec le message *"Quelque chose gêne"*.
+4. **Explosion :** Après 1,5 seconde, une grenade est lâchée juste au-dessus du point et explose dès qu'elle touche une surface.
 
 ---
 

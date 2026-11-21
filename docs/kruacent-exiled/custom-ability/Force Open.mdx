@@ -29,23 +29,27 @@ Force Open est une abilité **active** conçue pour forcer l'ouverture des porte
 | **Description (Français)** | Force une porte (grosse description) |
 | **Description (Anglais)** | Force open a door |
 | **Temps de recharge** | 30 secondes |
+| **Nombre d'utilisations** | 5 |
+| **Fenêtre d'action** | 30 secondes après l'activation |
 
 ---
 
 ## Mécanique détaillée
 
+Après l'activation, le joueur a **30 secondes** pour interagir avec une porte fermée qu'il ne peut pas ouvrir normalement. Les portes verrouillées par SCP-079 ou par un verrouillage plus fort ne peuvent pas être forcées. Les dégâts ne sont subis qu'en cas d'échec. La capacité ne peut être utilisée que **5 fois**.
+
 <Tabs>
-  <TabItem value="porte" label="Porte" default>
+  <TabItem value="gate" label="Gate" default>
     - 100% de succès d'ouverture
-    - 20 HP de dégats subis
+    - 20 HP de dégats subis en cas d'échec
   </TabItem>
   <TabItem value="checkpoint" label="Checkpoint">
     - 50% de succès d'ouverture
-    - 10 HP de dégats subis
+    - 10 HP de dégats subis en cas d'échec
   </TabItem>
-  <TabItem value="gate" label="Gate">
+  <TabItem value="porte" label="Porte">
     - 50% de succès d'ouverture
-    - 5 HP de dégats subis
+    - 5 HP de dégats subis en cas d'échec
   </TabItem>
 </Tabs>
 

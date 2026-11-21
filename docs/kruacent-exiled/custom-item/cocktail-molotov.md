@@ -67,7 +67,8 @@ Le commandement a dispersé ces objets dans les zones à haut risque d'infection
 | **Armoires de LCZ** | 50 % |
 | **Armoires de HCZ** | 50 % |
 | **Salle GR-18 de LCZ** | 75 % |
-| **Couloir à côté ascenseur de la Nuke** | 50 % |
+| **Armurerie de HCZ** | 80 % |
+| **Salle de SCP-049 (HCZ)** | 80 % |
 
 ---
 
@@ -81,29 +82,26 @@ Le cocktail Molotov utilise un verre fragile. Il explose **dès qu'il touche une
   src={MolotovZone}
   alt="Zone de feu"
   width="500px"
-  caption="Zone d'effet active (Rayon 5m)"
+  caption="Zone d'effet active (5 m de diamètre)"
   type="normal"
 />
 
 ### Caractéristiques de la Zone
 * **Durée :** 20 secondes.
-* **Rayon :** 5 mètres.
+* **Rayon :** 2,5 mètres (5 mètres de diamètre).
 * **Visuel :** Un soleil de forme cylindre de chaleur visible.
 
-### Dégâts Progressifs
-Le liquide colle à la peau et chauffe avec le temps. Plus vous restez longtemps, plus vous souffrez.
-* **Seuil Initial :** 5 Dégâts / seconde.
-* **Seuil Final (à 20s) :** 20 Dégâts / seconde.
-* **Calcul :** Les dégâts augmentent linéairement à chaque demi-seconde.
+### Dégâts
+Toutes les demi-secondes, chaque joueur dans la zone est brûlé et subit des dégâts fixes. Si le tir allié est désactivé, les coéquipiers du lanceur ne sont pas touchés (le lanceur, lui, peut l'être).
 
 ### Efficacité Contre les Menaces
 Le composé réagit différemment selon la cible :
 
 | Cible | Effet | Dégâts |
 | :--- | :--- | :--- |
-| **Humains** | Brûlures sévères | De 5 à 20 DPS (Progressif) |
-| **SCP (Classiques)** | Corrosion Acide | **~1.3% HP Max** / seconde |
-| **Zombies (049-2)** | **COMBUSTION TOTALE** | **2.5x Dégâts** (Jusqu'à 50 DPS !) |
+| **Humains** | Brûlures sévères | 6 PV toutes les 0,5 s (12 PV/s). Avec du bouclier (AHP), 10 points de bouclier sont retirés à la place. |
+| **SCP (Classiques)** | Corrosion Acide | 20 PV toutes les 0,5 s (40 PV/s) |
+| **Zombies (049-2)** | **COMBUSTION TOTALE** | **2.5x Dégâts** : 50 PV toutes les 0,5 s (100 PV/s) |
 
 ---
 
