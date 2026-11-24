@@ -6,6 +6,8 @@ date: 2026-11-24
 keywords: [pièce, coin, gamble, gambling, effet, aléatoire, casino]
 ---
 
+import GamblingCoinTable from '@site/src/components/docs/GamblingCoinTable';
+
 # Gambling Coin
 
 Sur Kruaçent, une pièce n'est pas juste une pièce. **Lancez-la** et il se passe quelque chose : une fois sur deux c'est un cadeau, une fois sur deux c'est une punition. La pièce disparaît après le lancer, et il faut attendre quelques secondes avant d'en relancer une autre.
@@ -21,72 +23,15 @@ Les gagnants s'en souviennent. Les perdants, souvent, ne sont plus là pour en p
 
 ---
 
+La **chance** indiquée à côté de chaque effet est la chance de tomber dessus en lançant une pièce.
+
 ## Les bons tirages
 
-| Effet | Message | Ce qui vous arrive |
-| :--- | :--- | :--- |
-| **SpawnHeal** | — | Un Medkit et des Anti-douleurs tombent à vos pieds. |
-| **GiveKeycard** | *You got a keycard !* | Une carte Containment Engineer, ou parfois une Facility Manager. |
-| **GiveRandomKeycard** | *You got a keycard !* | Une carte bizarre, aux couleurs et aux accès complètement aléatoires. |
-| **RandomItem** | *You got a random item !* | Un objet au hasard à vos pieds. Parfois rien du tout. |
-| **RandomizeInventory** | *You shouldn't gamble !* | Tout votre inventaire est remplacé par des objets au hasard. |
-| **RedCandy** | *You got a pink candy ! Wait is that pink no ?* | Un bonbon rouge de SCP-330. |
-| **KaboomCandy** | *Pink candy kaboooom !!* | Un bonbon rose. Oui, celui qui explose. |
-| **Lightbulb** | *Follow the light !!* | Une ampoule SCP-2176. |
-| **NiceHat** | *You've got a nice hat !* | SCP-268, le chapeau d'invisibilité. |
-| **EmptyMicro** | *DID YOU JUST GET A MICRO HID !?* | Un Micro H.I.D. ! …complètement vide. |
-| **GiveCom45** | *Ohh a Com45!* | Un COM-45. Un vrai, cette fois. |
-| **OneAmmoLogicer** | *Were you hiding that in your...* | Un Logicer avec une seule balle. Visez bien. |
-| **Revolver** | *It's a gift from the sky !!* | Un revolver équipé d'une lunette. |
-| **HealPlayer** | *You got magically healed !* | Un petit soin, qui peut même dépasser votre vie max. |
-| **IncreasePlayerHeal** | *You're life expectancy is extended !* | Un soin proportionnel à votre vie actuelle. |
-| **NightVision** | *Yippee, you can see in the dark* | Vision nocturne pendant deux minutes. |
-| **BigJump** | *Congratulations, you can now jump higher* | Super sauts pendant une minute et demie. |
-| **Gnomed** | *You got gnomed.* | Vous devenez un petit gnome trapu. |
-| **FakeYourDeath** | *Congrats ! You are now officially dead* | Un faux cadavre à votre nom apparaît, et les SCP vous croient mort. |
-| **ForceRespawn** | *Someone respawned... probably.* | Une vague de renforts arrive. Pour qui ? Surprise. |
-| **TeleportToEscape** | — | Vous voilà à la sortie de secours. |
-| **HappyBirthday** | — | C'est votre anniversaire ! Tout le serveur le sait, la musique joue et les lumières font la fête. |
-| **RandomGoodEffect** | *You got a random effect !* | Un petit bonus aléatoire pendant quelques secondes. |
-| **RandomBadEffect** | *You got a random effect !* | Un petit malus aléatoire pendant quelques secondes. Rangé avec les bons tirages, allez savoir pourquoi. |
+<GamblingCoinTable type="positif" />
 
 ## Les mauvais tirages
 
-| Effet | Message | Ce qui vous arrive |
-| :--- | :--- | :--- |
-| **Shit** | *The tacos of the otherday was not passed very good* | Une flaque de SCP-173 apparaît sous vous. Le plus fréquent de tous. |
-| **DetonatedFlash** | *a gift for your eyes* | Une grenade flash vous explose à la figure. |
-| **TeleportToEnemy** | *You were teleported to an enemy !!* | Vous atterrissez à côté d'un ennemi ou d'un SCP. |
-| **ReduceHP** | *The coin fall on your head !* | La pièce vous tombe sur la tête. Ça fait mal. |
-| **MakeOneHP** | — | Vous tombez à 1 PV. Si vous y étiez déjà, vous explosez. |
-| **InventoryReset** | *have you ever got item in your inventory ?* | Votre inventaire disparaît (sauf l'objet en main, qui tombe). |
-| **DropInventory** | *Empty your pocket... NOOOOWW !!* | Vous lâchez tout. |
-| **Handcuff** | *You were arrested for uhh commiting war crimes... or something* | Menotté, et tout votre matériel par terre. |
-| **SwapInventory** | *I think you don't deserve this stuff, i take it away* | Vous échangez votre inventaire avec un autre humain au hasard. |
-| **SwapPosition** | *Congratulations ! You just unlocked the premium teleport Uber service... but with no refunds.* | Vous échangez votre place avec un autre joueur. |
-| **SwapWithSpectator** | *You just made someone's round better !* | Un spectateur prend votre place, votre vie et votre équipement. Vous, vous regardez. |
-| **RandomTeleport** | *You were randomly teleported* | Téléporté n'importe où. |
-| **YouLoveTesla** | *You love Tesla much more than Elon Musk* | Téléporté dans une salle de Tesla. |
-| **TeleportToDBoyCell** | *You got teleported to Class D cells !* | Retour aux cellules des Classe-D. |
-| **TransformZombie** | — | Vous devenez un zombie de SCP-049. |
-| **TransformZombieFake** | *Good luck* | Vous ressemblez à un zombie… mais vous n'en êtes pas un. Vos alliés, eux, ne le savent pas. |
-| **FlipPlayerRole** | *That's what I call an UNO reverse card!* | Vous changez de camp et perdez votre équipement. |
-| **EveryoneChange** | *You converted everyone in the opposite team !* | **Tout le serveur** change de camp. Bravo. |
-| **Ball** | *Look a BALL* | Une balle SCP-018 géante. Courez. |
-| **HolyGrenade** | *Watch a holy grenade !* | Une [Sainte Grenade](/docs/kruacent-exiled/custom-item/sainte-grenade) vous explose dessus. Alléluia. |
-| **PrimedVase** | *You're grandma come to visit you* | Un vase SCP-244 déjà activé à vos pieds. Ça caille. |
-| **Prison** | *Not another warcrime mate, what are you doing* | Une cage vous enferme quelques secondes. |
-| **Reversed** | *Oops ! I connected your keyboard in the wrong way, sorryyyy* | Vos commandes sont inversées pendant un moment. |
-| **AutoDoor** | *You are very talented in messing up the game !* | Toutes les portes d'une zone s'ouvrent. |
-| **TurnOffLight** | — | Toute la facilité est plongée dans le noir quelques secondes. |
-| **FakeNuke** | — | L'ogive Alpha démarre… puis s'arrête toute seule. Normalement. |
-| **Warhead** | — | L'ogive Alpha démarre. Pour de vrai, cette fois. |
-| **EatingStar** | *Eating the disco ball wasn't good idea* | Vous devenez une boule disco musicale pendant un moment. |
-| **Laugh** | *Smile you are on a TV show* | Des rires enregistrés vous suivent pendant plusieurs minutes. |
-| **GiveFakeCom45** | *Ohh a Com45!* | Un COM-45 ! …enfin, un [Life Ender](/docs/kruacent-exiled/custom-item/life-ender). Ne tirez pas. |
-| **Vaporize** | *I think eating moss in your cell is not good for you* | Rien ne se passe… pour l'instant. Quelques minutes plus tard, vous êtes désintégré. |
-| **Kick** | *Bye !* | Vous êtes expulsé du serveur. Littéralement. |
-| **InstantDecontamination** | *Ouuppss you have the covid* | La décontamination de la Light démarre immédiatement. Le plus rare de tous. |
+<GamblingCoinTable type="negatif" />
 
 ---
 
