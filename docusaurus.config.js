@@ -89,6 +89,10 @@ const config = {
             label: 'Patchnotes',
             to: '/patchnotes/',
           },
+          {
+            label: 'Médias',
+            to: '/medias',
+          },
         ],
       },
            
