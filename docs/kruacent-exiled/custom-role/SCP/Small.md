@@ -48,7 +48,7 @@ Le **Petit** est un rôle exclusif aux entités SCP. Ce rôle n'affecte ni les c
 >
 > Merci de regarder **aussi** en bas avant de déclarer un couloir sûr.
 >
-> — Le Sgt. Alex, qui l'a appris à ses dépens.
+> - Le Sgt. Alex, qui l'a appris à ses dépens.
 
 ---
 
