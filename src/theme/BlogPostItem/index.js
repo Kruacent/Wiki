@@ -1,6 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
+import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useBlogPost } from '@docusaurus/plugin-content-blog/client';
 import BlogPostItem from '@theme-original/BlogPostItem';
 import styles from './styles.module.css';
@@ -51,6 +53,24 @@ function PatchnoteCard() {
   );
 }
 
+/** Image de partage générée pour cette version (voir src/plugins/og-images-plugin.js). */
+function PatchnoteShareImage() {
+  const { metadata } = useBlogPost();
+  const { siteConfig } = useDocusaurusContext();
+  const slug = metadata.permalink.split('/').filter(Boolean).pop();
+  const image = `${siteConfig.url}${siteConfig.baseUrl}img/og/${slug}.png`;
+
+  return (
+    <Head>
+      <meta property="og:image" content={image} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta name="twitter:image" content={image} />
+      <meta name="twitter:card" content="summary_large_image" />
+    </Head>
+  );
+}
+
 export default function BlogPostItemWrapper(props) {
   const { isBlogPostPage } = useBlogPost();
 
@@ -60,6 +80,7 @@ export default function BlogPostItemWrapper(props) {
 
   return (
     <div className={clsx('patchnote-page', styles.page)}>
+      <PatchnoteShareImage />
       <BlogPostItem {...props} />
     </div>
   );

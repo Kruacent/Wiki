@@ -59,12 +59,44 @@ module.exports = function (context, options) {
           tags: data.tags || [],
           // Nombre de lignes de changements, pour un petit résumé visuel.
           changes: (content.match(/^\s*[-*]\s+/gm) || []).length,
+          // Chaque ligne de changement, avec la section dont elle fait partie,
+          // pour l'historique affiché en bas des pages du wiki.
+          lines: extractLines(content),
         };
       })
       .filter(Boolean);
 
     patchnotes.sort((a, b) => new Date(b.date) - new Date(a.date));
     return patchnotes;
+  }
+
+  /** Lignes de changements d'une patchnote : { section, text } en texte brut. */
+  function extractLines(content) {
+    const lines = [];
+    let section = '';
+    for (const raw of content.split(/\r?\n/)) {
+      const heading = raw.match(/^##\s+(.+?)\s*:?\s*$/);
+      if (heading && !raw.startsWith('###')) {
+        section = heading[1].replace(/\s*:$/, '');
+        continue;
+      }
+      const item = raw.match(/^\s*[-*]\s+(.+)$/);
+      if (!item) continue;
+      const text = item[1]
+        .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+        .replace(/[*_`]/g, '')
+        .trim();
+      if (text) lines.push({ section, text });
+    }
+    return lines;
+  }
+
+  /** Pages du wiki qui affichent déjà l'historique à un endroit choisi. */
+  async function loadPagesWithBanner() {
+    const files = await glob('docs/**/*.{md,mdx}', { cwd: context.siteDir });
+    return files.filter((file) =>
+      /<Patch[Nn]ote[Bb]anner/.test(fs.readFileSync(path.join(context.siteDir, file), 'utf-8')),
+    );
   }
 
   /** Nombre de pages par catégorie du wiki (hors pages d'index). */
@@ -87,6 +119,7 @@ module.exports = function (context, options) {
         articles: await loadArticles(),
         patchnotes: await loadPatchnotes(),
         counts: await loadCounts(),
+        pagesWithBanner: await loadPagesWithBanner(),
       };
     },
 

@@ -25,8 +25,26 @@ const config = {
     locales: ['fr'],
   },
 
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['fr', 'en'],
+        docsRouteBasePath: 'docs',
+        blogDir: './patchnotes',
+        blogRouteBasePath: 'patchnotes',
+        indexBlog: true,
+        highlightSearchTermsOnTargetPage: true,
+        searchBarShortcutHint: true,
+        searchResultLimits: 10,
+      },
+    ],
+  ],
+
   plugins: [
     './src/plugins/latest-docs-plugin.js',
+    './src/plugins/og-images-plugin.js',
     './src/plugins/docusaurus-3d-asset-plugin',
     [
       '@docusaurus/plugin-content-blog',
@@ -49,6 +67,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          editUrl: 'https://github.com/Kruacent/Wiki/edit/main/',
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         blog: {
           showReadingTime: true,
@@ -70,6 +91,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Image affichée quand on partage un lien du wiki (générée par og-images-plugin).
+      image: 'img/og/default.png',
       navbar: {
         title: 'Kruaçent',
         logo: {
@@ -92,6 +115,10 @@ const config = {
           {
             label: 'Médias',
             to: '/medias',
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
         ],
       },
