@@ -1,0 +1,114 @@
+---
+sidebar_position: 1
+title: Gambling Coin
+description: Lancer une pièce déclenche un effet aléatoire, positif ou négatif.
+date: 2026-11-24
+keywords: [pièce, coin, gamble, gambling, effet, aléatoire, casino]
+---
+
+# Gambling Coin
+
+Sur Kruaçent, **lancer une pièce** déclenche un effet aléatoire. Un effet sur deux est positif, l'autre négatif. Cela concerne toutes les pièces normales (pas les objets personnalisés, sauf la [Pièce compressée](/docs/kruacent-exiled/custom-item/compressed-coin)).
+
+## Règles
+
+| Règle | Valeur |
+| :--- | :--- |
+| **Chance d'un effet positif** | 50 % |
+| **Chance d'un effet négatif** | 50 % |
+| **Utilisations par pièce** | 1 : la pièce disparaît après le lancer (*"no more coin"*) |
+| **Délai entre deux lancers** | 3 secondes (*"You must wait before flipping again"*) |
+
+- Une fois positif ou négatif décidé, l'effet est tiré au sort selon son **poids** : plus le poids est élevé, plus l'effet est fréquent. La chance indiquée dans les tableaux est la chance de l'effet **une fois la catégorie tirée** ; pour la chance réelle sur un lancer, divisez par 2.
+- Le message de l'effet s'affiche à l'écran pendant 5 secondes.
+- L'[Ultimate Lucky Student](/docs/kruacent-exiled/custom-role/Human/UltimateLuckyStudent) obtient toujours un effet positif.
+- La [Pièce compressée](/docs/kruacent-exiled/custom-item/compressed-coin) déclenche entre 10 et 30 effets d'un coup, chacun tiré avec les mêmes règles.
+
+:::note Valeurs par défaut
+Le nombre d'utilisations et le délai sont les valeurs par défaut du code. Le serveur peut les modifier dans sa configuration.
+:::
+
+### Où trouver des pièces ?
+- Les pièces du jeu de base, dans la facilité.
+- L'[Accro du casino](/docs/kruacent-exiled/custom-role/Scientist/GambleAddict) commence avec 2 pièces et en obtient d'autres avec sa capacité [Trade](/docs/kruacent-exiled/custom-ability/Trade).
+- Le Middle Event [EGamble](/docs/kruacent-exiled/global-event/middle-event/EveryoneGamble) donne une pièce à tous les non-SCP.
+- La [Gambling Room](gambling-room) peut en donner une.
+
+---
+
+## Effets positifs
+
+Somme des poids : **293**.
+
+| Effet | Message (en jeu) | Ce qui se passe | Poids | Chance |
+| :--- | :--- | :--- | :--- | :--- |
+| **SpawnHeal** | *(aucun)* | Un Medkit et des Anti-douleurs apparaissent à vos pieds. | 25 | 8,5 % |
+| **GiveKeycard** | You got a keycard ! | Une carte Containment Engineer apparaît à vos pieds. Environ 14 % de chances que ce soit une carte Facility Manager à la place. | 20 | 6,8 % |
+| **GiveRandomKeycard** | You got a keycard ! | Une carte personnalisée aux couleurs aléatoires, avec des niveaux d'accès aléatoires (0 à 3 en confinement, armurerie et administration), tombe à vos pieds. | 20 | 6,8 % |
+| **Gnomed** | You got gnomed. | Votre taille devient 1,13 × 0,5 × 1,13 (petit et large). | 20 | 6,8 % |
+| **RandomItem** | You got a random item ! | Un objet aléatoire du jeu de base apparaît à vos pieds (rien si l'objet tiré fait partie des objets interdits). | 20 | 6,8 % |
+| **RedCandy** | You got a pink candy ! Wait is that pink no ? | Un bonbon **rouge** de SCP-330 apparaît à vos pieds. | 20 | 6,8 % |
+| **RandomBadEffect** | You got a random effect ! | Un effet **négatif** aléatoire du jeu pendant 5 secondes. Cet effet est classé parmi les effets positifs dans le code. | 20 | 6,8 % |
+| **ForceRespawn** | Someone respawned... probably. | Force l'arrivée d'une vague de renforts tirée au hasard. | 15 | 5,1 % |
+| **Lightbulb** | Follow the light !! | Une ampoule SCP-2176 apparaît à vos pieds. | 15 | 5,1 % |
+| **EmptyMicro** | DID YOU JUST GET A MICRO HID !? | Un Micro H.I.D. **sans énergie** apparaît à vos pieds. | 10 | 3,4 % |
+| **HealPlayer** | You got magically healed ! | Soigne 25 PV, même au-delà des PV max. | 10 | 3,4 % |
+| **IncreasePlayerHeal** | You're life expectancy is extended ! | Soigne 30 % de vos PV actuels, même au-delà des PV max. | 10 | 3,4 % |
+| **KaboomCandy** | Pink candy kaboooom !! | Un bonbon **rose** de SCP-330 (explosif) apparaît à vos pieds. | 10 | 3,4 % |
+| **NiceHat** | You've got a nice hat ! | SCP-268 apparaît à vos pieds. | 10 | 3,4 % |
+| **NightVision** | Yippee, you can see in the dark | Vision nocturne pendant 120 secondes (sans effet pour un SCP). | 10 | 3,4 % |
+| **RandomGoodEffect** | You got a random effect ! | Un effet positif aléatoire du jeu pendant 5 secondes. | 10 | 3,4 % |
+| **RandomizeInventory** | You shouldn't gamble ! | Chaque objet de votre inventaire est remplacé par un objet aléatoire. | 10 | 3,4 % |
+| **HappyBirthday** | *(aucun)* | Tout le monde entend une musique d'anniversaire et voit *"It's [pseudo]'s birthday !!"*. Les lumières de la facilité changent de couleur chaque seconde pendant 19 secondes. 5 % de chances d'une musique surprise. | 8 | 2,7 % |
+| **BigJump** | Congratulations, you can now jump higher | Grands sauts pendant 90 secondes (comme [Grand saut](/docs/kruacent-exiled/custom-ability/ToggleHighJump)). | 5 | 1,7 % |
+| **FakeYourDeath** | Congrats ! You are now officially dead | Un faux cadavre à votre nom apparaît, et le compteur d'humains des SCP baisse de 1 (sauf si vous êtes un SCP). | 5 | 1,7 % |
+| **GiveCom45** | Ohh a Com45! | Un **vrai** COM-45 apparaît à vos pieds. | 5 | 1,7 % |
+| **OneAmmoLogicer** | Were you hiding that in your... | Un Logicer avec **1 balle** apparaît à vos pieds. | 5 | 1,7 % |
+| **Revolver** | It's a gift from the sky !! | Un revolver (barillet 7 coups, canon court, lunette) apparaît à vos pieds. | 5 | 1,7 % |
+| **TeleportToEscape** | *(aucun)* | Vous êtes téléporté à la sortie de secours (évasion). | 5 | 1,7 % |
+
+## Effets négatifs
+
+Somme des poids : **432**.
+
+| Effet | Message (en jeu) | Ce qui se passe | Poids | Chance |
+| :--- | :--- | :--- | :--- | :--- |
+| **Shit** | The tacos of the otherday was not passed very good | Une flaque de SCP-173 apparaît à vos pieds. | 40 | 9,3 % |
+| **DetonatedFlash** | a gift for your eyes | Une grenade flash explose à vos pieds après 1 seconde. | 30 | 6,9 % |
+| **TeleportToEnemy** | You were teleported to an enemy !! | Vous êtes téléporté sur un joueur d'une autre équipe ou un SCP, choisi au hasard. | 30 | 6,9 % |
+| **InventoryReset** | have you ever got item in your inventory ? | Vous lâchez l'objet en main, le reste de l'inventaire est supprimé. | 20 | 4,6 % |
+| **PrimedVase** | You're grandma come to visit you | Un SCP-244 déjà activé apparaît à vos pieds. | 20 | 4,6 % |
+| **ReduceHP** | The coin fall on your head ! | Vous perdez 30 PV. | 20 | 4,6 % |
+| **SwapInventory** | I think you don't deserve this stuff, i take it away | Vous échangez vos objets et munitions avec un autre joueur non-SCP au hasard (il reçoit le même message). S'il y a au plus un autre joueur non-SCP vivant, vous perdez 50 PV à la place. | 20 | 4,6 % |
+| **SwapPosition** | Congratulations ! You just unlocked the premium teleport Uber service... but with no refunds. | Vous échangez votre position avec un joueur vivant au hasard. | 20 | 4,6 % |
+| **Ball** | Look a BALL | Une balle SCP-018 **20 fois plus grosse** est lancée depuis votre position. | 15 | 3,5 % |
+| **HolyGrenade** | Watch a holy grenade ! | Une [Sainte Grenade](/docs/kruacent-exiled/custom-item/sainte-grenade) explose immédiatement sur vous. | 15 | 3,5 % |
+| **MakeOneHP** | *(aucun)* | Vos PV tombent à 1. Si vous étiez déjà à 1 PV, vous explosez. | 15 | 3,5 % |
+| **RandomTeleport** | You were randomly teleported | Vous êtes téléporté dans une salle au hasard. | 15 | 3,5 % |
+| **TransformZombie** | *(aucun)* | Vous devenez un SCP-049-2. | 15 | 3,5 % |
+| **YouLoveTesla** | You love Tesla much more than Elon Musk | Vous êtes téléporté dans une salle de porte Tesla. Si l'ogive a explosé, vous mourez. | 15 | 3,5 % |
+| **AutoDoor** | You are very talented in messing up the game ! | Toutes les portes non verrouillées d'une zone tirée au hasard s'ouvrent. | 10 | 2,3 % |
+| **EveryoneChange** | You converted everyone in the opposite team ! | Tous les joueurs vivants changent de camp : Classe-D ↔ Scientifique, Chaos → MTF, MTF → Chaos (sans inventaire). | 10 | 2,3 % |
+| **FakeNuke** | *(aucun)* | L'ogive Alpha se lance, puis s'arrête toute seule 15 secondes plus tard. | 10 | 2,3 % |
+| **Handcuff** | You were arrested for uhh commiting war crimes... or something | Vous êtes menotté et lâchez tous vos objets. | 10 | 2,3 % |
+| **Prison** | Not another warcrime mate, what are you doing | Une cage de barreaux vous enferme pendant 20 secondes. | 10 | 2,3 % |
+| **Reversed** | Oops ! I connected your keyboard in the wrong way, sorryyyy | Vos commandes de déplacement sont inversées pendant 40 secondes. | 10 | 2,3 % |
+| **SwapWithSpectator** | You just made someone's round better ! | Un spectateur prend votre place (rôle, position, PV, objets et munitions) et vous devenez spectateur. S'il n'y a aucun spectateur : *"you got lucky !"*. | 10 | 2,3 % |
+| **TurnOffLight** | *(aucun)* | Toutes les lumières de la facilité s'éteignent pendant 10 secondes. | 10 | 2,3 % |
+| **DropInventory** | Empty your pocket... NOOOOWW !! | Vous lâchez tous vos objets. | 8 | 1,9 % |
+| **TransformZombieFake** | Good luck | Vous prenez l'**apparence** d'un SCP-049-2, sans changer de rôle. | 8 | 1,9 % |
+| **EatingStar** | Eating the disco ball wasn't good idea | Pendant 20 secondes, une musique joue autour de vous et une lumière change de couleur sur vous toutes les 0,5 seconde. | 7 | 1,6 % |
+| **Laugh** | Smile you are on a TV show | Vous entendez un rire toutes les 30 à 60 secondes pendant 5 minutes (s'arrête si vous mourez ou changez de rôle). | 7 | 1,6 % |
+| **FlipPlayerRole** | That's what I call an UNO reverse card! | Vous lâchez vos objets et passez dans le rôle opposé (Classe-D ↔ Scientifique, Garde/MTF → Chaos, Chaos → MTF). | 6 | 1,4 % |
+| **GiveFakeCom45** | Ohh a Com45! | Un [Life Ender](/docs/kruacent-exiled/custom-item/life-ender) (faux COM-45 qui tue le tireur) apparaît à vos pieds avec 20 balles. | 5 | 1,2 % |
+| **Kick** | Bye ! | Vous êtes expulsé du serveur (*"Memory access violation"*). | 5 | 1,2 % |
+| **TeleportToDBoyCell** | You got teleported to Class D cells ! | Vous êtes téléporté aux cellules des Classe-D. Si l'ogive a explosé, vous mourez. | 5 | 1,2 % |
+| **Vaporize** | I think eating moss in your cell is not good for you | Entre 30 et 600 secondes plus tard, vous êtes désintégré (*"You shouldn't gamble too much (you ate moss)"*), même si vous avez changé de rôle entre-temps. | 5 | 1,2 % |
+| **Warhead** | *(aucun)* | L'ogive Alpha se lance pour de vrai. | 5 | 1,2 % |
+| **InstantDecontamination** | Ouuppss you have the covid | Du sang apparaît sous vous et la décontamination de la Light Containment Zone démarre immédiatement. | 1 | 0,2 % |
+
+---
+
+## Note de la Fondation
+
+Les pièces retrouvées dans le Site ne se comportent pas comme de la monnaie ordinaire. Chaque lancer provoque un événement imprévisible, parfois bénéfique, souvent non. Le jeu d'argent est officiellement interdit au personnel. Officiellement.

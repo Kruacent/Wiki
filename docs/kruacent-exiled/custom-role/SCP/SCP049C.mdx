@@ -1,0 +1,82 @@
+---
+title: SCP-049-C
+description: Une instance modifiée de SCP-049 qui consomme les corps pour gagner des améliorations.
+date: 2026-11-22
+keywords: [scp, scp-049, scp-049-c, custom scp, corps, palier, amélioration]
+abilities: ["ToggleHighJump", "Small", "Parry"]
+---
+
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
+import SpawnImg from '@site/static/img/doc/facility/hcz/939-lab.png';
+
+# SCP-049-C
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#FF0000', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>SCP personnalisé</span>
+  </div>
+</div>
+
+> **EN (même texte en français) :** *"A modified SCP049 instance which does not create any SCP049-2 instead consuming the body to gain powerful abilities. Doctor's call gives 300 Hume Shield. Expired body can still be consumed but need more time to do so (stay near the arrow until it disappear (10s))"*
+
+**SCP-049-C** est un SCP personnalisé basé sur SCP-049. Il ne crée jamais de zombies : chaque corps qu'il « soigne » est **consommé** et compte comme un kill. En accumulant les kills, il monte de palier et choisit une amélioration à chaque palier.
+
+---
+
+## Profil
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Classe de base** | SCP-049 |
+| **Points de vie** | 2500 HP |
+| **Apparition** | Point d'apparition de SCP-939 |
+| **Appel du Docteur** | Donne **+300** de Hume Shield |
+| **Paliers** | 3 au maximum |
+
+SCP-049-C est tiré au sort avec les SCP de base quand les joueurs SCP reçoivent leur rôle. Voir [l'attribution des SCP](/docs/articles/CustomRole#attribution-des-scp).
+
+<img src={SpawnImg} alt="Laboratoire de SCP-939" style={{ width: '440px', borderRadius: '8px' }} />
+
+---
+
+## Consommer les corps
+
+Il y a deux façons de gagner un kill :
+
+1. **Corps récent :** terminer la réanimation d'un corps comme SCP-049 normalement. Au lieu de créer un zombie, le corps disparaît.
+2. **Corps expiré :** une flèche **↓** apparaît au-dessus des corps trop anciens pour être réanimés (la flèche n'apparaît que pour les morts causées par un joueur, mais tout corps expiré peut être consommé). Restez à **2 mètres** ou moins du corps pendant **10 secondes** : la flèche devient rouge, puis le corps disparaît. S'éloigner remet le compteur à zéro.
+
+L'écran affiche le palier actuel et les kills (par exemple *Tier : 1, Kills : 1/2*).
+
+| Palier à atteindre | Kills nécessaires |
+| :--- | :--- |
+| Palier 1 | 2 |
+| Palier 2 | 2 |
+| Palier 3 | 4 |
+
+---
+
+## Améliorations
+
+À chaque nouveau palier, deux améliorations sont proposées. Le joueur a **17 secondes** pour choisir avec les touches gauche/droite (paramètres du serveur). À la fin du temps, l'amélioration sélectionnée est accordée (la première par défaut).
+
+| Palier | Amélioration | Effet réel |
+| :--- | :--- | :--- |
+| **1** | **Jump** | Donne la capacité [Grand saut](/docs/kruacent-exiled/custom-ability/ToggleHighJump). |
+| **1** | **More shield** | Hume Shield maximum porté à **1100**. |
+| **2** | **Smol** | Donne la capacité [Potit](/docs/kruacent-exiled/custom-ability/Small) (30 secondes plus petit, 120 secondes de recharge). |
+| **2** | **Deflect Damages** | Aucun effet dans la version actuelle (voir [Contre](/docs/kruacent-exiled/custom-ability/Parry)). |
+| **3** | **SCP-1344** | Voit à travers les murs, comme avec SCP-1344. |
+| **3** | **Speed** | **+50** de vitesse, mais **retire toutes les autres améliorations** obtenues. |
+
+---
+
+## Compétences
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+## Note de la Fondation
+
+Cette instance de SCP-049 ne cherche plus à « guérir » ses victimes : elle les absorbe. Chaque corps consommé semble la faire évoluer. Les équipes de nettoyage ont reçu l'ordre d'évacuer les cadavres au plus vite.

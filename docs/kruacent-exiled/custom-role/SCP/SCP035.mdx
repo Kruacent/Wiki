@@ -1,0 +1,84 @@
+---
+title: SCP-035
+description: Tue tous les humains ! Tu peux pas prendre d'arme spécial mais tu prends 3 fois moins de dégât de ces armes.
+date: 2026-11-22
+keywords: [scp, scp-035, tutorial, custom scp, masque, arme]
+---
+
+import ItemLink from '@site/src/components/docs/ItemLink';
+
+# SCP-035
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#FF0000', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>SCP personnalisé</span>
+  </div>
+</div>
+
+> **FR :** *"Tue tous les humains! Tu peux pas prendre d'arme spécial mais tu prends 3 fois moins de dégât de ces armes"*
+
+> **EN :** *"Kill every humans! You can't pick up the Micro-HID and anything made with it, but you take 3 time less damage by these weapon."*
+
+**SCP-035** est un SCP personnalisé qui joue comme un humain armé. Il apparaît avec une arme et une armure, se bat dans le camp des SCP et doit éliminer les humains.
+
+---
+
+## Profil
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Classe de base** | Tutorial |
+| **Points de vie** | 1600 HP |
+| **Apparition** | Point d'apparition de SCP-049 |
+| **Vision nocturne** | Oui (intensité 100, permanente) |
+
+---
+
+## Apparition
+
+SCP-035 est un SCP personnalisé : il est tiré au sort avec les SCP de base quand les joueurs SCP reçoivent leur rôle en début de partie. Voir [l'attribution des SCP](/docs/articles/CustomRole#attribution-des-scp).
+
+---
+
+## Inventaire
+
+| Équipement | Quantité |
+| :--- | :--- |
+| <ItemLink name="FSP-9" /> | 1x (avec les accessoires préférés du joueur) |
+| <ItemLink name="Armure légère" wikiId="Light_Armor" /> | 1x |
+| <ItemLink name="Carte d'accès de Garde" wikiId="Keycard" /> | 1x |
+
+---
+
+## Mécaniques
+
+### Combat
+- Les SCP ne peuvent pas le blesser, et il ne peut pas blesser les SCP (sauf si le tir allié est activé).
+- Il subit **3 fois moins** de dégâts du Jailbird, du 3-X Particle Disruptor et du Micro H.I.D.
+- Les dégâts qu'il inflige avec SCP-1509 sont **divisés par 2**. Un joueur réanimé par son SCP-1509 devient un **SCP-049-2** avec 100 PV.
+- Il ne déclenche pas SCP-096 quand on le regarde, ne compte pas comme observateur pour SCP-173, et ne déclenche pas la rage des zombies.
+
+### Objets
+Il ne peut ni ramasser ni recevoir :
+- les objets SCP (sauf SCP-330, SCP-1853 et SCP-1509) ;
+- les objets personnalisés de réanimation (Défibrillateur, Divine Pills, True Divine Pills) ;
+- et cette liste : Jailbird, 3-X Particle Disruptor, Micro H.I.D., Anti-douleurs, Medkit, FR-MG-0, AK, Shotgun, SCP-127, [Explosive Proof Armor](/docs/kruacent-exiled/custom-item/explosive-proof-armor), [Faraday Armor](/docs/kruacent-exiled/custom-item/faraday-armor), [Flower Stick](/docs/kruacent-exiled/custom-item/flower-stick), [Friend Maker](/docs/kruacent-exiled/custom-item/friend-maker), [Protocole Secret](/docs/kruacent-exiled/custom-item/overseer-protocol-document), [SCP-1650](/docs/kruacent-exiled/custom-item/scp-1650) et [SCP-3136](/docs/kruacent-exiled/custom-item/scp-3136).
+
+S'il essaie de ramasser un de ces objets, le message *"Une force étrange qui s'appelle 'équilibre' t'empêches de prendre cet objet."* s'affiche.
+
+Il ne peut pas **utiliser** d'Anti-douleurs, de Medkit ni de SCP-500 (message : *"Une force étrange qui s'appelle 'équilibre' t'empêches d'utiliser cet objet."*).
+
+### Communication
+- Il parle dans le **chat SCP** : seuls les SCP l'entendent, et il entend le chat SCP.
+- À l'Intercom, sa voix est diffusée à tout le monde.
+
+### Interface
+Un compteur en haut de l'écran affiche le nombre d'humains restants (jusqu'à 9).
+
+À sa mort, C.A.S.S.I.E. annonce la neutralisation de SCP-035.
+
+---
+
+## Note de la Fondation
+
+SCP-035 prend le contrôle de son porteur et le pousse à éliminer tout être humain qu'il croise. Le corps hôte reste celui d'un humain armé, ce qui rend l'entité difficile à identifier à distance.

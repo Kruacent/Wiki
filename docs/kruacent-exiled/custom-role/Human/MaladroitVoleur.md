@@ -4,7 +4,7 @@ description: Fais attention à "tes" objets ! Un humain incapable de garder ses 
 date: 2026-08-24
 image: /img/doc/teams/human.png
 keywords: [humain, voleur, maladroit, thief, drop, objet]
-abilities: ["Thief", "Mains de beurre"]
+abilities: ["Thief", "Mains De Beurre"]
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';

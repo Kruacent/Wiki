@@ -1,0 +1,77 @@
+---
+title: Suppressor
+description: Des fois, des sacrifices sont nécessaires.
+date: 2026-11-22
+image: /img/doc/teams/chaos-insurgency.png
+keywords: [chaos, suppressor, supresseur, logicer, recharge]
+abilities: ["TacticalReload"]
+---
+
+import ItemLink from '@site/src/components/docs/ItemLink';
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
+import SpawnImg from '@site/static/img/doc/facility/surface/chaos_car.gif';
+
+# Supresseur
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#008F1C', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Insurrection du Chaos</span>
+  </div>
+</div>
+
+> **FR :** *"Des fois, des sacrifices sont nécessaires"*
+
+> **EN :** *"Aim for the head for a quick reload"*
+
+Le **Supresseur** est un fusilier de l'Insurrection du Chaos équipé d'un Logicer. Sa [Recharge tactique](/docs/kruacent-exiled/custom-ability/TacticalReload) remplit son chargeur quand il tue un ennemi.
+
+---
+
+## Profil
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Classe de base** | Fusilier du Chaos |
+| **Points de vie** | 100 HP |
+| **Morphologie** | 1.0x (Standard) |
+| **Conservation du rôle lors échappement** | Non |
+| **Conservation du rôle lors décès** | Non |
+
+---
+
+## Apparition
+
+<div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', backgroundColor: 'var(--ifm-background-surface-color)', padding: '1rem', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-200)', marginTop: '1rem' }}>
+  <img src={SpawnImg} alt="Zone d'apparition" style={{ width: '440px', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-300)' }} />
+  <div>
+    <strong style={{ fontSize: '1.1rem', color: 'var(--ifm-color-primary)' }}>Voiture de l'Insurrection</strong><br/>
+    **Zone :** Surface<br/>
+  </div>
+</div>
+
+---
+
+## Inventaire
+
+| Équipement | Détails et Quantité |
+| :--- | :--- |
+| <ItemLink name="Logicer" /> | 1x |
+| **Munitions 7.62x39mm** | 200x |
+| <ItemLink name="Armure lourde" wikiId="Heavy_Armor" /> | 1x |
+| <ItemLink name="Grenade HE" wikiId="High-Explosive_Grenade" /> | 1x |
+| <ItemLink name="Medkit" wikiId="First_Aid_Kit" /> | **2x** |
+| <ItemLink name="Adrénaline" wikiId="Adrenaline" /> | 1x |
+| <ItemLink name="Keycard Chaos Insurgency" wikiId="Keycard" /> | 1x |
+| <ItemLink name="Radio" /> | 1x |
+
+---
+
+## Compétences
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+## Note de la Fondation
+
+Les rapports d'engagement décrivent un tireur de l'Insurrection dont la mitrailleuse ne semble jamais vide après une élimination. Les équipes de la Fondation sont invitées à ne pas lui offrir de cible facile.

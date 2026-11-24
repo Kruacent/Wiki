@@ -4,7 +4,7 @@ description: Incarnez la légendaire Fixer, la Brume Écarlate.
 date: 2026-10-20
 image: /img/doc/teams/mtf.png
 keywords: [mtf, customrole, redmist]
-abilities: ["ToggleEGO", "Spear", "OnRush", "GreaterSplitHorizontal"]
+abilities: ["ToggleEgo", "Spear", "OnRush", "GreaterSplitHorizontal"]
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';
@@ -49,7 +49,7 @@ Le **Red Mist** est un combattant d'élite redoutable dotée d'une force et d'un
 </div>
 
 <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', backgroundColor: 'var(--ifm-background-surface-color)', padding: '1rem', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-200)', marginTop: '1rem' }}>
-  <p>Actuellement le seul moyen de spawn avec avant la mise à jour 15.0 de SCP:SL est de mourrir dans une TESLA en tant que MTF. Vous aurez alors 20% de chance de l'avoir.</p>
+  <p>Dans la version actuelle, la chance d'apparition du Red Mist est de <strong>0 %</strong> : il n'apparaît jamais naturellement et ne peut être donné que par un administrateur.</p>
 </div>
 
 

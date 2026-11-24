@@ -1,0 +1,48 @@
+---
+title: Sprinter
+description: Tu as des chaussures qui courent vites.
+date: 2026-11-22
+keywords: [humain, sprinter, vitesse, sprint, course]
+abilities: ["Sprint"]
+---
+
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
+
+# Sprinter
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#DD1111', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Personnel Humain</span>
+  </div>
+</div>
+
+> **FR :** *"Tu as des chaussures qui courent vites"*
+
+> **EN :** *"Run forest, Run!"*
+
+Le **Sprinter** est un rôle humain qui peut, de temps en temps, accélérer fortement grâce à sa capacité [Sprint](/docs/kruacent-exiled/custom-ability/Sprint).
+
+---
+
+## Profil
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Points de vie** | Inchangés (ceux de sa classe) |
+| **Morphologie** | 1.0x (Standard) |
+| **Conservation du rôle lors échappement** | Oui |
+| **Conservation du rôle lors décès** | Non |
+
+Étant un rôle global modifiant un humain, le Sprinter garde l'inventaire et le point d'apparition de sa classe.
+
+---
+
+## Compétences
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+## Note de la Fondation
+
+Le sujet porte une paire de chaussures de sport d'origine inconnue, qu'il refuse de retirer. Les tests de vitesse ont dû être refaits trois fois.

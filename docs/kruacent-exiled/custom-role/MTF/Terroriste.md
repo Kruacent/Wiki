@@ -4,7 +4,7 @@ description: Ne fait pas exploser la facilité... Un Sergent équipé de multipl
 date: 2026-08-24
 image: /img/doc/teams/mtf.png
 keywords: [mtf, fim, terroriste, bombe, grenade, explode, explosion]
-abilities: ["Explode"]
+abilities: ["Explode", "GrenadeFabrication"]
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';

@@ -1,0 +1,54 @@
+---
+title: HealAura
+description: Soigne les coéquipiers autour de soi pendant 20 secondes.
+date: 2026-11-21
+keywords: [soin, heal, aura, medic, médecin, équipe]
+sidebar_custom_props:
+  type: active
+---
+
+import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
+
+# Aura de Soin
+
+L'**Aura de Soin** est une capacité **active** qui s'allume et s'éteint. Une fois allumée, elle soigne pendant **20 secondes** tous les joueurs de la même équipe que l'utilisateur (lui compris) qui se trouvent près de lui. La zone suit l'utilisateur et n'est pas visible.
+
+Son nom s'affiche en **vert** quand l'aura est allumée, en **blanc** sinon.
+
+---
+
+## Caractéristiques
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Nom (Français)** | Aura de Soin |
+| **Description (Français)** | Tu peux soigner les personnes autour de toi |
+| **Description (Anglais)** | You can heal teammates around you |
+| **Temps de recharge** | 90 secondes (aussi déclenché quand on éteint l'aura) |
+| **Durée** | 20 secondes |
+| **Soin** | 5 PV toutes les 0,5 seconde (10 PV/s) |
+| **Portée** | 2,5 mètres autour de l'utilisateur |
+| **Joueurs soignés** | Joueurs vivants de la même équipe, utilisateur compris |
+
+## Mécanique détaillée
+
+- Rallumer la capacité pendant que l'aura est active l'éteint immédiatement.
+- L'aura s'arrête si l'utilisateur meurt.
+
+### Conseils
+
+- Restez collé à vos coéquipiers : la portée n'est que de 2,5 mètres.
+
+---
+
+## Rôles équipés
+
+Les classes suivantes possèdent cette capacité :
+
+<SearchRolesByAbility ability="HealAura" />
+
+---
+
+## Note de la Fondation
+
+Le dispositif émet un champ régénérant de courte portée autour du personnel médical. Les blessés qui restent à proximité récupèrent rapidement. Ceux qui s'éloignent, non.
