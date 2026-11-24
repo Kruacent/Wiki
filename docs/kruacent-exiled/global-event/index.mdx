@@ -19,59 +19,42 @@ Chaque Global Event possède un niveau d'impact qui mesure l'impact du Global Ev
 5.  **Very High :** Global Event ayant un impact très élevé sur la partie, signalé par le préfixe **[VH]**
 6.  **Insane :** Global Event changeant completement le cours d'une partie, signalé par le préfixe **[I]**
 
-### Selection du Global Event
+### Le tirage
 
-Les Global Events sont tirés au sort pendant la génération de la carte, avant le début de la partie :
+Avant chaque partie, la Fondation lance les dés. La plupart du temps, **un seul** Global Event tombe ; de temps en temps, **deux** se cumulent pour une partie bien chaotique. Certains events tombent souvent, d'autres beaucoup plus rarement.
 
-* **90 %** des parties ont **un** Global Event, **10 %** en ont **deux**.
-* Chaque event a un **poids** : plus il est élevé, plus l'event a de chances d'être tiré. Un event de poids 0 n'est jamais tiré au sort (seul un administrateur peut le lancer).
-* Un même event ne peut pas être tiré deux fois, et deux events déclarés incompatibles ne peuvent pas être tirés ensemble.
-* L'event [nothing](R.mdx) est **exclusif** : s'il est tiré, il est le seul de la partie.
-
-Au début de la partie, les Global Events actifs sont affichés pendant 10 secondes à tous les joueurs, avec leur préfixe d'impact. Leur texte est tiré entre la description principale et les descriptions alternatives. Il y a **10 %** de chance que **[REDACTED]** soit affiché à la place du texte d'un event (sauf pour [Librarby](Librarby.mdx), qui est toujours annoncé).
-
-:::note Valeurs par défaut
-Les poids indiqués sur ce wiki sont les valeurs par défaut du code. Le serveur peut les modifier dans un fichier de configuration.
-:::
+Au début de la partie, les events tirés s'affichent quelques secondes à l'écran avec leur niveau d'impact. Parfois, la Fondation préfère ne pas vous dire ce qui vous attend : l'annonce affiche alors **[REDACTED]** à la place du nom. Bonne chance.
 
 ### Tableau des Global Events
 
-La chance indiquée est celle d'être tiré en premier, avec les poids par défaut (poids de l'event divisé par 36, la somme des poids).
-
-| Global Event | Impact | Poids | Chance (premier tirage) |
-| :--- | :--- | :--- | :--- |
-| [Blitz](Blitz.mdx) | Low **[L]** | 4 | ≈ 11 % |
-| [Impostor](Impostor.mdx) | High **[H]** | 2 | ≈ 6 % |
-| [ItemRain](ItemRain.mdx) | Medium **[M]** | 1 | ≈ 3 % |
-| [KIWIS](KIWIS.mdx) | Medium **[M]** | 1 | ≈ 3 % |
-| [Kaboom](Kaboom.mdx) | Medium **[M]** | 2 | ≈ 6 % |
-| [Librarby](Librarby.mdx) | Medium **[M]** | 1 | ≈ 3 % |
-| [nothing](R.mdx) | VeryLow **[VL]** | 10 | ≈ 28 % |
-| [OpenBar](OpenBar.mdx) | Medium **[M]** | 3 | ≈ 8 % |
-| [RandomSpawn](RandomSpawn.mdx) | High **[H]** | 5 | ≈ 14 % |
-| [RollBack](RollBack.mdx) | High **[H]** | 1 | ≈ 3 % |
-| [Speed](Speed.mdx) | VeryHigh **[VH]** | 5 | ≈ 14 % |
-| [System Malfunction](SystemMalfunction.mdx) | VeryLow **[VL]** | 1 | ≈ 3 % |
+| Global Event | Impact | Fréquence |
+| :--- | :--- | :--- |
+| [nothing](R.mdx) | VeryLow **[VL]** | Très courant |
+| [Speed](Speed.mdx) | VeryHigh **[VH]** | Courant |
+| [RandomSpawn](RandomSpawn.mdx) | High **[H]** | Courant |
+| [Blitz](Blitz.mdx) | Low **[L]** | Courant |
+| [OpenBar](OpenBar.mdx) | Medium **[M]** | Peu courant |
+| [Impostor](Impostor.mdx) | High **[H]** | Peu courant |
+| [Kaboom](Kaboom.mdx) | Medium **[M]** | Peu courant |
+| [ItemRain](ItemRain.mdx) | Medium **[M]** | Rare |
+| [KIWIS](KIWIS.mdx) | Medium **[M]** | Rare |
+| [Librarby](Librarby.mdx) | Medium **[M]** | Rare |
+| [RollBack](RollBack.mdx) | High **[H]** | Rare |
+| [System Malfunction](SystemMalfunction.mdx) | VeryLow **[VL]** | Rare |
 
 ---
 
 ## Middle Events
 
-Les **Middle Events** fonctionnent comme les Global Events, mais se déclenchent **en cours de partie** au lieu du début :
+Les **Middle Events**, ce sont les surprises de mi-temps. Ils ne tombent pas à chaque partie (à peu près une partie sur trois), et quand ils tombent, c'est **entre 10 et 16 minutes** de jeu, histoire de relancer une partie qui s'endormait. Un seul par partie, annoncé à l'écran au moment où il frappe.
 
-* Au début de chaque partie, il y a **37 %** de chance que la partie ait un Middle Event.
-* Si c'est le cas, un moment d'activation est tiré entre **10 et 15 minutes** de partie. Le jeu vérifie chaque minute si ce moment est passé : le Middle Event se déclenche donc entre 10 et 16 minutes environ.
-* Il y a **au maximum un** Middle Event par partie. Il est tiré au sort selon les poids, au moment de l'activation.
-* Certains Middle Events ont une **condition** : ils ne peuvent être tirés que si elle est remplie au moment du tirage.
-* À l'activation, le Middle Event est annoncé pendant 10 secondes (« Middle Event : » suivi de sa description). Les Middle Events n'ont pas de niveau d'impact et ne sont jamais cachés derrière **[REDACTED]**.
-
-| Middle Event | Poids | Condition |
-| :--- | :--- | :--- |
-| [EGamble](middle-event/EveryoneGamble.mdx) | 1 | Aucune |
-| [HealSCPM](middle-event/HealSCP.mdx) | 1 | Tous les SCP à 30 % de leurs PV max ou moins |
-| [MShuffleP](middle-event/ShufflePosition.mdx) | 1 | Aucune |
-| [SpeedM](middle-event/SpeedM.mdx) | 1 | Aucune |
-| [WallHack](middle-event/WallHackM.mdx) | 1 | Aucune |
+| Middle Event | Ce qu'il fait |
+| :--- | :--- |
+| [EGamble](middle-event/EveryoneGamble.mdx) | Une pièce pour tous les humains |
+| [HealSCPM](middle-event/HealSCP.mdx) | Les SCP mal en point reprennent des forces |
+| [MShuffleP](middle-event/ShufflePosition.mdx) | Tout le monde échange sa place |
+| [SpeedM](middle-event/SpeedM.mdx) | Tout le monde accélère |
+| [WallHack](middle-event/WallHackM.mdx) | Tout le monde voit à travers les murs |
 
 ---
 
