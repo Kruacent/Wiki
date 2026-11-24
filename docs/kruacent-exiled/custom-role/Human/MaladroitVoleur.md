@@ -54,7 +54,7 @@ Ce rôle est doté de mécaniques uniques le poussant à voler, mais aussi à pe
 
 ## Plainte officielle : « Mon badge a disparu »
 
-*Déposée par la Manager Maël.*
+*Déposée par le Manager Maël.*
 
 > Ce matin, mon badge a disparu de ma poche alors que je discutais avec un Classe-D dans la même pièce que moi. Il était à cinq mètres. Il ne m'a pas touché.
 >

@@ -77,7 +77,7 @@ Le Tank transporte un arsenal impressionnant qui le prépare à des affrontement
 
 ## Note logistique : « Le poids des munitions »
 
-*De la part de la Manager Maël, au service armement.*
+*De la part de le Manager Maël, au service armement.*
 
 > Pourquoi le soldat que vous appelez « le Tank » transporte-t-il quatre cents cartouches, une FR-MG-0, une armure lourde, une grenade et une radio ? Et pourquoi son dossier dit qu'il doit être ralenti par tout ça ?
 >

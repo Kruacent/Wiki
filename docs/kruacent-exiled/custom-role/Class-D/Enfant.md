@@ -67,7 +67,7 @@ L'enfant peut tout de même récupérer deux bonbons via <ItemLink name="SCP-330
 
 ## Note interne : « Il n'a rien à faire ici »
 
-*Message de la Manager Maël au service des ressources humaines.*
+*Message de le Manager Maël au service des ressources humaines.*
 
 > Je voudrais savoir comment un enfant s'est retrouvé dans les cellules des Classe-D. Il a un bonbon arc-en-ciel dans la poche, il ne lâche pas, et il passe sous les tables sans se baisser.
 >
