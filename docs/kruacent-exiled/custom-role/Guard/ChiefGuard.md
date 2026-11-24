@@ -87,4 +87,16 @@ Contrairement aux gardes standards, il possède un armement avancé et une carte
 
 ---
 
+## Note de service : « Les privilèges du grade »
+
+*Affichée dans le vestiaire des gardes.*
+
+> Rappel à l'ensemble du personnel de sécurité : le Chef des gardes dispose d'un Crossvec et d'une carte de soldat MTF. Ce n'est **pas** une raison pour le lui voler pendant qu'il dort.
+>
+> Il est également demandé d'arrêter de l'appeler « Capitaine ». Le seul Capitaine du Site s'appelle Romain, et il a horreur de ça.
+>
+> La direction.
+
+---
+
 <PatchNoteBanner name="Chef des gardes" tag="chiefguard" />

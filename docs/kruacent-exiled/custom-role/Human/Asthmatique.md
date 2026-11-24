@@ -51,4 +51,16 @@ L'**Asthmatique** est un rôle humain global qui modifie les capacités physique
 Le métabolisme de l'Asthmatique lui offre une résistance à **l'effet d'empoisonnement**.
 :::
 
+## Rapport médical : « Souffle court, œil de lynx »
+
+**Patient :** Agent de sécurité, dossier médical n° 4471.
+
+> Le patient s'essouffle au bout de quelques mètres de course. Il a été retrouvé assis contre un mur de la Heavy, en train de chercher son inhalateur, pendant qu'un SCP-106 sortait du sol à côté de lui.
+>
+> Il a abattu les trois Insurgés qui le poursuivaient sans quitter le sol. Une balle chacun.
+>
+> **Conclusion du Dr. Patrique :** "Il ne peut pas courir, alors il a appris à viser. Je recommande de ne jamais le contrarier."
+
+---
+
 <PatchNoteBanner name="Asthmatique" tag="asthmatique" />

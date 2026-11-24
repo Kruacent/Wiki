@@ -78,4 +78,30 @@ Cette carte de Janitor est une carte classique, améliorable dans SCP-914.
 
 ---
 
+## Rapport d'incident : « La carte magique »
+
+> **Garde de SCP-914 :** "Docteur, ma carte d'accès ne marche pas."
+>
+> **Dr. Patrique :** "Mettez-la dans 914, en Fine. Ça arrange tout, d'habitude."
+>
+> *[Clic. Bruit de machinerie.]*
+>
+> **Garde de SCP-914 :** "Elle s'appelle « MTF operative Keycard? » maintenant. Avec un point d'interrogation."
+>
+> **Dr. Patrique :** "Remettez-la."
+>
+> *[Clic.]*
+>
+> **Garde de SCP-914 :** "« MTF captain Keycard? »."
+>
+> **Dr. Patrique :** "Encore une fois, pour voir."
+>
+> *[Clic.]*
+>
+> **Garde de SCP-914 :** "...Carte de Janitor."
+>
+> **Dr. Patrique :** "Bon. Vous êtes concierge, maintenant."
+
+---
+
 <PatchNoteBanner name="Garde de SCP-914" tag="guard914" />

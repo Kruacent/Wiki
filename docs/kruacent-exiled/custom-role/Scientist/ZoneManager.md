@@ -96,4 +96,20 @@ Pour obtenir sa promotion, le joueur doit interagir manuellement avec les **4 Ch
 
 ---
 
+## Mail de la direction : « Félicitations pour votre promotion »
+
+*Envoyé à un Zone Manager après sa tournée des checkpoints.*
+
+> Cher collaborateur,
+>
+> Nous avons le plaisir de vous informer que vous avez ouvert les quatre checkpoints du Site, au péril de votre vie, en pleine brèche de confinement.
+>
+> En récompense, votre carte de Zone Manager a été remplacée par une carte de Facility Manager. Vous avez maintenant accès à toutes les portes du Site, y compris celle de la sortie.
+>
+> Nous comprenons que vous l'utilisiez immédiatement. Nous ne vous en voudrons pas.
+>
+> La direction.
+
+---
+
 <PatchNoteBanner name="Zone Manager" tag="zonemanager" />

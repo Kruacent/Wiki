@@ -52,7 +52,6 @@ Le **Red Mist** est un combattant d'élite redoutable dotée d'une force et d'un
   <p>Dans la version actuelle, la chance d'apparition du Red Mist est de <strong>0 %</strong> : il n'apparaît jamais naturellement et ne peut être donné que par un administrateur.</p>
 </div>
 
-
 ---
 
 ## Inventaire
@@ -70,6 +69,18 @@ La Red Mist ne possède pas de fusil d'assaut ni d'objets conventionnels. Elle n
 Les compétences de la Red Mist s'articulent autour de l'activation de son armure E.G.O et d'attaques tranchantes physiques :
 
 <GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+## Rapport d'observation : « La Brume Écarlate »
+
+**Observateur :** Sgt. Dorian, depuis un poste de surveillance.
+
+> "Je n'ai jamais vu quelqu'un se battre comme ça. Pas d'arme à feu. Juste cette lame. Elle a traversé le couloir en une seconde, et trois Insurgés sont tombés en même temps.
+>
+> Ensuite, elle a changé. Son armure a pris une teinte rouge, et elle a commencé à saigner, comme si son propre corps la dévorait. Elle ne s'est pas arrêtée. Elle frappait plus vite, et à chaque coup porté, on aurait dit que la douleur reculait.
+>
+> J'ai demandé au Capitaine si on pouvait la recruter. Il m'a dit que personne ne savait d'où elle venait."
 
 ---
 

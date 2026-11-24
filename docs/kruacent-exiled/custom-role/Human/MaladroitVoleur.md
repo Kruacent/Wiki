@@ -52,4 +52,16 @@ Ce rôle est doté de mécaniques uniques le poussant à voler, mais aussi à pe
 
 ---
 
+## Plainte officielle : « Mon badge a disparu »
+
+*Déposée par la Manager Maël.*
+
+> Ce matin, mon badge a disparu de ma poche alors que je discutais avec un Classe-D dans la même pièce que moi. Il était à cinq mètres. Il ne m'a pas touché.
+>
+> Une heure plus tard, le badge a été retrouvé par terre au milieu du couloir de la Light. Le Classe-D, lui, a été vu en train de lâcher successivement un Medkit, une radio et une arme qui ne lui appartenaient pas.
+>
+> Je demande qu'on lui interdise l'accès aux bureaux. Et aux couloirs. Et aux salles.
+
+---
+
 <PatchNoteBanner name="Maladroit Voleur" tag="maladroitvoleur" />

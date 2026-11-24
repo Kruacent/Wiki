@@ -55,6 +55,28 @@ Certains événements ont plus de chances de se produire que d'autres :
 
 ---
 
+## Transcription : « Ils sont là »
+
+> **Fou de la facilité :** "Vous avez entendu ça ? Des coups de feu !"
+>
+> **Sgt. Alex :** "Non."
+>
+> **Fou de la facilité :** "Et le bouclier de SCP-173 qui casse ! Juste là !"
+>
+> **Sgt. Alex :** "Il n'y a rien, monsieur. Calmez-vous."
+>
+> *[Le Fou se met à sauter sur place, puis à tourner la tête dans tous les sens.]*
+>
+> **Sgt. Alex (radio) :** "Capitaine, j'ai un civil en crise. Je fais quoi ?"
+>
+> **Cpt. Romain (radio) :** "Il y a un SCP-500 dans l'infirmerie. Ça le soignera."
+>
+> **Sgt. Alex :** "Et s'il a raison, pour les coups de feu ?"
+>
+> *[Coups de feu au loin.]*
+
+---
+
 <PatchNoteBanner name="Fou de la facilité" tag="crazy" />
 
 ---
