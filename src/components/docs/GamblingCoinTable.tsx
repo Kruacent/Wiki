@@ -42,7 +42,7 @@ export default function GamblingCoinTable({ type }: { type: CoinEffectType }) {
         {effects.map(({ effet, chance }) => (
           <tr key={effet.nom}>
             <td><strong>{effet.nom}</strong></td>
-            <td>{effet.message ? <em>{effet.message}</em> : '—'}</td>
+            <td>{effet.message ? <em>{effet.message}</em> : '-'}</td>
             <td>{effet.effet}</td>
             <td style={{ whiteSpace: 'nowrap' }}>{formatChance(chance)}</td>
           </tr>
