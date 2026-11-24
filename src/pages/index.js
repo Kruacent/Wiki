@@ -9,7 +9,7 @@ import styles from './index.module.css';
 const CATEGORIES = [
   { key: 'custom-role', title: 'Rôles', text: 'Les rôles personnalisés des humains et des SCP.', to: '/docs/articles/CustomRole' },
   { key: 'custom-item', title: 'Objets', text: 'Les objets anormaux que l’on trouve dans la facilité.', to: '/docs/articles/CustomItem' },
-  { key: 'custom-ability', title: 'Capacités', text: 'Les capacités actives et passives des rôles.', to: '/docs/articles/CustomAbility' },
+  { key: 'custom-ability', title: 'Abilités', text: 'Les abilités actives et passives des rôles.', to: '/docs/articles/CustomAbility' },
   { key: 'global-event', title: 'Global Events', text: 'La règle spéciale tirée au début de chaque partie.', to: '/docs/articles/global-events' },
   { key: 'map', title: 'Map', text: 'Pannes du Site, installations et Gambling Room.', to: '/docs/articles/map' },
   { key: 'miscellaneous', title: 'Miscellaneous', text: 'Pièces, SCP-914, renforts, paramètres et le reste.', to: '/docs/articles/miscelanious' },
@@ -51,15 +51,8 @@ export default function Home() {
           <div>
             <Heading as="h1" className={styles.title}>Kruaçent</Heading>
             <p className={styles.lead}>
-              Le wiki du serveur <em>SCP: Secret Laboratory</em> de la Team Croissant : rôles, objets, événements et
-              tout ce que le serveur ajoute au jeu.
+              Le wiki du serveur <em>SCP: Secret Laboratory</em> des Kruacent.
             </p>
-            <div className={styles.actions}>
-              <Link className="button button--primary" to="/docs/kruacent-exiled/">Ouvrir le wiki</Link>
-              <Link className="button button--secondary" to="/docs/kruacent-exiled/miscellaneous/parametres">
-                Nouveau sur le serveur ?
-              </Link>
-            </div>
             {latest && (
               <p className={styles.version}>
                 Dernière version : <Link to={latest.link}>v{latest.version}</Link>, le {formatDate(latest.date)}

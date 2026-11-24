@@ -27,10 +27,6 @@ L'échange n'a lieu que si le tireur **a les pieds au sol** au moment du tir, et
 | **Rareté** | Épique |
 | **Limite** | 1 |
 
-:::note Version actuelle
-Le code prévoit un temps de recharge de 60 secondes entre deux tirs, mais il ne s'applique jamais : l'arme peut tirer sans attendre.
-:::
-
 ## Localisation
 
 | Lieu | Chance d'apparition |
