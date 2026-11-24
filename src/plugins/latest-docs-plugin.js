@@ -67,6 +67,18 @@ module.exports = function (context, options) {
     return patchnotes;
   }
 
+  /** Nombre de pages par catégorie du wiki (hors pages d'index). */
+  async function loadCounts() {
+    const files = await glob('docs/kruacent-exiled/*/**/*.{md,mdx}', { cwd: context.siteDir });
+    const counts = {};
+    for (const file of files) {
+      if (/\/index\.mdx?$/.test(file)) continue;
+      const category = file.split('/')[2];
+      counts[category] = (counts[category] || 0) + 1;
+    }
+    return counts;
+  }
+
   return {
     name: 'custom-latest-docs-plugin',
 
@@ -74,6 +86,7 @@ module.exports = function (context, options) {
       return {
         articles: await loadArticles(),
         patchnotes: await loadPatchnotes(),
+        counts: await loadCounts(),
       };
     },
 
