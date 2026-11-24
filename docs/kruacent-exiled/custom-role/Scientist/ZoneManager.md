@@ -3,6 +3,7 @@ title: Zone Manager
 description: Incroyable tu peux avoir une promotion alors fais ton boulot et ouvre tous ces checkpoints et tu pourras sortir d'ici!
 date: 2026-08-24
 keywords: [scientifique, zone manager, manager, checkpoint, carte, upgrade, promotion]
+abilities: ["NumberCheckpoints"]
 ---
 
 import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
@@ -86,6 +87,28 @@ Pour obtenir sa promotion, le joueur doit interagir manuellement avec les **4 Ch
 <br/>
 
 > Dès que le dernier checkpoint est ouvert, la <ItemLink name="Carte d'accès Zone Manager" wikiId="Keycard" /> présente dans l'inventaire est instantanément **détruite** et remplacée par une **<ItemLink name="Carte d'accès Facility Manager" wikiId="Keycard" />**, lui ouvrant toutes les portes vers la liberté !
+
+---
+
+## Compétences
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+## Mail de la direction : « Félicitations pour votre promotion »
+
+*Envoyé à un Zone Manager après sa tournée des checkpoints.*
+
+> Cher collaborateur,
+>
+> Nous avons le plaisir de vous informer que vous avez ouvert les quatre checkpoints du Site, au péril de votre vie, en pleine brèche de confinement.
+>
+> En récompense, votre carte de Zone Manager a été remplacée par une carte de Facility Manager. Vous avez maintenant accès à toutes les portes du Site, y compris celle de la sortie.
+>
+> Nous comprenons que vous l'utilisiez immédiatement. Nous ne vous en voudrons pas.
+>
+> La direction.
 
 ---
 

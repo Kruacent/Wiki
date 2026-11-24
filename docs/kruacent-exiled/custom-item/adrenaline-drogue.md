@@ -27,6 +27,10 @@ import DA020Item from '@site/static/img/doc/sou.jpg'
 
 # SCP-1042-KR : "DA-020"
 
+:::danger Retiré du jeu
+Dans la version actuelle du serveur, cet objet n'existe plus : il n'apparaît plus et ne peut plus être obtenu. Cette page est conservée pour archive.
+:::
+
 <SCPImage
   src={DA020Item}
   alt="DA-020"

@@ -49,8 +49,8 @@ Contrairement aux substances médicales standard, cet objet n'a aucune propriét
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
-| **Salle de GR-018 à LCZ** | **100 %** |
-| **Casiers médical de la zone Entrance** | 25 % |
+| **Salle de GR-018 à LCZ** | **80 %** |
+| **Casiers médical de LCZ** | 25 % |
 | **Casier divers de la zone Entrance** | 75 % |
 
 ---

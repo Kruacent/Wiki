@@ -77,12 +77,25 @@ Contrairement aux gardes standards, il possède un armement avancé et une carte
 | Équipement | Détails et Quantité |
 | :--- | :--- |
 | <ItemLink name="Crossvec" /> | 1x |
-| **Munitions 5.56x45mm** | 120x |
+| **Munitions 9x19mm** | 70x |
+| **Munitions 5.56x45mm** | 40x |
 | <ItemLink name="Armure légère" wikiId="Light_Armor" /> | 1x |
 | <ItemLink name="Carte d'accès MTF Private" wikiId="keycard" /> | 1x |
 | <ItemLink name="Medkit" wikiId="First_Aid_Kit" /> | 1x |
 | <ItemLink name="Lampe torche" wikiId="Flashlight" /> | 1x |
 | <ItemLink name="Radio" /> | 1x |
+
+---
+
+## Note de service : « Les privilèges du grade »
+
+*Affichée dans le vestiaire des gardes.*
+
+> Rappel à l'ensemble du personnel de sécurité : le Chef des gardes dispose d'un Crossvec et d'une carte de soldat MTF. Ce n'est **pas** une raison pour le lui voler pendant qu'il dort.
+>
+> Il est également demandé d'arrêter de l'appeler « Capitaine ». Le seul Capitaine du Site s'appelle Romain, et il a horreur de ça.
+>
+> La direction.
 
 ---
 

@@ -1,0 +1,57 @@
+.header {
+  max-width: 760px;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: var(--ifm-color-emphasis-800);
+  text-align: left;
+}
+
+.section {
+  margin-top: 3rem;
+  max-width: 960px;
+}
+
+.sectionHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sectionHead h2 {
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.text {
+  margin: 0.75rem 0 1rem;
+  color: var(--ifm-color-emphasis-700);
+  text-align: left;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-card-border-radius);
+  overflow: hidden;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

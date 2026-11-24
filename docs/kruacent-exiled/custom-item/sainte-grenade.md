@@ -53,7 +53,7 @@ Le seul moyen de l'obtenir est de raffiner une **[SCP-1046-KR (Presse-Purée)](.
 
 | Input | Réglage | Probabilité | Résultat |
 | :--- | :--- | :--- | :--- |
-| **[SCP-1046-KR (Presse-Purée)](./presse-purée)** | **Very Fine** | **10 %** | **SCP-1055-KR** |
+| **[SCP-1046-KR (Presse-Purée)](./presse-purée)** | **Very Fine** | **5 %** | **SCP-1055-KR** |
 
 ---
 
@@ -68,8 +68,8 @@ Cela laisse le temps à la chorale de chanter *"Hallelujah"* avant la détonatio
 | :--- | :--- | :--- |
 | **1. Lancer** | Mèche de 6 secondes. | La grenade est lancée. Une musique céleste ("Worms Hallelujah") commence à jouer. |
 | **2. Détonation** | **Dégâts x3** | Explosion principale massive. Tue instantanément tout ce qui est proche. |
-| **3. Cluster** | **MIRV (4 Grenades)** | L'explosion principale fait apparaître **4 grenades HE standards** supplémentaires autour du point d'impact (Rayon 5m). |
-| **4. Chaos** | Réaction en chaîne | Les 4 sous-munitions explosent instantanément, rasant la salle entière. |
+| **3. Cluster** | **MIRV (3 Grenades)** | L'explosion principale fait apparaître **3 grenades HE standards** supplémentaires autour du point d'impact (Rayon 5m). |
+| **4. Chaos** | Réaction en chaîne | Les 3 sous-munitions explosent instantanément, rasant la salle entière. |
 
 ---
 

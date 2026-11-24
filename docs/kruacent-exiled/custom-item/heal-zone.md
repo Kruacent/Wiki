@@ -82,7 +82,7 @@ Contrairement aux grenades frag ou flash classiques qui rebondissent, la Heal Zo
 * **Délai de mèche :** 5 secondes (Si lancée en l'air sans toucher d'obstacle).
 * **Visuel :** Nuage de gaz vert persistant.
 * **Cibles :** Soigne l'utilisateur et ses alliés.
-* **Soins de :** 2 HP/s
+* **Soins de :** 10 HP/s (1 HP toutes les 0,1 seconde), dans la limite de 100 HP soignés par joueur
 
 ---
 

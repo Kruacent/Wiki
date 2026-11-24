@@ -27,6 +27,10 @@ import MineItem from '@site/static/img/doc/sou.jpg'
 
 # SCP-1053-KR : "Quantum Mine"
 
+:::danger Retiré du jeu
+Dans la version actuelle du serveur, cet objet est entièrement désactivé : il n'apparaît plus et ne peut plus être obtenu. Cette page est conservée pour archive.
+:::
+
 <SCPImage
   src={MineItem}
   alt="Mine deployed"

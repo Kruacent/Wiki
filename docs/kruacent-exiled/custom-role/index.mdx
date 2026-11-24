@@ -20,7 +20,21 @@ Ces modifications peuvent-être :
 
 ### Attribution
 
-Selon le rôle, l'attribution se fait **aléatoirement** au début de la manche.
+Les rôles personnalisés sont attribués **au début de la manche** (après le choix des SCP) et **à chaque vague de renforts** :
+
+* Chaque joueur qui n'a pas encore de rôle personnalisé en reçoit un, tiré parmi les rôles disponibles pour sa classe.
+* Le tirage tient compte de la chance d'apparition de chaque rôle (100 pour la plupart des rôles). Un rôle dont la chance est de **0** n'apparaît jamais naturellement : il ne peut être donné que par un administrateur (c'est le cas du [Red Mist](/docs/kruacent-exiled/custom-role/MTF/RedMist) et de l'[Ultimate Lucky Student](/docs/kruacent-exiled/custom-role/Human/UltimateLuckyStudent)).
+* Chaque rôle ne peut être attribué qu'à **un seul joueur par partie**.
+* Un seul rôle **rare** peut apparaître par partie.
+* Les rôles « humains » (Vieux, Sprinter, Curiosophile…) peuvent être attribués à n'importe quelle classe humaine et gardent son inventaire.
+
+### Attribution des SCP
+
+Les SCP personnalisés ([SCP-035](/docs/kruacent-exiled/custom-role/SCP/SCP035), [SCP-049-C](/docs/kruacent-exiled/custom-role/SCP/SCP049C)) sont tirés au sort avec les SCP de base (049, 079, 096, 106, 173, 939) quand les joueurs SCP reçoivent leur rôle :
+
+* Chaque joueur peut régler, dans la catégorie **SCP Spawn Preferences** des paramètres du serveur, sa préférence pour chaque SCP de **−5 à +5** (0 par défaut).
+* Le poids d'un SCP pour ce joueur vaut **préférence + 6**. Avec une préférence de −5, le SCP a encore un poids de 1 ; avec +5, un poids de 11.
+* Un même SCP ne peut être attribué qu'une fois. Les deux premiers SCP ne peuvent pas être des SCP de soutien (SCP-079 et SCP-096), les suivants si.
 
 ---
 

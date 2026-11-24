@@ -4,7 +4,7 @@ description: Ne fait pas exploser la facilité... Un Sergent équipé de multipl
 date: 2026-08-24
 image: /img/doc/teams/mtf.png
 keywords: [mtf, fim, terroriste, bombe, grenade, explode, explosion]
-abilities: ["Explode"]
+abilities: ["Explode", "GrenadeFabrication"]
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';
@@ -72,6 +72,22 @@ L'arsenal du Terroriste est orienté vers la destruction de masse.
 La dangerosité du Terroriste réside dans sa capacité active :
 
 <GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+## Rapport d'incident : « Il avait dit qu'il était démineur »
+
+> **Cpt. Romain :** "Sergent, qui a recruté ce type ?"
+>
+> **Sgt. Alex :** "Les MTF, Capitaine. Il a dit qu'il s'y connaissait en explosifs."
+>
+> **Cpt. Romain :** "Il s'y connaît, oui. Il en fabrique une toutes les deux minutes."
+>
+> *[Le Terroriste traverse la salle, une lumière rouge clignotant dans son dos.]*
+>
+> **Sgt. Dorian :** "Capitaine, je propose qu'on le laisse passer devant."
+>
+> **Cpt. Romain :** "Et loin devant."
 
 ---
 

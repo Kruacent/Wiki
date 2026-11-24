@@ -4,7 +4,7 @@ description: Classe de l'Insurrection du Chaos immunisée aux tirs alliés et ca
 date: 2025-12-01
 image: /img/doc/teams/chaos-insurgency.png
 keywords: [chaos, negotiator, negociateur, zombie, scp-049]
-abilities: ["Immunité Diplomatique", "Convert"]
+abilities: ["Immunité Diplomatique"]
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';
@@ -24,7 +24,7 @@ import SpawnImg from '@site/static/img/doc/facility/surface/chaos_car.gif';
 
 > **Description (Anglais) :** *"You're immune to friendly fire and you can convert zombie into your team, isn't that nice?"*
 
-Le **Negotiator** est une unité appartenant à l'Insurrection du Chaos. Contrairement aux autres unités de sa faction, son objectif principal est le recrutement des anomalies biologiques ennemies au profit de son escouade.
+Le **Negotiator** est une unité appartenant à l'Insurrection du Chaos. Contrairement aux autres unités de sa faction, son objectif principal est le recrutement des anomalies biologiques ennemies au profit de son escouade. Il recrute grâce à son [Friend Maker™](/docs/kruacent-exiled/custom-item/friend-maker), un pistolet qui convertit les zombies et les humains ennemis qu'il touche. Les dégâts infligés par ses alliés (même camp) ne l'affectent pas.
 
 ---
 
@@ -61,12 +61,35 @@ Le **Negotiator** est une unité appartenant à l'Insurrection du Chaos. Contrai
 | <ItemLink name="Medkit" wikiId="First_Aid_Kit" /> | 1x |
 | <ItemLink name="Painkillers" /> | 1x |
 | <ItemLink name="Radio" /> | 1x |
+| [Friend Maker™](/docs/kruacent-exiled/custom-item/friend-maker) | 1x |
 
 ---
 
 ## Compétences
 
 <GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+## Rapport d'incident : « Le Recruteur »
+
+**Lieu :** Couloir de la Heavy Containment Zone, à proximité du confinement de SCP-049.
+
+> *[Un zombie titube vers un soldat de l'Insurrection. Le soldat ne lève même pas son fusil. Il sort un petit pistolet.]*
+>
+> **Négociateur :** "Écoute, mon grand. Je sais que la journée a été difficile."
+>
+> *[Pan.]*
+>
+> **Ex-zombie :** "...Pourquoi j'ai un fusil ?"
+>
+> **Négociateur :** "Parce que tu bosses pour nous, maintenant. Bienvenue dans l'équipe."
+>
+> *[Plus tard, un coéquipier lui tire accidentellement dans le dos. La balle ricoche sans effet.]*
+>
+> **Négociateur :** "Et ça, c'est ce qu'on appelle l'immunité diplomatique."
+
+Le Dr. Patrique a demandé que le Friend Maker™ soit classé comme arme. Le service juridique de l'Insurrection a répondu que c'était « un outil de ressources humaines ».
 
 ---
 

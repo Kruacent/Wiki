@@ -40,4 +40,16 @@ Le **Petit** est un rôle exclusif aux entités SCP. Ce rôle n'affecte ni les c
 
 ---
 
+## Note de confinement : « Où est-il ? »
+
+*Post-it collé sur l'écran de surveillance de la Heavy.*
+
+> L'entité a encore été perdue de vue pendant vingt minutes. Elle n'est pas plus faible qu'avant, elle est juste plus petite. Beaucoup plus petite.
+>
+> Merci de regarder **aussi** en bas avant de déclarer un couloir sûr.
+>
+> - Le Sgt. Alex, qui l'a appris à ses dépens.
+
+---
+
 <PatchNoteBanner name="Petit" tag="petit" />

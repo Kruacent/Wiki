@@ -40,6 +40,24 @@ Le **Paper** est un rôle exclusif aux entités SCP. Ce rôle n'affecte ni les c
 
 ---
 
+## Rapport d'incident : « Bourrage papier »
+
+> **Sgt. Alex :** "Capitaine, SCP-096 vient de passer sous la porte."
+>
+> **Cpt. Romain :** "Sous la porte ?"
+>
+> **Sgt. Alex :** "Il est plat. Tout plat. De profil, on ne le voit même plus."
+>
+> **Cpt. Romain :** "Alors on tire de face."
+>
+> **Sgt. Alex :** "Uh oh."
+>
+> **Cpt. Romain :** "Quoi, uh oh ?"
+>
+> **Sgt. Alex :** "Paper jam."
+
+---
+
 <PatchNoteBanner name="Paper" tag="paper" />
 
 ---

@@ -63,7 +63,17 @@ Il ne possède pas d'équipement particulier en dehors de sa sucrerie au début 
 L'enfant peut tout de même récupérer deux bonbons via <ItemLink name="SCP-330" wikiId="SCP-330" />. Le bonbon qui lui est donné en début de partie n'est pas comptabilisé par le SCP.
 :::
 
+---
 
+## Note interne : « Il n'a rien à faire ici »
+
+*Message de le Manager Maël au service des ressources humaines.*
+
+> Je voudrais savoir comment un enfant s'est retrouvé dans les cellules des Classe-D. Il a un bonbon arc-en-ciel dans la poche, il ne lâche pas, et il passe sous les tables sans se baisser.
+>
+> Le Chercheur Noé me dit que c'est « un Classe-D comme les autres, juste plus petit ». Je refuse de signer ce rapport.
+>
+> P.S. : Il a réussi à s'échapper avant tout le monde. Je refuse aussi de signer ça.
 
 ---
 

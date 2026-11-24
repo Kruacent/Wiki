@@ -50,6 +50,24 @@ L'**Enderman** est un rôle humain global doté de capacités anormales. Il poss
 
 ---
 
+## Rapport d'incident : « Retour à la case départ »
+
+> **Chercheur Noé :** "Regarde, je pose un point ici, je vais chercher la carte dans la salle d'à côté, et..."
+>
+> *[Il disparaît. Il réapparaît, carte en main, au point de départ.]*
+>
+> **Chercheur Noé :** "Et voilà !"
+>
+> **Dr. Omer :** "Impressionnant. Tu peux le refaire ?"
+>
+> *[Il disparaît. Il réapparaît au milieu de l'escouade de Romain.]*
+>
+> **Sgt. Caedit :** "AAAH !"
+>
+> **Chercheur Noé :** "...Ça, c'était pas prévu."
+
+---
+
 <PatchNoteBanner name="Enderman" tag="enderman" />
 
 ---
