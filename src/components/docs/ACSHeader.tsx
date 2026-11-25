@@ -138,7 +138,8 @@ const ACSHeader: React.FC<ACSHeaderProps> = ({
         </div>
       </div>
 
-      {/* --- FOOTER (CRÉDITS) --- */}
+      {/* --- FOOTER (CRÉDITS) : masqué s'il n'y a aucun crédit --- */}
+      {displayCredits.length > 0 && (
       <div style={{
         padding: '12px', 
         backgroundColor: '#222', 
@@ -163,6 +164,7 @@ const ACSHeader: React.FC<ACSHeaderProps> = ({
         ))}
 
       </div>
+      )}
     </div>
   );
 };

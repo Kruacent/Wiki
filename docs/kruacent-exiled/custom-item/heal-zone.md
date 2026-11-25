@@ -11,8 +11,8 @@ hide_table_of_contents: true
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
-import HealZoneItem from '@site/static/img/doc/sou.jpg'
-import HealZoneDetonated from '@site/static/img/doc/sou.jpg'
+import HealZoneItem from '@site/static/img/doc/HealZone.jpg'
+import HealZoneDetonated from '@site/static/img/doc/HealZone-Exploded.jpg'
 
 <ACSHeader 
   item="SCP-1051-KR" 

@@ -10,7 +10,7 @@ hide_table_of_contents: true
 
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
-import TPGrenadeItem from '@site/static/img/doc/sou.jpg'
+import TPGrenadeItem from '@site/static/img/doc/TeleportationGrenade.jpg'
 
 <ACSHeader 
   item="SCP-1045-KR" 

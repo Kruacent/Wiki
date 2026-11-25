@@ -11,7 +11,7 @@ hide_table_of_contents: true
 
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
-import TruePillsItem from '@site/static/img/doc/sou.jpg'
+import TruePillsItem from '@site/static/img/doc/TrueDivinePills.jpg'
 
 <ACSHeader 
   item="SCP-1050-KR" 

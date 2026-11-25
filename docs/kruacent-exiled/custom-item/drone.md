@@ -10,9 +10,19 @@ date: 2026-11-22
 hide_table_of_contents: true
 ---
 
+import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import Statut from '@site/src/components/docs/Statut';
 
 <Statut type="desactive">Obtensible uniquement via les commandes</Statut>
+
+<ACSHeader 
+  item="SCP-1057-KR" 
+  name="Drone"
+  ObjectClass="SAFE"
+  Level="3"
+  Disruption="VLAM"
+  itemColor="#1e88e5"
+/>
 
 # SCP-1057-KR : « Drone »
 
@@ -66,6 +76,34 @@ Le drone ne peut pas être activé pendant qu'une capacité à durée est active
 
 ---
 
-## Note de la Fondation
+## Archives : le projet « Mouche »
 
-Le modèle de reconnaissance a été conçu pour les couloirs étroits du Site. Son pilote reste vulnérable pendant toute la mission. Retrouvez votre corps avant que quelqu'un d'autre ne le trouve.
+Le **Drone** est né d'une plainte. Le Capitaine Romain en avait assez de perdre des éclaireurs à chaque coin de couloir de Heavy. Il a demandé « un moyen de regarder derrière une porte sans y laisser un soldat ».
+
+Le Dr. Omer a mal lu la demande. Au lieu d'une caméra, il a construit un dispositif qui **rétrécit le pilote lui-même** et le transforme en petite machine volante, pendant que son corps reste planté là, immobile et sans défense.
+
+Le premier essai a été un succès technique total : le Sergent Alex a survolé tout le couloir de SCP-939 sans être vu. Il est revenu à son corps pour découvrir que quelqu'un lui avait volé ses chaussures, sa carte d'accès et son repas.
+
+---
+
+## Rapport d'incident : « Le pilote absent »
+
+> **Cpt. Romain :** "Dorian, rapport de reconnaissance ?"
+>
+> **Sgt. Dorian (drone) :** "Deux Chaos derrière la porte de l'armurerie, un SCP-049 dans le couloir sud. On peut passer par le nord."
+>
+> **Cpt. Romain :** "Parfait. Et votre corps, Sergent ?"
+>
+> **Sgt. Dorian (drone) :** "Il est à côté de Caedit, je lui ai demandé de le surveiller."
+>
+> *[Silence radio.]*
+>
+> **Sgt. Caedit :** "Dorian ? Je ne veux pas t'inquiéter, mais il y a un docteur en blouse avec un masque d'oiseau qui regarde ton corps très intensément."
+>
+> **Sgt. Dorian (drone) :** "J'arrive."
+>
+> **Sgt. Caedit :** "Il dit que tu es malade."
+
+:::warning L'avis de Maël
+« Le drone est désormais rangé sous clé, et seul l'état-major peut en sortir un. Trop de corps abandonnés dans les couloirs. Le service de nettoyage ne sait plus qui est mort et qui est juste en train de piloter. »
+:::

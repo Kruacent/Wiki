@@ -10,10 +10,20 @@ date: 2026-11-24
 hide_table_of_contents: true
 ---
 
+import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import Sons from '@site/src/components/docs/Sons';
 import Statut from '@site/src/components/docs/Statut';
 
 <Statut type="desactive">Obtensible uniquement via les commandes</Statut>
+
+<ACSHeader 
+  item="SCP-1067-KR" 
+  name="Shield Belt"
+  ObjectClass="SAFE"
+  Level="3"
+  Disruption="VLAM"
+  itemColor="#78909c"
+/>
 
 # SCP-1067-KR : « Bouclier d'énergie »
 
@@ -58,6 +68,40 @@ Aucun point d'apparition n'est défini pour cet objet dans la version actuelle.
 
 ---
 
-## Note de la Fondation
+## Archives : la bulle grise
 
-Un générateur de champ porté à la ceinture qui dévie les projectiles entrants. Le champ bloque aussi les tirs sortants, ce qui en fait un équipement de survie et non de combat.
+La **Shield Belt** est un générateur de champ de force porté à la ceinture. Une fois en marche, une bulle grise entoure son porteur et **arrête les balles**, tant qu'elle a de la charge. Quand on la vide, elle casse, se tait un long moment, puis redémarre doucement.
+
+Le Dr. Patrique la présente comme « le meilleur équipement défensif jamais conçu par la Fondation ». Il oublie souvent de préciser un détail : la bulle bloque les balles **dans les deux sens**. Celui qui la porte est presque intouchable… et presque incapable de toucher quoi que ce soit.
+
+Pour l'instant, aucune ceinture n'apparaît sur le Site. Les prototypes sont stockés à l'état-major, en attendant que quelqu'un trouve comment tirer à travers.
+
+---
+
+## Transcription : démonstration à l'état-major
+
+> **Dr. Patrique :** "Capitaine, tirez sur moi."
+>
+> **Cpt. Romain :** "Avec plaisir."
+>
+> *[Plusieurs tirs. La bulle grise absorbe tout. Petit bruit sec à chaque impact.]*
+>
+> **Dr. Patrique :** "Vous voyez ? Pas une égratignure. À mon tour."
+>
+> *[Le Dr. Patrique tire sur une cible d'entraînement. Les balles s'écrasent sur l'intérieur de sa propre bulle.]*
+>
+> **Dr. Patrique :** "…C'est une fonctionnalité."
+>
+> **Cpt. Romain :** "Donc c'est un équipement pour survivre."
+>
+> **Dr. Patrique :** "C'est un équipement pour survivre."
+>
+> **Sgt. Caedit :** *[tire sur la cible à travers la petite ouverture qui se forme quand la bulle se recharge]* "Dix sur dix."
+>
+> **Dr. Patrique :** "…Il n'y a pas d'ouverture."
+>
+> **Sgt. Caedit :** "Il y en a une, pendant un instant. Il faut juste la voir."
+
+:::warning L'avis de Maël
+« La Shield Belt n'est pas distribuée. Elle coûte le prix d'un hélicoptère, et la seule personne capable de tirer avec, c'est le Sergent Caedit. Je refuse de construire un hélicoptère pour une seule personne. Surtout pour lui. »
+:::

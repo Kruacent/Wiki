@@ -1,0 +1,64 @@
+.capture {
+  margin: 1.75rem auto;
+}
+
+.media {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  background: #000;
+}
+
+.zoom {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+
+.zoom:hover .media {
+  border-color: var(--ifm-color-primary);
+}
+
+.zoom:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+.legende {
+  margin-top: 0.6rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.plein {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.85);
+  cursor: zoom-out;
+}
+
+.plein img {
+  max-width: 100%;
+  max-height: 85vh;
+  border-radius: 8px;
+}
+
+.pleinLegende {
+  color: #ddd;
+  font-size: 0.95rem;
+}

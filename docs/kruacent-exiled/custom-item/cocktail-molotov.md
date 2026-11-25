@@ -13,8 +13,8 @@ import Sons from '@site/src/components/docs/Sons';
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
-import MolotovItem from '@site/static/img/doc/sou.jpg'
-import MolotovZone from '@site/static/img/doc/sou.jpg'
+import MolotovItem from '@site/static/img/doc/CocktailMolotov.jpg'
+import MolotovZone from '@site/static/img/doc/CocktailMolotov-Exploded.jpg'
 
 <ACSHeader 
   item="SCP-1049-KR" 

@@ -11,7 +11,7 @@ hide_table_of_contents: true
 
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
-import SmokeItem from '@site/static/img/doc/sou.jpg'
+import SmokeItem from '@site/static/img/doc/SmokeGrenade.jpg'
 
 <ACSHeader 
   item="SCP-1071-KR" 

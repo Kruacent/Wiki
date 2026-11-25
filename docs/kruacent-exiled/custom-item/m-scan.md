@@ -9,7 +9,28 @@ date: 2026-11-24
 hide_table_of_contents: true
 ---
 
+import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
+import SCPImage from '@site/src/components/docs/SCPImage.tsx'
+import ItemImage from '@site/static/img/doc/MScan.jpg'
+
+<ACSHeader 
+  item="SCP-1063-KR" 
+  name="M-Scan"
+  ObjectClass="SAFE"
+  Level="2"
+  Disruption="DARK"
+  itemColor="#00acc1"
+/>
+
 # SCP-1063-KR : « M-Scan »
+
+<SCPImage
+  src={ItemImage}
+  alt="Le M-Scan"
+  width="500px"
+  caption="Le M-Scan."
+  type="normal"
+/>
 
 Le **M-Scan** est un détecteur de mouvement. On le pose en le **lâchant** au sol : il s'active pour **120 secondes**. Dès qu'un ennemi passe à moins de **3,5 mètres**, son propriétaire reçoit une notification avec le rôle détecté, dans la couleur de ce rôle (par exemple *M-SCAN: Classe-D*).
 
@@ -52,6 +73,36 @@ Le capteur est détruit (*"SCANNER DÉTRUIT"*) :
 
 ---
 
-## Note de la Fondation
+## Archives : le garde qui ne dort jamais
 
-Un capteur de proximité portable, conçu pour surveiller un passage sans y laisser de garde. Les entités du Site ont appris à le détruire dès qu'elles le repèrent.
+Le **M-Scan** est né d'un problème de planning. Pour surveiller tous les couloirs de Light pendant la nuit, il fallait quarante gardes. Le budget en payait douze. Maël a demandé une solution « qui ne réclame ni salaire, ni pause café, ni congés maladie ».
+
+Le Dr. Omer a pris un détecteur de mouvement d'alarme de cuisine, l'a branché sur le réseau radio du Site et l'a mis dans un boîtier qui tient dans la main. On le pose par terre, et pendant deux minutes il surveille le passage : dès qu'un ennemi passe devant, son propriétaire reçoit une alerte avec le rôle de l'intrus.
+
+Les SCP ont très vite compris le principe. Aujourd'hui, la plupart d'entre eux détruisent le capteur dès qu'ils le repèrent. Le Dr. Omer considère ça comme une preuve que l'objet fonctionne.
+
+---
+
+## Rapport d'incident : « M-SCAN: Classe-D »
+
+> **Sgt. Alex :** "J'ai posé le M-Scan devant la cafétéria. Enfin, je crois que c'est la cafétéria. Si quelqu'un passe, on le saura."
+>
+> *[Bip. « M-SCAN: Classe-D ».]*
+>
+> **Sgt. Alex :** "Un Classe-D ! Je fonce."
+>
+> *[Bip. « M-SCAN: Classe-D ».]*
+>
+> **Sgt. Alex :** "Deux Classe-D."
+>
+> *[Bip. Bip. Bip. Bip.]*
+>
+> **Sgt. Alex :** "Capitaine, je crois que les cellules ont explosé."
+>
+> **Cpt. Romain :** "Combien ?"
+>
+> **Sgt. Alex :** "Le scanner a arrêté de compter."
+
+:::warning L'avis de Maël
+« Le M-Scan ne remplace pas un garde. Il remplace un garde qui dort. Ce qui, après analyse des plannings, revient au même. »
+:::

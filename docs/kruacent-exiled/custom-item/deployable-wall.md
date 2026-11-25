@@ -11,10 +11,10 @@ hide_table_of_contents: true
 import Sons from '@site/src/components/docs/Sons';
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
-import SCPVideo from '@site/src/components/docs/SCPVideo.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
-import DeployableWallsItem from '@site/static/img/doc/sou.jpg'
-import DeployableWalls from '@site/static/video/test.mp4'
+import DeployableWallsItem from '@site/static/img/doc/DeployableWall.jpg'
+import DeployableWallInHand from '@site/static/img/doc/DeployableWall-InHand.jpg'
+import DeployableWallDeployed from '@site/static/img/doc/DeployableWall-WallDeployed.jpg'
 
 <ACSHeader 
   item="SCP-1048-KR" 
@@ -71,11 +71,20 @@ L'objet utilise le lâcher via l'inventaire pour s'activer.
 | **Dropper via l'inventaire** | **ACTIVATION** | L'objet est consommé. Un **MUR** apparaît instantanément devant vous à la position de la carte. |
 | **Lancer la carte** <br/> | **INERTIE** | La carte est simplement jetée au loin. **Aucun mur n'apparaît.** Vous pouvez la ramasser pour réessayer. |
 
-<SCPVideo 
-  src={DeployableWalls} 
-  title="Cam_Hallway_SCP173_Vid01.mp4" 
-  location="Ascenseur de SCP-173" 
-  caption="Fig 2.B : Enregistrement de sécurité du ██/██/2024. L'agent █████ utilise le dispositif pour bloquer la progression de SCP-096."
+<SCPImage
+  src={DeployableWallInHand}
+  alt="Deployable Wall en main"
+  width="500px"
+  caption="La carte en main, prête à être posée."
+  type="normal"
+/>
+
+<SCPImage
+  src={DeployableWallDeployed}
+  alt="Mur déployé"
+  width="500px"
+  caption="Le mur, une fois sorti du sol."
+  type="normal"
 />
 
 ### Caractéristiques du Mur

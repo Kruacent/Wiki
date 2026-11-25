@@ -12,7 +12,7 @@ hide_table_of_contents: true
 
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
-import ProximityItem from '@site/static/img/doc/sou.jpg'
+import ProximityItem from '@site/static/img/doc/ProximityGrenade.jpg'
 
 <ACSHeader 
   item="SCP-1073-KR" 

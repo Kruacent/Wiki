@@ -10,7 +10,7 @@ hide_table_of_contents: true
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
-import ImpactFlashItem from '@site/static/img/doc/sou.jpg'
+import ImpactFlashItem from '@site/static/img/doc/ImpactFlash.jpg'
 
 <ACSHeader 
   item="SCP-1052-KR" 

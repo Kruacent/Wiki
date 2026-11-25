@@ -13,7 +13,7 @@ import Sons from '@site/src/components/docs/Sons';
 
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
-import HolyGrenadeItem from '@site/static/img/doc/sou.jpg'
+import HolyGrenadeItem from '@site/static/img/doc/SainteGrenada.jpg'
 
 <ACSHeader 
   item="SCP-1055-KR" 

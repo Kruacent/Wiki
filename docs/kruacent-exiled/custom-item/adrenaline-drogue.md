@@ -13,7 +13,6 @@ import Statut from '@site/src/components/docs/Statut';
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
-import DA020Item from '@site/static/img/doc/sou.jpg'
 
 <Statut type="obsolete">SCP-1042-KR a été retiré du plugin : il n'apparaît plus et ne peut plus être obtenu.</Statut>
 
@@ -31,14 +30,6 @@ import DA020Item from '@site/static/img/doc/sou.jpg'
 />
 
 # SCP-1042-KR : "DA-020"
-
-<SCPImage
-  src={DA020Item}
-  alt="DA-020"
-  width="500px"
-  caption="DA-020 disposé dans une armoire."
-  type="normal"
-/>
 
 ## 1. Description et Obtention
 

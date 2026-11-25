@@ -13,7 +13,7 @@ import Statut from '@site/src/components/docs/Statut';
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
-import MineItem from '@site/static/img/doc/sou.jpg'
+import MineItem from '@site/static/img/doc/item/mine-enabled.jpg'
 
 <Statut type="obsolete">La Quantum Mine a été retirée du plugin : elle n'apparaît plus et ne peut plus être obtenue.</Statut>
 

@@ -12,8 +12,8 @@ hide_table_of_contents: true
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import SCPVideo from '@site/src/components/docs/SCPVideo.tsx'
-import DefibrilatorItem from '@site/static/img/doc/sou.jpg'
-import DefibrilatorAction from '@site/static/video/test.mp4'
+import DefibrilatorItem from '@site/static/img/doc/defibrillator.jpg'
+import DefibrilatorAction from '@site/static/video/DefibrillatorUse.mp4'
 
 <ACSHeader 
   item="SCP-1041-KR" 

@@ -5,6 +5,9 @@ slug: /articles/global-events
 description: Tous les Global Events et Middle Events, ce qu'ils font et leur chance de tomber.
 ---
 
+import Capture from '@site/src/components/docs/Capture';
+import AnnonceGE from '@site/static/img/doc/GlobalEventDisplay.jpg'
+
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 import { GlobalEventTable, GlobalEventTirage, MiddleEventTable, ChanceMiddleEvent } from '@site/src/components/docs/EventStats';
 
@@ -13,6 +16,8 @@ import { GlobalEventTable, GlobalEventTirage, MiddleEventTable, ChanceMiddleEven
 Au début de chaque partie, la Fondation tire une **règle spéciale** : c'est le Global Event. Il s'affiche à l'écran dès le lancement, avec son niveau d'impact entre crochets.
 
 <GlobalEventTirage />
+
+<Capture src={AnnonceGE} alt="Annonce du Global Event" caption="L'annonce en haut de l'écran : ici [VL] y'a r, donc nothing." />
 
 ## Tous les Global Events
 

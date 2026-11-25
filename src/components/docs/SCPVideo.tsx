@@ -1,6 +1,10 @@
 import React from 'react';
 
-export default function SCPVideo({ src, title, location, caption }) {
+/**
+ * Vidéo façon caméra de surveillance.
+ * En couleur par défaut ; `noirEtBlanc` remet le vieux filtre noir et blanc qui scintille.
+ */
+export default function SCPVideo({ src, title, location, caption, noirEtBlanc = false }) {
   const glitchStyle = `
     @keyframes scp-flicker {
       0%   { opacity: 0.95; transform: translateY(0px); }
@@ -63,8 +67,9 @@ export default function SCPVideo({ src, title, location, caption }) {
             width="100%" 
             style={{
               display: 'block',
-              filter: 'grayscale(100%) contrast(1.3) brightness(0.9) sepia(20%)',
-              animation: 'scp-flicker 4s infinite',
+              ...(noirEtBlanc
+                ? { filter: 'grayscale(100%) contrast(1.3) brightness(0.9) sepia(20%)', animation: 'scp-flicker 4s infinite' }
+                : {}),
             }}
           >
             <source src={src} type="video/mp4" />
@@ -74,7 +79,7 @@ export default function SCPVideo({ src, title, location, caption }) {
           <div style={{
             position: 'absolute',
             top: 0, left: 0, right: 0, bottom: 0,
-            background: 'repeating-linear-gradient(transparent 0px, transparent 2px, rgba(0,0,0,0.3) 3px, rgba(0,0,0,0.3) 4px)',
+            background: `repeating-linear-gradient(transparent 0px, transparent 2px, rgba(0,0,0,${noirEtBlanc ? 0.3 : 0.08}) 3px, rgba(0,0,0,${noirEtBlanc ? 0.3 : 0.08}) 4px)`,
             pointerEvents: 'none',
             zIndex: 5
           }}></div>
@@ -83,7 +88,7 @@ export default function SCPVideo({ src, title, location, caption }) {
           <div style={{
             position: 'absolute',
             top: 0, left: 0, right: 0, bottom: 0,
-            boxShadow: 'inset 0 0 40px rgba(0,0,0,0.9)',
+            boxShadow: noirEtBlanc ? 'inset 0 0 40px rgba(0,0,0,0.9)' : 'inset 0 0 25px rgba(0,0,0,0.45)',
             pointerEvents: 'none',
             zIndex: 6
           }}></div>

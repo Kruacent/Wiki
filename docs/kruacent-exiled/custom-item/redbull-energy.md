@@ -9,7 +9,28 @@ date: 2026-11-24
 hide_table_of_contents: true
 ---
 
+import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
+import SCPImage from '@site/src/components/docs/SCPImage.tsx'
+import ItemImage from '@site/static/img/doc/RedBullEnergy.jpg'
+
+<ACSHeader 
+  item="SCP-1066-KR" 
+  name="RedBull™ Energy"
+  ObjectClass="EUCLID"
+  Level="3"
+  Disruption="KENEQ"
+  itemColor="#1565c0"
+/>
+
 # SCP-1066-KR : « RedBull™ Energy »
+
+<SCPImage
+  src={ItemImage}
+  alt="La canette RedBull™ Energy"
+  width="500px"
+  caption="La canette RedBull™ Energy."
+  type="normal"
+/>
 
 La **RedBull™ Energy** est une canette qui donne un énorme coup de boost pendant **20 secondes**, suivi d'un **crash** de 30 secondes.
 
@@ -57,6 +78,38 @@ On ne peut pas boire une deuxième canette tant que les 50 secondes ne sont pas 
 
 ---
 
-## Note de la Fondation
+## Archives : la canette qui donne des ailes
 
-Une boisson énergisante d'apparence banale dont les effets dépassent largement ceux d'un produit commercial. Le cœur du consommateur ne suit pas longtemps.
+La **RedBull™ Energy** a été trouvée dans un carton de livraison qui n'aurait jamais dû arriver au Site. L'adresse indiquait « *Salle de pause, Site-19, Niveau -3* ». Le livreur n'a jamais été retrouvé. Le carton contenait deux canettes.
+
+Les analyses du Dr. Omer sont formelles : ce n'est pas une boisson énergisante. C'est **SCP-207 en canette**, avec de la caféine en plus, de la taurine en plus, et quelque chose que le spectromètre a refusé de nommer. Pendant vingt secondes, celui qui la boit court comme jamais, encaisse les coups, se soigne en continu et défonce les portes qu'il frôle. Ensuite, le cœur rend la monnaie : trente secondes de crash, sourd, lent et à bout de souffle.
+
+Le Dr. Omer a demandé à la goûter « pour la science ». Il a traversé trois portes et un mur de la cafétéria, puis il a dormi deux jours.
+
+---
+
+## Rapport d'incident : « Les ailes »
+
+> **Sgt. Caedit :** "C'est quoi cette canette ?"
+>
+> **Sgt. Dorian :** "Ne bois pas ça."
+>
+> **Sgt. Caedit :** *[boit]* "Ça a un goût de… OH."
+>
+> *[Le Sergent Caedit disparaît dans le couloir. Bruit de porte qui explose. Puis d'une autre. Puis d'une troisième.]*
+>
+> **Cpt. Romain :** "Où est-il allé ?"
+>
+> **Sgt. Alex :** "En Heavy, je crois. En ligne droite."
+>
+> *[Dix-neuf secondes plus tard, le Sergent Caedit revient en glissant. Il tient une Micro-HID, une carte O5 et le Protocole Secret. Il s'effondre pile dans l'ascenseur, au moment où les portes se ferment devant SCP-106.]*
+>
+> **Sgt. Caedit (essoufflé) :** "Capitaine… je n'entends plus rien… mais j'ai pris des trucs."
+>
+> **Sgt. Dorian :** *[ouvre son carnet, le referme]* "Il a fait l'armurerie, le confinement de 079 et l'ascenseur en vingt secondes. Il n'existe aucun chemin pour faire ça en vingt secondes."
+>
+> **Cpt. Romain :** "Et pourtant."
+
+:::warning Le mémo de Maël
+« Une canette par personne. Pas deux. Votre cœur ne supporterait pas une deuxième canette, et le service de réparation des portes non plus. »
+:::
