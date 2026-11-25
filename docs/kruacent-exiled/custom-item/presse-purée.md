@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1046
-title: SCP-1049-KR (Presse-Purée)
+title: SCP-1046-KR (Presse-Purée)
 tags:
     - Grenade
 description: Grenade à percussion modifiée pour une détonation instantanée.
@@ -86,7 +86,7 @@ Si placé dans la cabine d'entrée avec le sélecteur sur **Very Fine** :
 * Transformation en **[Sainte Grenade](./sainte-grenade)** (Version Améliorée).
 
 :::info Note du Dr. Patrique
-"Seulement 5% de réussite ? C'est peu, mais le résultat en vaut la chandelle. La **sainte grenade** est une merveille d'instabilité. Par contre, ne dites pas à Maël que les 95% autres essais détruisent l'objet, il va encore me parler de budget."
+"Seulement 5% de réussite ? C'est peu, mais le résultat en vaut la chandelle. La **sainte grenade** est une merveille d'instabilité. Et les 95 % d'échecs ne cassent rien : la grenade ressort intacte, on peut retenter. Ne le dites pas à Maël, il va vouloir facturer chaque essai."
 :::
 
 ---

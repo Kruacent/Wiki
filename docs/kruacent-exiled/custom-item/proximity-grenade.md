@@ -63,12 +63,12 @@ Ce dispositif coûte plus cher que votre salaire annuel cumulé sur 10 ans. Si v
 | Phase | Description |
 | :--- | :--- |
 | **1. Lancer** | Mèche standard de **3 secondes**. (Ne la gardez pas en main en attendant le bip, ce n'est pas un minuteur à œuf). |
-| **2. Activation** | Émet un son de sonar distinctif et une impulsion rouge visible. |
+| **2. Activation** | N'explose pas : des traits de couleur apparaissent, visibles par tout le monde. |
 | **3. Révélation** | Affiche un trait de la couleur de l'équipe de **TOUS** les joueurs (Amis, Ennemis, SCPs) dans un rayon de **3 salles**. |
 
 ### Données Tactiques
 * **Portée :** 3 Salles.
-* **Durée de l'info :** Instantanée.
+* **Durée des traits :** 20 secondes.
 * **Usage recommandé :** Vérifier les ascenseurs, les coins de couloirs, et tricher à cache-cache.
 
 ---

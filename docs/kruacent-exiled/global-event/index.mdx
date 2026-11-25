@@ -2,26 +2,35 @@
 sidebar_position: 1
 title: Liste des Global Events
 slug: /articles/global-events
-description: Index des Global Event et leurs fonctionnement
+description: Tous les Global Events et Middle Events, ce qu'ils font et leur chance de tomber.
 ---
 
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+import { GlobalEventTable, GlobalEventTirage, MiddleEventTable, ChanceMiddleEvent } from '@site/src/components/docs/EventStats';
 
-# Fonctionnement des Global Event
+# Global Events
 
-Les **Global Event** sont des mutateurs qui s'active à chaque début de partie. Ils peuvent changer des statistiques des joueurs, du SCP ou ajouter des d'autres événements dans la partie.
+Au début de chaque partie, la Fondation tire une **règle spéciale** : c'est le Global Event. Il s'affiche à l'écran dès le lancement, avec son niveau d'impact entre crochets.
 
-Chaque Global Event possède un niveau d'impact qui mesure l'impact du Global Event sur la partie :
-1.  **Very Low :** Impact très legers sur la partie, signalé par le préfixe **[VL]**
-2.  **Low :** Légèr impact au déroulement de la partie, signalé par le préfixe **[L]**
-3.  **Medium :** Impact moyen sur la partie, signalé par le préfixe **[M]**
-4.  **High :** Impact élevé sur la partie, signalé par le préfixe **[H]**
-5.  **Very High :** Global Event ayant un impact très élevé sur la partie, signalé par le préfixe **[VH]**
-6.  **Insane :** Global Event changeant completement le cours d'une partie, signalé par le préfixe **[I]**
+<GlobalEventTirage />
 
-### Selection du Global Event
+## Tous les Global Events
 
-Un ou deux Global Event sont tirés au sort à chaque début de partie, les global event actifs sont alors affiché aux joueurs. Il y a 10% de chance qu'il y ai affiché **[REDACTED]** à la place du nom du Global Event au début de partie
+Du plus courant au plus rare.
+
+<GlobalEventTable />
+
+**Niveaux d'impact :** **[VL]** à peine visible, **[L]** léger, **[M]** moyen, **[H]** gros changement, **[VH]** la partie part en vrille, **[I]** tout est permis.
+
+## Middle Events
+
+Les surprises de mi-temps. Dans un peu plus d'**une partie sur trois** (<ChanceMiddleEvent />), un Middle Event tombe **vers 10 à 15 minutes** de jeu pour relancer la partie. Un seul par partie, et il dure jusqu'à la fin.
+
+<MiddleEventTable />
+
+:::danger Obsolète
+**MShuffleI** (mélange des inventaires) et **MShuffle** (mélange des rôles) ne tombent plus.
+:::
 
 ---
 

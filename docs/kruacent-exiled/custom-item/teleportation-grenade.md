@@ -64,20 +64,26 @@ Stockage limité. Le personnel a peur de toucher cet objet.
 
 :::danger AUCUN DÉGÂT, MAIS...
 Cette grenade inflige **0 dégât physique**. Cependant, c'est l'arme la plus dangereuse du jeu.
-Être téléporté dans une Tesla active, dans le vide, ou devant SCP-173, c'est une condamnation à mort instantanée.
+Elle ne vous enverra jamais dans une salle de Tesla ni dans une zone dangereuse. Mais devant SCP-173 ou au milieu des Chaos ? Ça, oui.
 :::
 
 | Phase | Description |
 | :--- | :--- |
 | **1. Lancer** | Mèche de **3 secondes**. |
 | **2. Détonation** | Flash Cyan silencieux (Implosion). |
-| **3. Effet** | **TÉLÉPORTATION DE MASSE.** Tous les joueurs dans le rayon d'explosion sont envoyés instantanément dans une salle aléatoire de la carte. |
+| **3. Effet** | **TÉLÉPORTATION DE MASSE.** Tous les joueurs dans le rayon d'explosion sont envoyés dans une salle aléatoire de la carte. |
 
 ### Destinations Possibles
 * **Light Containment Zone** (Bon pas quand c'est décontaminé, ouf...).
 * **Heavy Containment Zone** (Souvent chez les SCPs).
 * **Entrance Zone**.
 * **Surface**.
+
+Après l'explosion de l'ogive, c'est **toujours la Surface**.
+
+:::info Les gros SCP ne bougent pas
+SCP-049, SCP-096, SCP-106, SCP-173, SCP-939, SCP-3114 et les zombies ne sont **pas** téléportés. Inutile de la lancer sur eux pour vous en débarrasser.
+:::
 
 ---
 

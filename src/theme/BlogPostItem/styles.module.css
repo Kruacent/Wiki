@@ -1,0 +1,170 @@
+/* ───────────── Carte de la liste ───────────── */
+.card {
+  display: flex;
+  border-radius: 14px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.cardVersion {
+  flex: 0 0 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  color: #fff;
+  background: linear-gradient(160deg, var(--ifm-color-primary-darkest), var(--ifm-color-primary));
+}
+
+.cardVersion:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cardVersionLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.cardVersionNumber {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.cardBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  min-width: 0;
+}
+
+.cardTop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cardDate {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.cardAuthors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cardAuthor {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.cardAuthor img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.cardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.cardTag {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+}
+
+.cardTag:hover {
+  text-decoration: none;
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.cardLink {
+  align-self: flex-start;
+  font-weight: 700;
+}
+
+/* ───────────── Page d'une version ───────────── */
+.page :global(header h1) {
+  display: inline-block;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  padding: 0.35rem 1rem;
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--ifm-color-primary-darkest), var(--ifm-color-primary));
+}
+
+.page :global(.markdown) > h2 {
+  margin-top: 2.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border-left: 5px solid var(--ifm-color-primary);
+  background: var(--ifm-color-emphasis-100);
+  font-size: 1.5rem;
+}
+
+.page :global(.markdown) > h3 {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  color: var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-primary);
+}
+
+.page :global(.markdown) > ul > li {
+  margin-bottom: 0.4rem;
+}
+
+.page :global(.markdown) > ul > li::marker {
+  color: var(--ifm-color-primary);
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .cardVersion {
+    flex-basis: auto;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    padding: 0.9rem 1.25rem;
+  }
+
+  .cardVersionNumber {
+    font-size: 1.5rem;
+  }
+}

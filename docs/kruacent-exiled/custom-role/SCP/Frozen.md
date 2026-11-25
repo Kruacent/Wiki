@@ -62,4 +62,20 @@ Le froid permet de régénérer l'armure. Si le SCP-173 Frozen parvient à tuer 
 
 ---
 
+## Rapport de confinement : « Brouillard givrant »
+
+> **Dr. Patrique :** "Pourquoi la cellule de SCP-173 est couverte de givre ?"
+>
+> **Chercheur Noé :** "Il ne laisse plus ses... déchets habituels. Il pose des vases SCP-244 à la place."
+>
+> **Dr. Patrique :** "C'est une amélioration, non ?"
+>
+> **Chercheur Noé :** "Il se sert du brouillard pour approcher. Et à chaque fois qu'il attrape quelqu'un gelé, il a l'air... plus solide."
+>
+> **Dr. Patrique :** "Mettez des chauffages dans le couloir."
+>
+> **Chercheur Noé :** "On a essayé. Il les a renversés."
+
+---
+
 <PatchNoteBanner name="SCP-173 Frozen" tag="frozen173" />

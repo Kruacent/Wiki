@@ -1,0 +1,54 @@
+.statut {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+  padding: 0.9rem 1.1rem;
+  border: 2px solid var(--statut-color);
+  border-radius: 6px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--statut-bg),
+    var(--statut-bg) 12px,
+    transparent 12px,
+    transparent 24px
+  );
+}
+
+.obsolete {
+  --statut-color: #d32f2f;
+  --statut-bg: rgba(211, 47, 47, 0.08);
+}
+
+.desactive {
+  --statut-color: #e08600;
+  --statut-bg: rgba(224, 134, 0, 0.08);
+}
+
+.titre {
+  flex-shrink: 0;
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  background: var(--statut-color);
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.texte {
+  text-align: left;
+}
+
+.raison {
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .statut {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

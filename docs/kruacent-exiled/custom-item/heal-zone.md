@@ -81,8 +81,12 @@ Contrairement aux grenades frag ou flash classiques qui rebondissent, la Heal Zo
 * **Type :** Grenade à Impact (Explode on Collision).
 * **Délai de mèche :** 5 secondes (Si lancée en l'air sans toucher d'obstacle).
 * **Visuel :** Nuage de gaz vert persistant.
-* **Cibles :** Soigne l'utilisateur et ses alliés.
-* **Soins de :** 2 HP/s
+* **Cibles :** Soigne seulement les joueurs de la **même équipe** que le lanceur (un MTF soigne les MTF et les gardes, mais pas les Scientifiques).
+* **Durée :** 20 secondes, sur une zone de 5 mètres de large.
+* **Soins de :** 10 HP/s, dans la limite de 100 HP soignés par joueur
+
+### Dans SCP-914
+Passée en **1:1**, la Heal Zone devient **à coup sûr** un [Cocktail Molotov](./cocktail-molotov). Et inversement. Le département chimie appelle ça « recycler ». Le département médical appelle ça « une agression ».
 
 ---
 

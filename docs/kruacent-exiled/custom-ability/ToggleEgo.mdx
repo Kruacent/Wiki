@@ -23,7 +23,7 @@ import PatchnoteBanner from '@site/src/components/docs/PatchnoteBanner';
 | :--- | :--- |
 | **Description (Français)** | Manifeste ton E.G.O, gagne de puissants bonus mais draine rapidement ta santé. Peut être désactivé à tout moment. |
 | **Description (Anglais)** | Manifest your E.G.O, gain powerful buff but rapid health drain. Can be deactivated anytime. |
-| **Dégâts de drain** | 2 HP toutes les 0.2s |
+| **Dégâts de drain** | 10 HP par seconde |
 | **Temps de recharge** | 0 seconde |
 
 ---
@@ -34,15 +34,15 @@ La manifestation de l'E.G.O altère directement les états physiques du joueur e
 
 ### 1. Effets appliqués
 Lorsque la capacité est activée :
-- **Augmentation de vitesse**
-- **Effet de SCP-1853**
-- **Immunité au poison**
+- **Immunité au poison** : tout effet de poison reçu est annulé.
 
-Lorsque la capacité est désactivée, les intensités d'effets sont retirées.
+:::note En ce moment
+Le bonus de vitesse et l'effet de SCP-1853 de l'E.G.O sont désactivés : pour l'instant, seule l'immunité au poison fonctionne.
+:::
 
 ### 2. Drainage de santé et Vol de vie
-- **Drain passif :** Tant que l'E.G.O est actif, le joueur subit **2 HP de dégâts brut** toutes les **0.2 secondes**.
-- **Pause du drain via dégâts :** À chaque fois que le joueur blesse un ennemi, l'objectif du timer de dégâts augmente. Cela repousse le prochain tic de drain et permet au joueur de maintenir son E.G.O actif sans perdre de santé tant qu'il reste en combat.
+- **Drain passif :** Tant que l'E.G.O est actif, le joueur perd **10 HP par seconde**.
+- **Pause du drain via dégâts :** À chaque fois que le joueur blesse un ennemi, l'objectif du timer de dégâts augmente de **2 secondes**. Cela repousse le prochain tic de drain et permet au joueur de maintenir son E.G.O actif sans perdre de santé tant qu'il reste en combat.
 
 ---
 

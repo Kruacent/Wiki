@@ -4,7 +4,7 @@ description: Fais attention à "tes" objets ! Un humain incapable de garder ses 
 date: 2026-08-24
 image: /img/doc/teams/human.png
 keywords: [humain, voleur, maladroit, thief, drop, objet]
-abilities: ["Thief", "Mains de beurre"]
+abilities: ["Thief", "Mains De Beurre"]
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';
@@ -49,6 +49,18 @@ Le **Maladroit Voleur** (ou *Butter Finger Thief*) est un rôle humain global qu
 Ce rôle est doté de mécaniques uniques le poussant à voler, mais aussi à perdre ce qu'il tient :
 
 <GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+## Plainte officielle : « Mon badge a disparu »
+
+*Déposée par le Manager Maël.*
+
+> Ce matin, mon badge a disparu de ma poche alors que je discutais avec un Classe-D dans la même pièce que moi. Il était à cinq mètres. Il ne m'a pas touché.
+>
+> Une heure plus tard, le badge a été retrouvé par terre au milieu du couloir de Light. Le Classe-D, lui, a été vu en train de lâcher successivement un Medkit, une radio et une arme qui ne lui appartenaient pas.
+>
+> Je demande qu'on lui interdise l'accès aux bureaux. Et aux couloirs. Et aux salles.
 
 ---
 

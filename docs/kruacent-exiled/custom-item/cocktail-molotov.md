@@ -9,6 +9,8 @@ date: 2025-11-28
 hide_table_of_contents: true
 ---
 
+import Sons from '@site/src/components/docs/Sons';
+
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import MolotovItem from '@site/static/img/doc/sou.jpg'
@@ -67,7 +69,8 @@ Le commandement a dispersé ces objets dans les zones à haut risque d'infection
 | **Armoires de LCZ** | 50 % |
 | **Armoires de HCZ** | 50 % |
 | **Salle GR-18 de LCZ** | 75 % |
-| **Couloir à côté ascenseur de la Nuke** | 50 % |
+| **Armurerie de HCZ** | 80 % |
+| **Salle de SCP-049 (HCZ)** | 80 % |
 
 ---
 
@@ -81,31 +84,36 @@ Le cocktail Molotov utilise un verre fragile. Il explose **dès qu'il touche une
   src={MolotovZone}
   alt="Zone de feu"
   width="500px"
-  caption="Zone d'effet active (Rayon 5m)"
+  caption="Zone d'effet active (5 m de diamètre)"
   type="normal"
 />
 
 ### Caractéristiques de la Zone
 * **Durée :** 20 secondes.
-* **Rayon :** 5 mètres.
+* **Rayon :** 2,5 mètres (5 mètres de diamètre).
 * **Visuel :** Un soleil de forme cylindre de chaleur visible.
 
-### Dégâts Progressifs
-Le liquide colle à la peau et chauffe avec le temps. Plus vous restez longtemps, plus vous souffrez.
-* **Seuil Initial :** 5 Dégâts / seconde.
-* **Seuil Final (à 20s) :** 20 Dégâts / seconde.
-* **Calcul :** Les dégâts augmentent linéairement à chaque demi-seconde.
+### Dégâts
+Toutes les demi-secondes, chaque joueur dans la zone est brûlé et subit des dégâts fixes. Si le tir allié est désactivé, les coéquipiers du lanceur ne sont pas touchés (le lanceur, lui, peut l'être).
 
 ### Efficacité Contre les Menaces
 Le composé réagit différemment selon la cible :
 
 | Cible | Effet | Dégâts |
 | :--- | :--- | :--- |
-| **Humains** | Brûlures sévères | De 5 à 20 DPS (Progressif) |
-| **SCP (Classiques)** | Corrosion Acide | **~1.3% HP Max** / seconde |
-| **Zombies (049-2)** | **COMBUSTION TOTALE** | **2.5x Dégâts** (Jusqu'à 50 DPS !) |
+| **Humains** | Brûlures sévères | 12 PV par seconde. Avec du bouclier (AHP), c'est le bouclier qui prend (20 par seconde). |
+| **SCP (Classiques)** | Corrosion Acide | 40 PV par seconde |
+| **Zombies (049-2)** | **COMBUSTION TOTALE** | **2.5x Dégâts** : 100 PV par seconde |
+
+### Dans SCP-914
+Passé en **1:1**, le Molotov devient **à coup sûr** une [Heal Zone](./heal-zone). Pratique quand l'équipe a plus besoin de soins que de feu.
 
 ---
+
+<Sons titre="Les sons" sons={[
+  { src: '/audio/molotov-impact.ogg', nom: "Impact", quand: "La bouteille se brise" },
+  { src: '/audio/molotov-feu.ogg', nom: "Feu", quand: "Tant que la zone brûle" },
+]} />
 
 ## 4. Rapport de Test Terrain
 
@@ -134,7 +142,7 @@ Archives de la FIM Epsilon-11.
 
 :::info AVIS DE MAËL
 "C'est l'outil ultime de **contrôle de zone**.
-1.  **Contre les SCPs :** Si un SCP campe dans une pièce (ex: 914 ou Salle SCP-079), lancez le Molotov. Les dégâts en pourcentage le forceront à sortir ou à mourir.
+1.  **Contre les SCPs :** Si un SCP campe dans une pièce (ex: 914 ou Salle SCP-079), lancez le Molotov. Les brûlures continues le forceront à sortir ou à mourir.
 2.  **Contre les Hordes :** Si vous voyez des zombies, c'est votre meilleure arme. Ils disparaîtront en quelques secondes.
 3.  **Attention :** Le feu brûle aussi les amis. Ne bloquez pas la seule sortie de votre équipe."
 :::

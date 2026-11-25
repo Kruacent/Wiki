@@ -1,4 +1,5 @@
 ---
+sidebar_class_name: sidebar-obsolete
 sidebar_position: 1042
 title: SCP-1042-KR (DA-020)
 tags:
@@ -8,9 +9,13 @@ date: 2025-11-27
 hide_table_of_contents: true
 ---
 
+import Statut from '@site/src/components/docs/Statut';
+
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import DA020Item from '@site/static/img/doc/sou.jpg'
+
+<Statut type="obsolete">SCP-1042-KR a été retiré du plugin : il n'apparaît plus et ne peut plus être obtenu.</Statut>
 
 <ACSHeader 
   item="SCP-1042-KR" 
@@ -113,6 +118,6 @@ Entre **60 et 120 secondes** après la Phase 6, un effet secondaire permanent se
 > **Journal Audio : Chercheur Noé**
 >
 > "J'ai testé la seringue sur D-9932. Il a commencé à courir à une vitesse inhumaine en hurlant qu'il voyait des fantômes. Trente secondes plus tard... pouf. Disparu.
-> Les caméras de sécurité l'ont repéré 6 secondes plus tard à HCZ, menotté par... personne ?
+> Les caméras de sécurité l'ont repéré 6 secondes plus tard en HCZ, menotté par... personne ?
 > Le plus inquiétant, c'est quand il est réapparu devant SCP-173 avec 1 point de vie. Il a survécu par miracle (bon après SCP-173 était nul hein !).
 > À la fin de l'expérience, il prétendait s'appeler 'Sou Hiyori' et son corps s'est aplati comme une crêpe. Dr. Omer, je suggère de classifier ça en SAFE, mais loin de ma cafétéria."

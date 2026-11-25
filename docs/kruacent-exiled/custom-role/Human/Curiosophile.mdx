@@ -1,0 +1,92 @@
+---
+title: Curiosophile
+description: Les objets de pacotille te rendent plus rapide et résistant, les objets puissants t'alourdissent.
+date: 2026-11-22
+keywords: [humain, curiosophile, objet, inventaire, vitesse, résistance, score]
+---
+
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
+
+# Curiosophile
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#091943', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Personnel Humain</span>
+  </div>
+</div>
+
+> **FR :** *"Les objets de pacotille te rendent plus rapide et résistant. Sans rien sur toi, tu es ralenti. Les objets puissants t'alourdissent"*
+
+> **EN :** *"Junk items make you faster and tougher. An empty inventory slows you down. Powerful items weigh you down"*
+
+Le **Curiosophile** est un rôle humain dont la force dépend de ce qu'il transporte. Chaque objet de son inventaire a une valeur : les objets ordinaires le renforcent, les objets rares et puissants le ralentissent. À chaque objet ramassé ou perdu, il voit s'afficher la valeur de l'objet et son score total.
+
+---
+
+## Profil
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Points de vie** | Inchangés (ceux de sa classe) |
+| **Morphologie** | 1.0x (Standard) |
+| **Conservation du rôle lors échappement** | Oui |
+| **Conservation du rôle lors décès** | Non |
+
+Étant un rôle global modifiant un humain, le Curiosophile garde l'inventaire et le point d'apparition de sa classe.
+
+---
+
+## Valeur des objets
+
+Chaque objet a une rareté. Les objets personnalisés ont leur propre rareté. Pour les objets du jeu de base, la rareté dépend de leur catégorie dans le jeu.
+
+| Rareté | Objets du jeu de base concernés | Valeur |
+| :--- | :--- | :--- |
+| **Basique** | La plupart des objets, et SCP-244 | **+15** |
+| **Bon** | Objets de qualité militaire | **+5** |
+| **Épique** | Objets rares | **−10** |
+| **Légendaire** | Objets extrêmement rares | **−20** |
+| **Exotique** | Armes spéciales (Micro H.I.D., Jailbird, etc.) | **−30** |
+
+Le **score** est la somme des valeurs de tous les objets de l'inventaire.
+
+## Effets du score
+
+| Effet | Calcul |
+| :--- | :--- |
+| **Réduction des dégâts** | Score ÷ 2, entre 0 et 20 (intensité de l'effet) |
+| **Bonus de vitesse** (score positif) | Score ÷ 4, au maximum 10 |
+| **Ralentissement** (score nul ou négatif) | Score ÷ 4 − 8, jusqu'à un ralentissement de 25 au maximum |
+| **Épuisement** | Actif tant que le score est de 20 ou moins |
+
+Exemples :
+- **Inventaire vide** (score 0) : ralentissement de 8, épuisé, aucune réduction des dégâts.
+- **4 objets basiques** (score 60) : vitesse +10 (maximum), réduction des dégâts 20 (maximum), pas épuisé.
+- **1 Micro H.I.D. seul** (score −30) : ralentissement de 15, épuisé.
+
+### Conseils
+
+- Remplissez votre inventaire de petits objets (cartes, lampes, soins) pour devenir rapide et résistant.
+- Réfléchissez avant de ramasser une arme spéciale : elle vous ralentit fortement.
+
+---
+
+## Compétences
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+## Inventaire saisi : « Le collectionneur »
+
+*Liste des objets retrouvés sur un membre du personnel, en pleine forme, au checkpoint d'Entrance.*
+
+> - Trois lampes torches (dont une sans piles)
+> - Une carte de Janitor, une carte de Scientifique, une carte de Janitor (la même ?)
+> - Une radio éteinte
+> - Un paquet d'Anti-douleurs vide
+> - Une pièce
+>
+> **Remarque du Sgt. Dorian :** "Il courait plus vite que moi avec tout ça."
+>
+> On lui a confié un Micro H.I.D. pour la suite de la mission. Il a mis vingt minutes à traverser le couloir. Il a rendu le Micro H.I.D.

@@ -49,6 +49,18 @@ Cependant, la Fondation (ou le hasard) lui accorde une chance de survie : à son
 
 <GenerateLinksToAbilities abilities={frontMatter.abilities} />
 
+## Note de la cafétéria
+
+*Affichée au-dessus du comptoir.*
+
+> Suite à l'incident de mardi dernier, la cafétéria ne servira plus de crumble aux pommes au personnel.
+>
+> Pour rappel, l'employé concerné a couru autour du Site pendant quarante minutes sans s'arrêter. Il a dépassé SCP-096. Deux fois.
+>
+> Il est actuellement en salle de repos, une trousse de soins à la main, et refuse de dire d'où vient son crumble.
+
+---
+
 <PatchNoteBanner name="Diabétique" tag="diabetique" />
 
 ---

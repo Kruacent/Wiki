@@ -43,15 +43,37 @@ Le **Fou de la facilité** est un rôle humain global qui altère la santé ment
 
 ## Mécaniques détaillées
 
-Toutes les **3 à 5 minutes**, le joueur subit obligatoirement une crise de folie. Le jeu tire au sort un comportement parmi 4 possibilités. 
+Toutes les **3 à 5 minutes**, le joueur subit obligatoirement une crise de folie. Le jeu tire au sort un comportement parmi 3 possibilités. 
 Certains événements ont plus de chances de se produire que d'autres :
 
 | Comportement | Probabilité | Description de la crise |
 | :--- | :--- | :--- |
-| **Sursaut** | **33%** | Le joueur est forcé de sauter de manière incontrôlable. |
-| **Hallucination auditive** | **33%** | Le joueur entend le bruit du bouclier de SCP-173 qui se brise. Simultanément, tous les autres joueurs aux alentours entendent des faux tirs provenant de la position du fou. <br/> <audio controls src={require('@site/static/sound/scp/173_Hume_Shield_Break.mp3').default} style={{ width: '100%', height: '30px', marginTop: '10px' }}></audio> |
-| **Hallucination visuelle** | **22%** | Un faux SCP aléatoire apparaît juste derrière le joueur avec un bruit d'arme à feu, avant de disparaître 2 secondes plus tard. |
-| **Crise de panique** | **11%** | Le joueur perd le contrôle de sa vision. Sa caméra se met à trembler violemment et à tourner dans tous les sens pendant **15 secondes**. |
+| **Sursaut** | **≈ 43%** (3 chances sur 7) | Le joueur est forcé de sauter de manière incontrôlable. |
+| **Hallucination auditive** | **≈ 43%** (3 chances sur 7) | Le joueur entend le bruit du bouclier de SCP-173 qui se brise. Simultanément, tous les autres joueurs aux alentours entendent des faux tirs provenant de la position du fou. <br/> <audio controls src={require('@site/static/sound/scp/173_Hume_Shield_Break.mp3').default} style={{ width: '100%', height: '30px', marginTop: '10px' }}></audio> |
+| **Hallucination visuelle** | **0%** (désactivée dans la version actuelle) | Un faux SCP aléatoire apparaît juste derrière le joueur avec un bruit d'arme à feu, avant de disparaître 2 secondes plus tard. |
+| **Crise de panique** | **≈ 14%** (1 chance sur 7) | Le joueur perd le contrôle de sa vision. Sa caméra se met à trembler violemment et à tourner dans tous les sens pendant **10 secondes**. |
+
+---
+
+## Transcription : « Ils sont là »
+
+> **Fou de la facilité :** "Vous avez entendu ça ? Des coups de feu !"
+>
+> **Sgt. Alex :** "Non."
+>
+> **Fou de la facilité :** "Et le bouclier de SCP-173 qui casse ! Juste là !"
+>
+> **Sgt. Alex :** "Il n'y a rien, monsieur. Calmez-vous."
+>
+> *[Le Fou se met à sauter sur place, puis à tourner la tête dans tous les sens.]*
+>
+> **Sgt. Alex (radio) :** "Capitaine, j'ai un civil en crise. Je fais quoi ?"
+>
+> **Cpt. Romain (radio) :** "Il y a un SCP-500 dans l'infirmerie. Ça le soignera."
+>
+> **Sgt. Alex :** "Et s'il a raison, pour les coups de feu ?"
+>
+> *[Coups de feu au loin.]*
 
 ---
 

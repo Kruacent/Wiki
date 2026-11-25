@@ -1,4 +1,5 @@
 ---
+sidebar_class_name: sidebar-obsolete
 sidebar_position: 1053
 title: SCP-1053-KR (Proximity Mine)
 tags:
@@ -8,9 +9,13 @@ date: 2025-11-28
 hide_table_of_contents: true
 ---
 
+import Statut from '@site/src/components/docs/Statut';
+
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import MineItem from '@site/static/img/doc/sou.jpg'
+
+<Statut type="obsolete">La Quantum Mine a été retirée du plugin : elle n'apparaît plus et ne peut plus être obtenue.</Statut>
 
 <ACSHeader 
   item="SCP-1053-KR" 

@@ -16,9 +16,11 @@
   "dependencies": {
     "@docusaurus/core": "^3.10.2",
     "@docusaurus/preset-classic": "^3.10.2",
+    "@easyops-cn/docusaurus-search-local": "^0.55.3",
     "@mdx-js/react": "latest",
     "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "^8.18.0",
+    "@resvg/resvg-js": "^2.6.2",
     "clsx": "latest",
     "fast-glob": "^3.3.3",
     "fs-extra": "^11.3.2",

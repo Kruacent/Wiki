@@ -8,6 +8,8 @@ date: 2025-11-27
 hide_table_of_contents: true
 ---
 
+import Sons from '@site/src/components/docs/Sons';
+
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPVideo from '@site/src/components/docs/SCPVideo.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
@@ -83,6 +85,10 @@ L'objet utilise le lâcher via l'inventaire pour s'activer.
 * **Temps :** Le mur semble disparaître à partir de T+10s à partir de sa création.
 
 ---
+
+<Sons titre="Le son" sons={[
+  { src: '/audio/deployable-wall.ogg', nom: "Clac", quand: "Le mur se monte" },
+]} />
 
 ## 3. Rapport de Test Terrain
 

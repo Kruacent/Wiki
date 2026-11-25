@@ -73,6 +73,20 @@ Le mime à une marche silencieuse rendant ses bruits de pas pratiquement inaudib
 
 ---
 
+## Témoignage : « Il était mort, je vous jure »
+
+**Témoin :** Sgt. Alex, interrogé après l'incident.
+
+> "Je l'ai vu tomber, Capitaine. Je suis passé à côté, il était étendu par terre, tout plat, même pas un bruit. J'ai continué ma ronde.
+>
+> Dix secondes plus tard, j'entends quelqu'un ouvrir la porte derrière moi. Je me retourne. Plus de cadavre. Juste un Classe-D qui me fait un petit salut de la main, sans rien dire.
+>
+> Je ne l'avais même pas entendu marcher."
+
+*Le Dr. Patrique précise que SCP-049 s'est fait avoir aussi, et qu'il en a été très vexé.*
+
+---
+
 <PatchNoteBanner name="Mime" tag="mime" />
 
 ---

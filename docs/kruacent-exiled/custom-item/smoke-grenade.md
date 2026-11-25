@@ -72,7 +72,7 @@ Ce n'est pas une fumée chaude. Basée sur la technologie de SCP-244, la fumée 
 | **3. Persistance** | Le nuage reste sur place pendant **30 secondes** avant de se dissiper vers le sol. |
 
 ### Utilité Tactique
-* **Anti-Sniper :** Bloque totalement la ligne de vue à la Surface ou dans les longs couloirs.
+* **Anti-Sniper :** Bloque totalement la ligne de vue en Surface ou dans les longs couloirs.
 * **Contre-173 :** SCP-173 ne peut pas vous voir à travers la fumée (Attention : vous ne pouvez pas le voir non plus pour le bloquer !).
 
 ---

@@ -86,4 +86,24 @@ Son seul espoir de survie repose sur sa capacité à parier ses pièces.
 
 ---
 
+## Réunion des Joueurs Anonymes
+
+*Enregistrement de la séance du jeudi, cafétéria du Site.*
+
+> **Animateur :** "Bonjour, présentez-vous."
+>
+> **Accro du casino :** "Bonjour, je suis scientifique, et ça fait... deux minutes que je n'ai pas lancé de pièce."
+>
+> **Tous :** "Bonjour."
+>
+> **Accro du casino :** "J'ai échangé mon kit et ma carte contre deux pièces ce matin. Et puis j'ai échangé mon Medkit contre une autre. Et ma radio. Et mes chaussures."
+>
+> **Animateur :** "Et vous avez gagné quoi ?"
+>
+> **Accro du casino :** "Une pièce très étrange. Elle fait plein de choses d'un coup."
+>
+> *[On entend une pièce tomber par terre. Puis une série d'explosions.]*
+
+---
+
 <PatchNoteBanner name="Gamble Addict" tag="gambleaddict" />

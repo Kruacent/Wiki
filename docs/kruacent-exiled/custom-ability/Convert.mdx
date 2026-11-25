@@ -1,4 +1,5 @@
 ---
+sidebar_class_name: sidebar-desactive
 title: Convert
 description: Permet de convertir les instances SCP-049-2 en humain
 image: /img/doc/abilities/convert.png
@@ -7,11 +8,15 @@ sidebar_custom_props:
   type: active
 ---
 
+import Statut from '@site/src/components/docs/Statut';
+
 import Spoiler from '@site/src/components/docs/Antispoil.tsx';
 import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
 import AbilityIcon from '@site/src/components/docs/AbilityIcon';
 import PatchnoteBanner from '@site/src/components/docs/PatchnoteBanner';
 import Icone from '@site/static/img/doc/abilities/convert.png';
+
+<Statut type="desactive">Aucun rôle ne possède cette capacité pour l'instant (elle a été retirée du Négociateur).</Statut>
 
 # Conversion
 
@@ -27,13 +32,18 @@ La **Conversion** est une abilité **active** conçue pour transformer les insta
 | :--- | :--- |
 | **Description (Français)** | Converti un zombie à la bonne foi |
 | **Description (Anglais)** | Convert a zombie to your team |
-| **Temps de recharge** | 60 secondes |
+| **Temps de recharge** | 10 minutes |
+| **Portée** | 15 mètres |
 
 ---
 
 ## Mécanique détaillée
 
-La conversion est actuellement sous forme d'un [COM-15](https://en.scpslgame.com/index.php?title=COM-15). Les tirs touchant les zombies, permet la transformation immédiate.
+À l'activation, la capacité vise le joueur situé droit devant vous, à **15 mètres** au maximum. Tant que la capacité est prête, la cible visée est surlignée : en **bleu** si elle peut être convertie, en **rouge** sinon.
+
+* **Zombie (SCP-049-2) :** il devient un membre de votre rôle et reçoit l'inventaire de ce rôle.
+* **Humain d'un autre camp :** il devient lui aussi un membre de votre rôle, mais garde son inventaire.
+* **Allié, SCP autre qu'un zombie, ou personne en face :** la conversion échoue avec un message et le temps de recharge n'est pas déclenché.
 
 ---
 

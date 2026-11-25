@@ -53,7 +53,6 @@ En raison de son instabilité potentielle, cet objet est confiné dans la **Heav
 | :--- | :--- |
 | **Salle de SCP-127** | 25 % |
 | **Salle de SCP-939** | 25 % |
-| **Laboratoire Micro-HID** | 25 % |
 
 ---
 

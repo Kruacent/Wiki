@@ -57,7 +57,6 @@ Le Tank transporte un arsenal impressionnant qui le prépare à des affrontement
 
 | Équipement | Détails et Quantité |
 | :--- | :--- |
-| <ItemLink name="Logicer" /> | 1x |
 | <ItemLink name="FR-MG-0" /> | 1x |
 | **Munitions 7.62x39mm** | 200x |
 | **Munitions 5.56x45mm** | 200x |
@@ -73,6 +72,18 @@ Le Tank transporte un arsenal impressionnant qui le prépare à des affrontement
 ## Compétence
 
 <GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+## Note logistique : « Le poids des munitions »
+
+*De la part de le Manager Maël, au service armement.*
+
+> Pourquoi le soldat que vous appelez « le Tank » transporte-t-il quatre cents cartouches, une FR-MG-0, une armure lourde, une grenade et une radio ? Et pourquoi son dossier dit qu'il doit être ralenti par tout ça ?
+>
+> Je l'ai vu ce matin. Il courait comme tout le monde.
+>
+> Je ne sais pas ce que vous mettez dans son café, mais j'en veux.
 
 ---
 

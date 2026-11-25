@@ -1,0 +1,60 @@
+---
+title: Sprinter
+description: Tu as des chaussures qui courent vites.
+date: 2026-11-22
+keywords: [humain, sprinter, vitesse, sprint, course]
+abilities: ["Sprint"]
+---
+
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
+
+# Sprinter
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#DD1111', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Personnel Humain</span>
+  </div>
+</div>
+
+> **FR :** *"Tu as des chaussures qui courent vites"*
+
+> **EN :** *"Run forest, Run!"*
+
+Le **Sprinter** est un rôle humain qui peut, de temps en temps, accélérer fortement grâce à sa capacité [Sprint](/docs/kruacent-exiled/custom-ability/Sprint).
+
+---
+
+## Profil
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Points de vie** | Inchangés (ceux de sa classe) |
+| **Morphologie** | 1.0x (Standard) |
+| **Conservation du rôle lors échappement** | Oui |
+| **Conservation du rôle lors décès** | Non |
+
+Étant un rôle global modifiant un humain, le Sprinter garde l'inventaire et le point d'apparition de sa classe.
+
+---
+
+## Compétences
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+## Rapport d'incident : « Run, forest »
+
+**Sujet :** Scientifique, chaussures de sport fluorescentes, refuse de les retirer.
+
+> **Sgt. Caedit :** "Monsieur ! Ne courez pas, SCP-173 est dans le couloir !"
+>
+> **Sprinter :** "Justement."
+>
+> *[Le scientifique disparaît au bout du couloir en quelques secondes.]*
+>
+> **Sgt. Caedit :** "...Et moi, je fais comment ?"
+>
+> *[Bruit de craquement.]*
+
+*Le Sgt. Caedit a été retrouvé vivant, mais il a demandé une paire de chaussures identiques.*

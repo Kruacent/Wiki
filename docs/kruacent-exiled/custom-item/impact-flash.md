@@ -48,7 +48,7 @@ Cet équipement est stocké dans les armureries pour les interventions rapides.
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
-| **Armurerie HCZ** | 50 % |
+| **Armurerie HCZ** | 50 % (deux tirages) |
 | **Armurerie LCZ** | 50 % |
 | **Armurerie 049 (HCZ)** | 50 % |
 | **Salle SCP-914 (LCZ)** | 2 % |

@@ -52,6 +52,18 @@ Le **Pacifiste** est un rôle exclusif aux classes civiles (Classe-D et Scientif
 
 ---
 
+## Témoignage : « Il n'a jamais tiré »
+
+**Témoin :** Classe-D 5530, évadé.
+
+> "On était coincés en Light, avec SCP-049 qui nous cherchait. Il y avait un fusil par terre. Je le lui ai tendu. Il a refusé. Il a dit qu'il ne touchait pas à ça.
+>
+> J'ai cru qu'il allait nous faire tuer. Il nous a guidés jusqu'à la sortie, en passant par des couloirs où même moi je ne serais pas allé.
+>
+> On est sortis. Et là, je ne sais pas comment, un gars qu'on avait perdu de vue deux heures plus tôt est réapparu à côté de nous. Vivant."
+
+---
+
 <PatchNoteBanner name="Pacifiste" tag="pacifiste" />
 
 ---

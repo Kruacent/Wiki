@@ -75,6 +75,26 @@ Le Pilote dispose de capacités uniques pour marquer des cibles et faire pleuvoi
 
 ---
 
+## Transcription : « Tir ami »
+
+> **Pilote (radio) :** "Cible marquée. Frappe dans quelques secondes."
+>
+> **Cpt. Romain :** "Où, la cible ?"
+>
+> **Pilote :** "La lumière rouge."
+>
+> **Cpt. Romain :** "Quelle lumière rouge ?"
+>
+> **Sgt. Dorian :** "Celle sous les pieds d'Alex, Capitaine."
+>
+> **Sgt. Alex :** "...Quoi ?"
+>
+> *[BOUM.]*
+>
+> **Pilote :** "Désolé. Je l'avais posée avant qu'il arrive."
+
+---
+
 <PatchNoteBanner name="Pilote" tag="pilote" />
 
 ---

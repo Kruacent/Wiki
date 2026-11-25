@@ -1,76 +1,139 @@
-/* Espacement global de la section */
-.latestArticles {
-  padding: 4rem 0;
-  background-color: var(--ifm-background-surface-color); /* Couleur de fond adaptative */
+/* Page d'accueil : sobre, dans le style des pages du wiki. */
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 820px;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
-/* Titre de la section */
-.sectionTitle {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
+.logo {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: var(--ifm-color-emphasis-800);
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.version {
+  margin: 1.25rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  text-align: left;
+}
+
+.section {
+  margin-top: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-card-border-radius);
+  color: var(--ifm-font-color-base);
+  transition: border-color 0.15s ease;
+}
+
+.category:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+}
+
+.categoryTitle {
+  font-weight: 700;
+  font-size: 1.1rem;
   color: var(--ifm-color-primary);
 }
 
-/* --- LE COEUR DU RESPONSIVE --- */
-.articleCardsContainer {
-  display: grid;
-  /* Sur PC : 3 colonnes. 
-     Sur Mobile : "auto-fit" va réduire à 1 colonne si l'espace manque (< 300px) 
-  */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem; /* Espace entre les cartes */
-  padding: 0 1rem; /* Marge de sécurité sur les bords de l'écran mobile */
+.categoryText {
+  font-size: 0.92rem;
+  color: var(--ifm-color-emphasis-700);
 }
 
-/* Design de la carte */
-.articleCard {
-  background-color: var(--ifm-card-background-color);
-  border: 1px solid var(--ifm-color-emphasis-200); /* Bordure subtile */
-  border-radius: var(--ifm-card-border-radius); /* Arrondi standard Docusaurus */
-  padding: 1.5rem;
-  box-shadow: var(--ifm-global-shadow-lw);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  
-  /* Flexbox pour aligner le bouton en bas */
+.categoryCount {
+  margin-top: auto;
+  padding-top: 0.25rem;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+}
+
+.list {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.list li {
   display: flex;
   flex-direction: column;
-  height: 100%; 
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
-/* Effet au survol de la carte */
-.articleCard:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--ifm-global-shadow-md);
-  border-color: var(--ifm-color-primary);
+.listTitle {
+  font-weight: 600;
 }
 
-.cardTitle {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.2;
+.listMeta {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
 }
 
-.cardExcerpt {
-  margin-bottom: 1.5rem;
-  color: var(--ifm-color-emphasis-700);
-  flex-grow: 1; /* Pousse le bouton vers le bas si le texte est court */
-}
-
-.readMore {
-  align-self: flex-start; /* Le bouton ne prend pas toute la largeur */
-  margin-top: auto;
-}
-
-/* --- FIX SPECIFIQUE MOBILE (Écrans < 600px) --- */
-@media (max-width: 600px) {
-  .sectionTitle {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+@media (max-width: 996px) {
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
-  
-  .articleCardsContainer {
-    grid-template-columns: 1fr; 
-    gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logo {
+    width: 72px;
+    height: 72px;
+  }
+
+  .title {
+    font-size: 2.25rem;
   }
 }

@@ -58,4 +58,20 @@ L'atout de l'Ultra SCP-939 réside dans sa capacité de traque,  lui permettant 
 
 ---
 
+## Rapport d'incident : « Partie de cache-cache »
+
+> **Classe-D 3316 :** *(chuchotant)* "Il ne peut pas nous voir, il est aveugle."
+>
+> **Classe-D 3317 :** "Il nous entend, c'est pareil."
+>
+> **Classe-D 3316 :** "On ne fait pas de bruit, là."
+>
+> *[Une minute plus tard, SCP-939 tourne au coin du couloir et se dirige droit vers leur cachette.]*
+>
+> **Classe-D 3317 :** "Il sait où on est. Il sait toujours où on est."
+
+*Le Chercheur Noé a confirmé que ce SCP-939 sait en permanence combien de proies se trouvent dans chaque zone, et qu'il met régulièrement à jour sa « liste de courses ».*
+
+---
+
 <PatchNoteBanner name="Ultra SCP-939" tag="ultra939" />

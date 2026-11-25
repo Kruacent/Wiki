@@ -1,0 +1,96 @@
+---
+title: Medic
+description: Vas soigner les autres là.
+date: 2026-11-22
+image: /img/doc/teams/mtf.png
+keywords: [mtf, ntf, medic, médecin, soin, heal, défibrillateur]
+abilities: ["HealAura"]
+---
+
+import ItemLink from '@site/src/components/docs/ItemLink';
+import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
+import SpawnImg from '@site/static/img/doc/facility/surface/mtf_helicopter.gif';
+
+# Médecin
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#0096FF', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Mobile Task Force</span>
+  </div>
+</div>
+
+> **FR :** *"Vas soigner les autres là"*
+
+> **EN :** *"You are here to heal others"*
+
+Le **Médecin** est un soldat MTF (Sergent) spécialisé dans le soutien. Il a moins de vie que ses coéquipiers, mais il peut les soigner avec son [Aura de Soin](/docs/kruacent-exiled/custom-ability/HealAura) et réanimer les morts récents avec son [Défibrillateur](/docs/kruacent-exiled/custom-item/defibrilator). Une lumière verte clignotante est fixée dans son dos.
+
+---
+
+## Profil
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| **Classe de base** | Sergent NTF |
+| **Points de vie** | **75 HP** |
+| **Morphologie** | 1.0x (Standard) |
+| **Conservation du rôle lors échappement** | Non |
+| **Conservation du rôle lors décès** | Non |
+| **Armes lourdes** | **Interdites** : le Médecin ne peut pas porter d'arme lourde |
+
+---
+
+## Apparition
+
+<div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', backgroundColor: 'var(--ifm-background-surface-color)', padding: '1rem', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-200)', marginTop: '1rem' }}>
+  <img src={SpawnImg} alt="Zone d'apparition" style={{ width: '440px', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-300)' }} />
+  <div>
+    <strong style={{ fontSize: '1.1rem', color: 'var(--ifm-color-primary)' }}>Hélicoptère des MTF</strong><br/>
+    **Zone :** Surface<br/>
+  </div>
+</div>
+
+---
+
+## Inventaire
+
+| Équipement | Détails et Quantité |
+| :--- | :--- |
+| <ItemLink name="COM-18" /> | 1x |
+| **Munitions 9x19mm** | 70x |
+| [Défibrillateur](/docs/kruacent-exiled/custom-item/defibrilator) | 1x |
+| <ItemLink name="Medkit" wikiId="First_Aid_Kit" /> | **2x** |
+| <ItemLink name="Adrénaline" wikiId="Adrenaline" /> | 1x |
+| <ItemLink name="Armure légère" wikiId="Light_Armor" /> | 1x |
+| <ItemLink name="Carte MTF Operative" wikiId="Keycard" /> | 1x |
+| <ItemLink name="Radio" /> | 1x |
+
+:::warning Pas d'arme lourde
+Le Médecin ne peut pas porter d'arme lourde. Son travail, c'est de garder l'équipe en vie, pas de tenir la ligne de front.
+:::
+
+---
+
+## Compétences
+
+<GenerateLinksToAbilities abilities={frontMatter.abilities} />
+
+---
+
+## Rapport d'intervention : « Docteur, j'ai mal »
+
+> **Sgt. Caedit :** "Médecin ! Je me suis pris une grenade !"
+>
+> **Médecin :** "Venez près de moi. Plus près. Encore plus près."
+>
+> **Sgt. Caedit :** "On est collés, là."
+>
+> **Médecin :** "C'est le principe."
+>
+> *[Quelques secondes plus tard.]*
+>
+> **Sgt. Caedit :** "Ça va mieux ! Merci, doc !"
+>
+> *[Il trébuche et se reprend une balle.]*
+>
+> **Médecin :** "...Ne bougez pas. J'ai un défibrillateur."

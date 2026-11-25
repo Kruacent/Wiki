@@ -6,9 +6,12 @@ tags:
   - Soin
   - Consommable
 description: Rapport d'analyse et procédure d'utilisation pour SCP-1047.
+aliases: [Pilules divines, Divines Pills]
 date: 2025-11-27
 hide_table_of_contents: true
 ---
+
+import Sons from '@site/src/components/docs/Sons';
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
@@ -49,8 +52,8 @@ Contrairement aux substances médicales standard, cet objet n'a aucune propriét
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
-| **Salle de GR-018 à LCZ** | **100 %** |
-| **Casiers médical de la zone Entrance** | 25 % |
+| **Salle de GR-018 en LCZ** | **80 %** |
+| **Casiers médical de LCZ** | 25 % |
 | **Casier divers de la zone Entrance** | 75 % |
 
 ---
@@ -70,7 +73,7 @@ Les tests intensifs menés par le **Dr. Patrique** ont permis d'établir une car
     </p>
     <hr style={{borderColor: '#388e3c', opacity: 0.3}}/>
     <p style={{fontSize: '0.9em', fontStyle: 'italic', color: '#aaa'}}>
-      Un joueur mort (Spectateur) réapparaît instantanément. Il a alors **33% de chance** de réapparaître à côté du joueur ayant ingesté SCP-1047.
+      Un joueur mort (Spectateur) réapparaît instantanément dans votre camp. Il a alors **33% de chance** de réapparaître à côté du joueur ayant ingéré SCP-1047. Ne marche que si vous êtes **MTF ou Chaos**, et seulement s'il y a au moins un spectateur.
     </p>
   </div>
 
@@ -90,6 +93,10 @@ Les tests intensifs menés par le **Dr. Patrique** ont permis d'établir une car
 </div>
 
 ---
+
+<Sons titre="Le son" sons={[
+  { src: '/audio/divine-pills-mort.ogg', nom: "Mauvais tirage", quand: "Les pilules vous tuent. Tout le monde autour l'entend" },
+]} />
 
 ## 3. Rapports d'Incidents et Tests
 
@@ -134,8 +141,9 @@ Les transcripts suivants ont été récupérés des archives personnelles du **C
 L'objet réagit aux mécanismes d'horlogerie de SCP-914.
 Si placé dans la cabine d'entrée avec le sélecteur sur **Very Fine** :
 
-* **10% de chance** de stabilisation moléculaire.
-* Transformation en **[True Divine Pills](./true-divine-pills)**.
+* **10 % de chance** de stabilisation moléculaire : elles deviennent des **[True Divine Pills](./true-divine-pills)**.
+* **25 % de chance** que les pilules soient **détruites**. Il ne reste rien dans la cabine de sortie.
+* Le reste du temps, elles ressortent intactes et vous pouvez retenter.
 
 :::info Note du Dr. Patrique
 "La version 'True' est la seule forme pure de cette anomalie. Elle supprime totalement le risque de décès de l'utilisateur."

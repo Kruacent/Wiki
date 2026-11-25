@@ -9,6 +9,8 @@ date: 2025-11-30
 hide_table_of_contents: true
 ---
 
+import Sons from '@site/src/components/docs/Sons';
+
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import HolyGrenadeItem from '@site/static/img/doc/sou.jpg'
@@ -53,7 +55,7 @@ Le seul moyen de l'obtenir est de raffiner une **[SCP-1046-KR (Presse-Purée)](.
 
 | Input | Réglage | Probabilité | Résultat |
 | :--- | :--- | :--- | :--- |
-| **[SCP-1046-KR (Presse-Purée)](./presse-purée)** | **Very Fine** | **10 %** | **SCP-1055-KR** |
+| **[SCP-1046-KR (Presse-Purée)](./presse-purée)** | **Very Fine** | **5 %** | **SCP-1055-KR** |
 
 ---
 
@@ -68,10 +70,14 @@ Cela laisse le temps à la chorale de chanter *"Hallelujah"* avant la détonatio
 | :--- | :--- | :--- |
 | **1. Lancer** | Mèche de 6 secondes. | La grenade est lancée. Une musique céleste ("Worms Hallelujah") commence à jouer. |
 | **2. Détonation** | **Dégâts x3** | Explosion principale massive. Tue instantanément tout ce qui est proche. |
-| **3. Cluster** | **MIRV (4 Grenades)** | L'explosion principale fait apparaître **4 grenades HE standards** supplémentaires autour du point d'impact (Rayon 5m). |
-| **4. Chaos** | Réaction en chaîne | Les 4 sous-munitions explosent instantanément, rasant la salle entière. |
+| **3. Cluster** | **MIRV (3 Grenades)** | L'explosion principale fait apparaître **3 grenades HE standards** supplémentaires autour du point d'impact (Rayon 5m). |
+| **4. Chaos** | Réaction en chaîne | Les 3 sous-munitions explosent instantanément, rasant la salle entière. |
 
 ---
+
+<Sons titre="Le son" sons={[
+  { src: '/audio/sainte-grenade.ogg', nom: "Alléluia", quand: "Dès que la grenade est lancée" },
+]} />
 
 ## 4. Rapport de Test Terrain
 
@@ -89,7 +95,7 @@ Archives vidéo du Site-19.
 >
 > **D-9341 :** "C'était quoi ce brui..."
 >
-> *[BOUM. L'explosion principale pulvérise la porte blindée. Quatre autres explosions suivent immédiatement, détruisant les caméras, les murs et propulsant D-9341 à travers le plafond.]*
+> *[BOUM. L'explosion principale pulvérise la porte blindée. Trois autres explosions suivent immédiatement, détruisant les caméras, les murs et propulsant D-9341 à travers le plafond.]*
 >
 > **Dr. Patrique :** "Magnifique. Une destruction digne de *Worms Armageddon*. Il faudra juste repeindre le couloir."
 >
@@ -100,7 +106,7 @@ Archives vidéo du Site-19.
 ## 5. Directive Tactique
 
 :::warning AVIS DE MAËL
-"Je viens de voir la facture de reconstruction de la Heavy Zone.
+"Je viens de voir la facture de reconstruction de Heavy Zone.
 Qui a autorisé Patrique à recréer des armes de *Worms* ? C'est quoi la prochaine étape ? Un **Âne en Béton** qui tombe du ciel et traverse tous les étages jusqu'à l'ogive nucléaire ? Une **Super-Banane** ?
 
 L'utilisation de la Sainte Grenade est strictement interdite dans les ascenseurs. La dernière fois, les sous-munitions ont rebondi et tué toute l'escouade de renfort. Si vous voulez jouer à la guerre, faites-le dehors."
