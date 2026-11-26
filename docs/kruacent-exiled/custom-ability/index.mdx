@@ -5,8 +5,7 @@ slug: /articles/CustomAbility
 description: Classifications des abilités.
 ---
 
-import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
-import { NewBadge } from '@site/src/components/docs/NewBadge';
+import { AbilityGrid } from '@site/src/components/docs/RoleAbilityCards';
 
 Les capacités sont les pouvoirs des rôles personnalisés. Il en existe deux sortes : les capacités **actives**, que vous déclenchez vous-même, et les capacités **passives**, qui agissent toutes seules.
 
@@ -14,49 +13,4 @@ Pour utiliser une capacité active, choisissez-la puis activez-la avec les touch
 
 Ci-dessous se trouve la liste des abilités actuellement disponibles.
 
-export const AbilityList = () => {
-  const {items} = useCurrentSidebarCategory();
-  const validItems = items.filter(item => item.type === 'link' && item.label !== 'Liste des Customs Abilités');
-
-  const actives = validItems.filter(item => item.customProps?.type === 'active');
-  const passives = validItems.filter(item => item.customProps?.type === 'passive');
-  const nonClassees = validItems.filter(item => !item.customProps?.type);
-
-  const renderList = (title, list) => {
-    if (list.length === 0) return null;
-    
-    return (
-      <div style={{ marginBottom: '2rem' }}>
-        <h3 style={{ 
-          borderBottom: '1px solid #a2a9b1', 
-          paddingBottom: '0.3em', 
-          marginBottom: '0.8em',
-          color: '#202122',
-          fontSize: '1.2em',
-          fontWeight: 'normal'
-        }}>
-          {title}
-        </h3>
-        <ul style={{ listStyleType: 'square', paddingLeft: '1.5em', color: '#54595d' }}>
-          {list.map((item, index) => (
-            <li key={index} style={{ marginBottom: '0.5rem' }}>
-              <a href={item.href} style={{ textDecoration: 'none', fontWeight: 'bold', color: '#0645ad' }}>
-                {item.label}
-              </a> <NewBadge addedIn={item.customProps?.addedIn} />
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  };
-
-  return (
-    <div>
-      {renderList('Capacités Actives', actives)}
-      {renderList('Capacités Passives', passives)}
-      {renderList('Inconnus', nonClassees)}
-    </div>
-  );
-};
-
-<AbilityList />
+<AbilityGrid />
