@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import { usePluginData } from '@docusaurus/useGlobalData';
+import { termsFrom, mentions } from '@site/src/utils/patchnotes';
 
 interface PatchnoteLine {
   section: string;
@@ -14,55 +15,7 @@ interface Patchnote {
   lines: PatchnoteLine[];
 }
 
-/** Mots trop génériques pour identifier une page. */
-const IGNORED = new Set(['scp', 'role', 'item', 'version', 'le', 'la', 'les', 'the']);
-
-/**
- * Mots qui, placés juste avant un nom, désignent un autre objet
- * (« True Divine Pills » n'est pas « Divine Pills »).
- */
-const PREFIXES_AUTRE_OBJET = ['true'];
-
-function normalize(text: string): string {
-  return text
-    // « DivinePills » → « Divine Pills », « FriendMaker » → « Friend Maker »
-    .replace(/([a-z])([A-Z])/g, '$1 $2')
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim();
-}
-
-/** Transforme les noms d'une page en termes de recherche (« SCP-1049-KR (Molotov) » → « molotov », etc.). */
-function termsFrom(names: string[]): string[] {
-  const terms = new Set<string>();
-  for (const name of names) {
-    if (!name) continue;
-    const inParens = name.match(/\(([^)]+)\)/);
-    const candidates = [name, name.replace(/\([^)]*\)/g, ''), inParens ? inParens[1] : ''];
-    for (const candidate of candidates) {
-      const term = normalize(candidate).replace(/^(le|la|les|l) /, '');
-      if (term.length >= 4 && !IGNORED.has(term)) terms.add(term);
-    }
-  }
-  return [...terms];
-}
-
-function mentions(line: string, terms: string[]): boolean {
-  const text = ` ${normalize(line)} `;
-  // La ligne parle d'un autre objet (« True Divine Pills : … ») : on l'ignore.
-  if (PREFIXES_AUTRE_OBJET.some((p) => terms.some((term) => text.startsWith(` ${p} ${term} `)))) return false;
-  return terms.some((term) => {
-    // Le nom doit apparaître au moins une fois sans être précédé d'un préfixe d'un autre objet.
-    const parts = text.split(` ${term} `);
-    for (let i = 0; i < parts.length - 1; i++) {
-      const before = parts[i].trim().split(' ').pop() || '';
-      if (!PREFIXES_AUTRE_OBJET.includes(before)) return true;
-    }
-    return false;
-  });
-}
+// Même logique qu'au build : voir src/utils/patchnotes.js.
 
 function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });

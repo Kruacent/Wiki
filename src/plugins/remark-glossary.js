@@ -9,9 +9,21 @@
  * - pas sur la page Glossaire elle-même, ni dans le Lore et les Archives.
  * Le lien porte la définition courte en infobulle (attribut title).
  */
-const glossary = require('../data/glossary');
+const fs = require('fs');
+const path = require('path');
+const allEntries = require('../data/glossary');
 
 const GLOSSARY_URL = '/docs/kruacent-exiled/glossaire';
+const GLOSSARY_FILE = path.join(__dirname, '../../docs/kruacent-exiled/glossaire.mdx');
+
+// Sécurité : un terme dont l'ancre n'existe plus sur la page Glossaire n'est pas lié
+// (sinon le build signale des ancres cassées). On prévient dans la console du build.
+const glossaryPage = fs.existsSync(GLOSSARY_FILE) ? fs.readFileSync(GLOSSARY_FILE, 'utf8') : '';
+const glossary = allEntries.filter((entry) => glossaryPage.includes(`{#${entry.anchor}}`));
+const orphans = allEntries.filter((entry) => !glossary.includes(entry)).map((entry) => entry.anchor);
+if (orphans.length) {
+  console.warn(`[glossaire] Ancres absentes de glossaire.mdx, termes non liés : ${orphans.join(', ')}`);
+}
 
 /** Types de nœuds dans lesquels on ne descend pas. */
 const SKIP = new Set([

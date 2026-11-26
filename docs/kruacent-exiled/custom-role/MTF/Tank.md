@@ -5,6 +5,8 @@ date: 2026-08-24
 image: /img/doc/teams/mtf.png
 keywords: [mtf, fim, tank, lourd, logicer, frmg, slowness, munition]
 abilities: ["Lourd"]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';

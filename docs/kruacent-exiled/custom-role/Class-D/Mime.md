@@ -5,6 +5,8 @@ date: 2026-08-24
 image: /img/doc/teams/class-d.png
 keywords: [class-d, mime, silentwalk, furtif, simulatedeath]
 abilities: ["Simulate Death"]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';

@@ -5,6 +5,8 @@ date: 2026-08-24
 image: /img/doc/teams/human.png
 keywords: [humain, enderman, teleportation, setposition, tp, espace]
 abilities: ["Téléportation", "SetPosition"]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';

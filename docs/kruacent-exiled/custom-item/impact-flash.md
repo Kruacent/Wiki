@@ -6,6 +6,8 @@ tags:
 description: Grenade aveuglante modifiée avec détonateur à impact immédiat.
 date: 2025-11-28
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'

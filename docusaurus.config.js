@@ -47,7 +47,6 @@ const config = {
   plugins: [
     './src/plugins/latest-docs-plugin.js',
     './src/plugins/og-images-plugin.js',
-    './src/plugins/docusaurus-3d-asset-plugin',
     [
       '@docusaurus/plugin-content-blog',
       {

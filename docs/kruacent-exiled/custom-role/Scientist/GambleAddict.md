@@ -4,6 +4,8 @@ description: T'as trade ton kit et ta carte contre 2 pièces, fais en bon usage.
 date: 2026-08-24
 keywords: [scientifique, accro du casino, gamble addict, piece, coin, trade, casino]
 abilities: ["Trade"]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';

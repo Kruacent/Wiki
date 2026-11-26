@@ -7,6 +7,8 @@ tags:
 description: Tire et POUF, tu change de position avec la cible.
 date: 2026-11-24
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.2.1"
 ---
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'

@@ -6,6 +6,7 @@ description: Classification et analyse des objets altérés de type Custom Item.
 ---
 
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+import { NewBadge } from '@site/src/components/docs/NewBadge';
 
 # Protocole des Custom Items
 
@@ -62,7 +63,7 @@ export const SimpleList = () => {
         
         return (
           <li key={index} style={{marginBottom: '0.5rem'}}>
-            <a href={item.href}><strong>{item.label}</strong></a>
+            <a href={item.href}><strong>{item.label}</strong></a> <NewBadge addedIn={item.customProps?.addedIn} />
           </li>
         );
       })}

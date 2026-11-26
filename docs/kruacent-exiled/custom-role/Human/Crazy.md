@@ -3,6 +3,8 @@ title: Fou de la facilité
 description: Un humain instable souffrant de crises de démence régulières aux effets imprévisibles.
 date: 2026-08-24
 keywords: [humain, fou, crazy, folie, hallucination]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';

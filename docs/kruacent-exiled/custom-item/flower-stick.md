@@ -7,6 +7,8 @@ tags:
 description: It says "Flowery".
 date: 2026-11-22
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.1.0"
 ---
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'

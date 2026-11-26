@@ -7,6 +7,8 @@ tags:
 description: Dispositif médical anomal capable de restaurer la conscience d'un sujet décédé.
 date: 2025-11-27
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.1.2"
 ---
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'

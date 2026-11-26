@@ -6,6 +6,7 @@ description: Classifications des abilités.
 ---
 
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+import { NewBadge } from '@site/src/components/docs/NewBadge';
 
 Les capacités sont les pouvoirs des rôles personnalisés. Il en existe deux sortes : les capacités **actives**, que vous déclenchez vous-même, et les capacités **passives**, qui agissent toutes seules.
 
@@ -41,7 +42,7 @@ export const AbilityList = () => {
             <li key={index} style={{ marginBottom: '0.5rem' }}>
               <a href={item.href} style={{ textDecoration: 'none', fontWeight: 'bold', color: '#0645ad' }}>
                 {item.label}
-              </a>
+              </a> <NewBadge addedIn={item.customProps?.addedIn} />
             </li>
           ))}
         </ul>

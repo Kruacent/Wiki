@@ -3,6 +3,8 @@ title: Petit
 description: t poti. Un rôle qui réduit la taille des SCP.
 date: 2026-08-24
 keywords: [scp, petit, small, taille, scale, hitbox]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import PatchNoteBanner from '@site/src/components/docs/PatchnoteBanner';

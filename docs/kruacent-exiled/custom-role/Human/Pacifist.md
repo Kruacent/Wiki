@@ -3,6 +3,8 @@ title: Pacifiste
 description: T'es idées empêche quelconque violence. S'enlève quand tu t'échappes et ramène plus de renfort.
 date: 2026-08-24
 keywords: [humain, pacifiste, pacifist, class-d, scientifique, arme, respawn]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import Spoiler from '@site/src/components/docs/Antispoil.tsx';

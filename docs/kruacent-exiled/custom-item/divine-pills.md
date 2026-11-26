@@ -9,6 +9,8 @@ description: Rapport d'analyse et procédure d'utilisation pour SCP-1047.
 aliases: [Pilules divines, Divines Pills]
 date: 2025-11-27
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import Sons from '@site/src/components/docs/Sons';

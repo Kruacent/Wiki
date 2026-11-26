@@ -7,6 +7,8 @@ tags:
 description: Tu as besoin de t'echaper avec cet objet pour gagner un avantage.
 date: 2026-11-24
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.2.0"
 ---
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'

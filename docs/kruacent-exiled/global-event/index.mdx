@@ -9,6 +9,7 @@ import Capture from '@site/src/components/docs/Capture';
 import AnnonceGE from '@site/static/img/doc/GlobalEventDisplay.jpg'
 
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+import { NewBadge } from '@site/src/components/docs/NewBadge';
 import { GlobalEventTable, GlobalEventTirage, MiddleEventTable, ChanceMiddleEvent } from '@site/src/components/docs/EventStats';
 
 # Global Events
@@ -69,7 +70,7 @@ export const RoleList = () => {
                   <li key={subIndex} style={{marginBottom: '0.5rem', paddingLeft: '1rem', borderLeft: '3px solid #333'}}>
                     <a href={subItem.href} style={{fontSize: '1.1rem', fontWeight: 'bold', textDecoration: 'none'}}>
                       {subItem.label}
-                    </a>
+                    </a> <NewBadge addedIn={subItem.customProps?.addedIn} />
                   </li>
                 ))}
               </ul>
@@ -80,7 +81,7 @@ export const RoleList = () => {
         if (item.href && item.label !== 'Liste des Custom Roles') {
            return (
              <div key={index} style={{marginBottom: '0.5rem'}}>
-                <a href={item.href}><strong>{item.label}</strong></a>
+                <a href={item.href}><strong>{item.label}</strong></a> <NewBadge addedIn={item.customProps?.addedIn} />
              </div>
            );
         }

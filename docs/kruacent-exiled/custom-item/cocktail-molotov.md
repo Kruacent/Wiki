@@ -7,6 +7,8 @@ tags:
 description: Grenade chimique incendiaire à réaction exponentielle.
 date: 2025-11-28
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import Sons from '@site/src/components/docs/Sons';

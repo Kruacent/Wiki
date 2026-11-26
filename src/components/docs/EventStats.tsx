@@ -36,13 +36,6 @@ function chanceSecond(ev: GlobalEventData): number {
   return (autres / n) * (ev.poids / reste);
 }
 
-/** Chance que l'event soit actif dans une partie. */
-export function chanceGlobalEvent(ev: GlobalEventData): number {
-  const premier = chancePremier(ev);
-  if (ev.seul) return premier;
-  return premier + CHANCE_DEUX_GE * chanceSecond(ev);
-}
-
 /** Chance que l'event tombe accompagné d'un autre Global Event. */
 function chanceAccompagne(ev: GlobalEventData): number {
   if (ev.seul || ev.poids <= 0) return 0;

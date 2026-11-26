@@ -2,12 +2,19 @@ const path = require('path');
 const fs = require('fs');
 const matter = require('gray-matter');
 const glob = require('fast-glob');
+const { extractLines, latestVersions } = require('../utils/patchnotes');
 
 /**
  * Fournit à la page d'accueil :
  * - les derniers articles du wiki (pages avec un champ `date`) ;
  * - les patchnotes, de la plus récente à la plus ancienne.
  */
+/** Version d'ajout d'une page (`sidebar_custom_props.addedIn`), en texte. */
+function addedInOf(data) {
+  const v = data.sidebar_custom_props && data.sidebar_custom_props.addedIn;
+  return v == null || v === '' ? null : String(v);
+}
+
 module.exports = function (context, options) {
   const maxDisplayedArticles = 6;
 
@@ -32,6 +39,7 @@ module.exports = function (context, options) {
           excerpt: data.description || 'Aucune description disponible.',
           date: new Date(data.date).toISOString(),
           category,
+          addedIn: addedInOf(data),
         };
       })
       .filter(Boolean);
@@ -70,60 +78,6 @@ module.exports = function (context, options) {
     return patchnotes;
   }
 
-  /**
-   * Lignes de changements d'une patchnote : { section, text } en texte brut.
-   * Une puce qui se termine par « : » et qui a des sous-puces (« - SCP-035 : » puis « - Vie augmentée »)
-   * n'est pas gardée seule : son nom est ajouté devant chaque sous-puce (« SCP-035 : Vie augmentée »).
-   * Sans ça, l'historique des pages affichait des puces vides.
-   */
-  function extractLines(content) {
-    const lines = [];
-    let section = '';
-    /** Puces parentes en cours : { indent, label, hasChild, sectionAtPush }. */
-    let parents = [];
-
-    const flushParent = (parent) => {
-      // Une puce « Titre : » sans sous-puce reste une ligne normale.
-      if (!parent.hasChild) lines.push({ section: parent.section, text: `${parent.label} :` });
-    };
-    const closeParents = (indent) => {
-      while (parents.length && parents[parents.length - 1].indent >= indent) {
-        flushParent(parents.pop());
-      }
-    };
-
-    for (const raw of content.split(/\r?\n/)) {
-      const heading = raw.match(/^##\s+(.+?)\s*:?\s*$/);
-      if (heading && !raw.startsWith('###')) {
-        closeParents(-1);
-        section = heading[1].replace(/\s*:$/, '');
-        continue;
-      }
-      const item = raw.match(/^(\s*)[-*]\s+(.+)$/);
-      if (!item) continue;
-      const indent = item[1].replace(/\t/g, '    ').length;
-      const text = item[2]
-        .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
-        .replace(/[*_`]/g, '')
-        .trim();
-      if (!text) continue;
-
-      closeParents(indent);
-      // Le label de la dernière puce parente contient déjà ceux de ses propres parents.
-      const prefix = parents.length ? parents[parents.length - 1].label : '';
-      parents.forEach((p) => { p.hasChild = true; });
-
-      if (/:\s*$/.test(text)) {
-        const label = text.replace(/\s*:\s*$/, '');
-        parents.push({ indent, label: prefix ? `${prefix} › ${label}` : label, hasChild: false, section });
-        continue;
-      }
-      lines.push({ section, text: prefix ? `${prefix} : ${text}` : text });
-    }
-    closeParents(-1);
-    return lines;
-  }
-
   /** Pages du wiki qui affichent déjà l'historique à un endroit choisi. */
   async function loadPagesWithBanner() {
     const files = await glob('docs/**/*.{md,mdx}', { cwd: context.siteDir });
@@ -148,9 +102,13 @@ module.exports = function (context, options) {
     name: 'custom-latest-docs-plugin',
 
     async loadContent() {
+      const patchnotes = await loadPatchnotes();
+      // Les 3 dernières versions : une page ajoutée dans l'une d'elles a le badge « Nouveau ».
+      const versions = latestVersions(patchnotes.map((p) => p.version));
       return {
         articles: await loadArticles(),
-        patchnotes: await loadPatchnotes(),
+        patchnotes,
+        latestVersions: versions,
         counts: await loadCounts(),
         pagesWithBanner: await loadPagesWithBanner(),
       };

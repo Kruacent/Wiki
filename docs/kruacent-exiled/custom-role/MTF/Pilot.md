@@ -5,6 +5,8 @@ date: 2026-08-24
 image: /img/doc/teams/mtf.png
 keywords: [mtf, pilote, pilot, airstrike, frappe, setposition]
 abilities: ["AirStrike", "SetPosition"]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import Spoiler from '@site/src/components/docs/Antispoil.tsx';

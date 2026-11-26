@@ -3,6 +3,8 @@ title: Ultra SCP-939
 description: Tu sais où est tout le monde. Une variante de SCP-939 capable de traquer le nombre de proies par zone.
 date: 2026-08-24
 keywords: [scp, scp-939, ultra, radar, traque, zone, survivant, sensoriel]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import PatchNoteBanner from '@site/src/components/docs/PatchnoteBanner';

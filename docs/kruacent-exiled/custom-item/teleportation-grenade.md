@@ -6,6 +6,8 @@ tags:
 description: Grenade générant une faille de ver instable téléportant les cibles aléatoirement.
 date: 2025-11-30
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.1.0"
 ---
 
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'

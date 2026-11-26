@@ -5,6 +5,7 @@ import { usePluginData } from '@docusaurus/useGlobalData';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import { NewBadge } from '@site/src/components/docs/NewBadge';
 
 const CATEGORIES = [
   { key: 'custom-role', title: 'Rôles', text: 'Les rôles personnalisés des humains et des SCP.', to: '/docs/articles/CustomRole' },
@@ -26,6 +27,7 @@ const CATEGORY_LABELS = {
   miscellaneous: 'Misc',
   map: 'Map',
   lore: 'Lore',
+  'custom-role': 'Rôle',
 };
 
 function formatDate(iso) {
@@ -99,6 +101,7 @@ export default function Home() {
               {articles.slice(0, 5).map((a) => (
                 <li key={a.link}>
                   <Link to={a.link} className={styles.listTitle}>{a.title}</Link>
+                  <NewBadge addedIn={a.addedIn} />
                   <span className={styles.listMeta}>
                     {CATEGORY_LABELS[a.category] || a.category} · {formatDate(a.date)}
                   </span>

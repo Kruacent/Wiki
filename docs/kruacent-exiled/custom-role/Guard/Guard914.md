@@ -4,6 +4,8 @@ description: Un garde assigné à la protection de SCP-914, équipé d'une carte
 date: 2026-08-24
 image: /img/doc/teams/guard.png
 keywords: [garde, guard, scp-914, keycard, carte, 914]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';

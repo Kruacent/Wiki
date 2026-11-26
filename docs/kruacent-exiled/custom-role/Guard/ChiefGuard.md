@@ -4,6 +4,8 @@ description: Un garde suréquipé qui commence avec un Crossvec et une carte d'a
 date: 2026-08-24
 image: /img/doc/teams/guard.png
 keywords: [garde, guard, chiefguard, crossvec, mtf]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';

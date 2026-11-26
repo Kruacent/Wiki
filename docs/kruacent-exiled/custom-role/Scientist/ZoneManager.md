@@ -4,6 +4,8 @@ description: Incroyable tu peux avoir une promotion alors fais ton boulot et ouv
 date: 2026-08-24
 keywords: [scientifique, zone manager, manager, checkpoint, carte, upgrade, promotion]
 abilities: ["NumberCheckpoints"]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';

@@ -4,6 +4,8 @@ description: Un humain souffrant de problèmes respiratoires. Son endurance est 
 date: 2026-08-24
 keywords: [humain, asthmatique, asthme, stamina, endurance, scp-1853]
 abilities: ["Asthme"]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';

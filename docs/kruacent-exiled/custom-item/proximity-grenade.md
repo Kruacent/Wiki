@@ -8,6 +8,8 @@ tags:
 description: Dispositif de reconnaissance tactique révélant la position des entités.
 date: 2025-11-30
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'

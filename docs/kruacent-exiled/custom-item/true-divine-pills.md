@@ -7,6 +7,8 @@ tags:
 description: Version purifiée capable de résurrection de masse.
 date: 2025-11-30
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'

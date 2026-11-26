@@ -7,6 +7,8 @@ tags:
 description: T'es protégé des Teslas et tu prends 2 fois moins de dégats d'électricité !
 date: 2026-11-22
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.2.0"
 ---
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'

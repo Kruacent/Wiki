@@ -46,8 +46,6 @@ export interface MiddleEventData {
 
 /** Chance qu'il y ait deux Global Events au lieu d'un. */
 export const CHANCE_DEUX_GE = 0.1;
-/** Chance par défaut que l'annonce d'un Global Event soit [REDACTED]. */
-export const CHANCE_REDACTED = 10;
 /** Chance qu'un Middle Event se déclenche dans la partie. */
 export const CHANCE_MIDDLE_EVENT = 0.37;
 

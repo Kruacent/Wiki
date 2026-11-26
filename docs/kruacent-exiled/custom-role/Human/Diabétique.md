@@ -4,6 +4,8 @@ description: T'as mangé le crambleu au pomme de mael.
 date: 2026-08-24
 keywords: [humain, diabetique, diabete, scp-207, soin, sucre]
 abilities: ["Diabète"]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';

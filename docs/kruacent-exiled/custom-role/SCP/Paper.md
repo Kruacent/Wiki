@@ -3,6 +3,8 @@ title: Paper
 description: uh oh. paper jam. Un rôle qui rend les SCP aussi fins qu'une feuille de papier.
 date: 2026-08-24
 keywords: [scp, paper, papier, fin, epaisseur, scale, hitbox]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import PatchNoteBanner from '@site/src/components/docs/PatchnoteBanner';

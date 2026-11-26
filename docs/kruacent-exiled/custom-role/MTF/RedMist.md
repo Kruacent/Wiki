@@ -6,6 +6,8 @@ date: 2026-10-20
 image: /img/doc/teams/mtf.png
 keywords: [mtf, customrole, redmist]
 abilities: ["ToggleEgo", "Spear", "OnRush", "GreaterSplitHorizontal"]
+sidebar_custom_props:
+  addedIn: "2.1.0"
 ---
 
 import Statut from '@site/src/components/docs/Statut';

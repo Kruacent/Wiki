@@ -52,7 +52,10 @@ h1, h2, h3 {
 .sidebar-obsolete > div > .menu__link::after,
 .sidebar-obsolete > .menu__link::after,
 .sidebar-desactive > div > .menu__link::after,
-.sidebar-desactive > .menu__link::after {
+.sidebar-desactive > .menu__link::after,
+.sidebar-nouveau > div > .menu__link::after,
+.sidebar-nouveau > .menu__link::after,
+.badge-nouveau {
   display: inline-block;
   margin-left: 0.4rem;
   padding: 0 0.35rem;
@@ -73,6 +76,16 @@ h1, h2, h3 {
   content: 'désactivé';
   background: #e08600;
 }
+/* Pages ajoutées dans l'une des 3 dernières versions (src/components/docs/NewBadge.tsx). */
+.sidebar-nouveau > div > .menu__link::after,
+.sidebar-nouveau > .menu__link::after {
+  content: 'nouveau';
+}
+.sidebar-nouveau > div > .menu__link::after,
+.sidebar-nouveau > .menu__link::after,
+.badge-nouveau {
+  background: #2e7d32;
+}
 
 /* Liens automatiques vers le glossaire (src/plugins/remark-glossary.js) : discrets, soulignés en pointillés. */
 .markdown a.glossary-link {
@@ -84,4 +97,13 @@ h1, h2, h3 {
 }
 .markdown a.glossary-link:hover {
   color: var(--ifm-color-primary);
+}
+
+/* « Ajouté en vX.Y.Z » en haut des pages (src/components/docs/NewBadge.tsx). */
+.added-in {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
 }

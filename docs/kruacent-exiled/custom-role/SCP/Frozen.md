@@ -3,6 +3,8 @@ title: Frozen
 description: Au lieu de chier tu poses un SCP-244. Tué quelqu'un qui est en hypothermie donne du shield.
 date: 2026-08-24
 keywords: [scp, scp-173, glace, frozen, scp-244, hypothermie, hume shield, tantrum, flaque]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';

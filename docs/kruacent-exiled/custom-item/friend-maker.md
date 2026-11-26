@@ -7,6 +7,8 @@ tags:
 description: LA méthode pour se faire des amis !
 date: 2026-11-22
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.0.2"
 ---
 
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'

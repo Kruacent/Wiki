@@ -4,6 +4,8 @@ description: Un classe-d de plus petite taille, commençant avec un bonbon arc-e
 date: 2026-08-24
 image: /img/doc/teams/class-d.png
 keywords: [class-d, enfant, kid, bonbon, candy, scp-330]
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import ItemLink from '@site/src/components/docs/ItemLink';

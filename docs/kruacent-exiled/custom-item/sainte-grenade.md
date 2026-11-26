@@ -7,6 +7,8 @@ tags:
 description: Relique explosive divine générant des sous-munitions.
 date: 2025-11-30
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import Sons from '@site/src/components/docs/Sons';

@@ -30,8 +30,6 @@ module.exports = [
   // Annonces et classification
   { anchor: 'cassie', terms: ['C.A.S.S.I.E.', 'C.A.S.S.I.E', 'CASSIE'], def: 'La voix du Site, qui fait les annonces : pannes, renforts, ogive…' },
   { anchor: 'redacted', terms: ['[REDACTED]'], def: 'Information censurée par la Fondation. Ou par Maël, pour raisons budgétaires.' },
-  { anchor: 'classe-objet', terms: ['SAFE', 'EUCLID', 'KETER', 'THAUMIEL', 'NEUTRALIZED'], def: 'Classe de confinement : à quel point l\'objet est difficile à contenir.' },
-  { anchor: 'perturbation', terms: ['DARK', 'VLAM', 'KENEQ', 'EKHI', 'AMIDA'], def: 'Classe de perturbation : à quel point l\'objet peut chambouler le Site (de DARK, discret, à AMIDA, catastrophique).' },
   { anchor: 'raretes', terms: ['Rareté'], def: 'La puissance d\'un objet personnalisé : Basique, Bon, Épique, Légendaire ou Exotique.' },
   { anchor: 'hume-shield', terms: ['Hume Shield'], def: 'Bouclier qui protège la plupart des SCP et se recharge quand ils ne prennent plus de dégâts.' },
 

@@ -18,17 +18,13 @@
     "@docusaurus/preset-classic": "^3.10.2",
     "@easyops-cn/docusaurus-search-local": "^0.55.3",
     "@mdx-js/react": "latest",
-    "@react-three/drei": "^9.122.0",
-    "@react-three/fiber": "^8.18.0",
     "@resvg/resvg-js": "^2.6.2",
     "clsx": "latest",
     "fast-glob": "^3.3.3",
-    "fs-extra": "^11.3.2",
     "gray-matter": "^4.0.3",
     "prism-react-renderer": "latest",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "three": "^0.181.2"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.7.0",

@@ -6,6 +6,8 @@ tags:
 description: Dispositif de couverture tactique instantanée dissimulé sous la forme d'une carte d'accès.
 date: 2025-11-27
 hide_table_of_contents: true
+sidebar_custom_props:
+  addedIn: "2.0.0"
 ---
 
 import Sons from '@site/src/components/docs/Sons';
