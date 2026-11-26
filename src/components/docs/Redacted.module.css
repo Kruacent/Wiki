@@ -1,0 +1,73 @@
+.conteneur {
+  position: relative;
+  display: inline-block;
+}
+
+.barre {
+  display: inline;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #111;
+  font: inherit;
+  letter-spacing: -0.12em;
+  cursor: pointer;
+  user-select: none;
+}
+
+[data-theme='dark'] .barre {
+  color: #000;
+  text-shadow: 0 0 0 #000, 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+.barre:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.secoue {
+  animation: secousse 0.35s;
+}
+
+@keyframes secousse {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  75% {
+    transform: translateX(3px);
+  }
+}
+
+.bulle {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  background: #c62828;
+  color: #fff;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+/* Une fois déverrouillé : surligné discrètement, comme un ajout manuscrit. */
+.revele {
+  padding: 0 0.2rem;
+  border-bottom: 1px dashed var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .secoue {
+    animation: none;
+  }
+}

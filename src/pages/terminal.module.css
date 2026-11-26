@@ -1,0 +1,152 @@
+.page {
+  width: 100%;
+  max-width: 900px;
+  margin: 2.5rem auto 4rem;
+  padding: 0 1rem;
+}
+
+.cadre {
+  border: 2px solid #333;
+  border-top: 6px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #0c100d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.barre {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.45rem 1rem;
+  border-bottom: 1px solid #1f2a22;
+  background: #121a14;
+  color: #6f8f76;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+}
+
+.ecran {
+  position: relative;
+  min-height: 340px;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 1rem 1.1rem 1.2rem;
+  color: #9ee6a8;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  cursor: text;
+}
+
+.ecran::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.18) 0 1px, transparent 1px 3px);
+}
+
+.saisie {
+  color: #e6f5e8;
+}
+
+.ok {
+  color: #3ddc68;
+  font-weight: 700;
+}
+
+.erreur {
+  color: #ff6b5e;
+  font-weight: 700;
+}
+
+.info {
+  color: #6fd0ff;
+}
+
+.invite {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.invite label {
+  color: #3ddc68;
+}
+
+.invite input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #e6f5e8;
+  font: inherit;
+  caret-color: #3ddc68;
+  text-transform: uppercase;
+}
+
+.onglets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0 0;
+}
+
+.onglet,
+.ongletActif {
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--ifm-font-color-base);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.ongletActif {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.document {
+  margin-top: 1.5rem;
+  padding: 2rem 2.2rem;
+  border: 2px solid var(--ifm-color-emphasis-800);
+  border-top: 6px solid #c62828;
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.document h1 {
+  margin: 0.25rem 0 1.25rem;
+  font-size: 1.7rem;
+}
+
+.tampon {
+  margin: 0;
+  color: #c62828;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contenu p {
+  text-align: left;
+}
+
+.contenu pre {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .document {
+    padding: 1.25rem 1.1rem;
+  }
+}

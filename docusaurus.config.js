@@ -44,6 +44,8 @@ const config = {
     ],
   ],
 
+  clientModules: ['./src/clientModules/secrets.js'],
+
   plugins: [
     './src/plugins/latest-docs-plugin.js',
     './src/plugins/og-images-plugin.js',

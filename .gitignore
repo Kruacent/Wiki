@@ -21,3 +21,5 @@ yarn-error.log*
 
 # Images de partage générées automatiquement
 /static/img/og/
+
+/secrets/
