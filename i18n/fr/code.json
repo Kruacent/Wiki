@@ -1,0 +1,14 @@
+{
+  "theme.SearchBar.label": {
+    "message": "Rechercher",
+    "description": "Texte du champ de recherche (docusaurus-search-local)"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Voir les {count} résultats",
+    "description": "Lien vers tous les résultats de recherche"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "Aucun résultat",
+    "description": "Message quand la recherche ne trouve rien"
+  }
+}

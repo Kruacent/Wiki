@@ -11,6 +11,7 @@ hide_table_of_contents: true
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ImpactFlashItem from '@site/static/img/doc/ImpactFlash.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1052-KR" 
@@ -44,7 +45,6 @@ Le délai de détonation chimique (mèche) a été retiré par le **Dr. Patrique
 ### Localisation
 
 Cet équipement est stocké dans les armureries pour les interventions rapides.
-**Limite :** 5 Unités.
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
@@ -52,6 +52,8 @@ Cet équipement est stocké dans les armureries pour les interventions rapides.
 | **Armurerie LCZ** | 50 % |
 | **Armurerie 049 (HCZ)** | 50 % |
 | **Salle SCP-914 (LCZ)** | 2 % |
+
+<SpawnRule limit={5} lieux={4} />
 
 ---
 

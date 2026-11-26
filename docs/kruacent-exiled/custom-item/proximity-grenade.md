@@ -13,6 +13,7 @@ hide_table_of_contents: true
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import ProximityItem from '@site/static/img/doc/ProximityGrenade.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1073-KR" 
@@ -51,7 +52,10 @@ Le stock initial comprenait 200 unités prêtes au combat. Suite à une "réaffe
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
-| **Ascenceur A de HCZ** | 50 % |
+| **Salle de l'ascenseur A (HCZ)** | 50 % |
+
+<SpawnRule limit={1} lieux={1} />
+
 ---
 
 ## 2. Manuel d'Opération

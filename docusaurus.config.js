@@ -5,6 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import remarkGlossary from './src/plugins/remark-glossary.js';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -38,6 +39,7 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         searchBarShortcutHint: true,
         searchResultLimits: 10,
+
       },
     ],
   ],
@@ -67,9 +69,18 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
+            const items = await defaultSidebarItemsGenerator(args);
+            const sansIndex = (list) =>
+              list
+                .filter((item) => !(item.type === 'doc' && /(^|\/)index$/.test(item.id)))
+                .map((item) => (item.type === 'category' ? { ...item, items: sansIndex(item.items) } : item));
+            return sansIndex(items);
+          },
           editUrl: 'https://github.com/Kruacent/Wiki/edit/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
+          remarkPlugins: [remarkGlossary],
         },
         blog: {
           showReadingTime: true,

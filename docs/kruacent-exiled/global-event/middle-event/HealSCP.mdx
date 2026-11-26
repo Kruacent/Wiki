@@ -10,18 +10,29 @@ import { MiddleEventStats } from '@site/src/components/docs/EventStats';
 
 # HealSCPM
 
-*Middle Event.* Quand **tous les SCP** sont bien amochés (moins d'un tiers de leur vie environ), ils peuvent recevoir un second souffle : leur vie remonte à **la moitié**. Cet event ne peut tomber que si les SCP sont vraiment en mauvaise posture. Les zombies de SCP-049 ne sont pas concernés.
+*Middle Event.* Quand **tous les SCP** sont bien amochés, ils peuvent recevoir un second souffle : leur vie remonte à **la moitié** de leur vie max. Cet event ne peut tomber que si les SCP sont vraiment en mauvaise posture. Les zombies de SCP-049 ne sont pas concernés.
 
 ## En bref
 
 <MiddleEventStats id="HealSCPM" />
 
+### La condition
+
+Le Middle Event de la partie est tiré **une seule fois**, entre 10 et 16 minutes de jeu. À cet instant précis, le serveur regarde tous les SCP en vie :
+
+1. Les **zombies** (SCP-049-2) sont ignorés.
+2. Si **un seul** des autres SCP a **plus de 30 %** de sa vie max, la condition n'est pas remplie.
+3. S'il ne reste **aucun SCP** (hors zombies), la condition n'est pas remplie non plus.
+
+Condition remplie : HealSCPM entre dans le tirage avec les autres Middle Events, et il a une chance sur cinq de sortir. Condition ratée : il est retiré du tirage, et l'un des quatre autres tombe à sa place. Le serveur ne revérifie pas plus tard : c'est maintenant ou jamais.
+
 ### Dans le détail
 
 | | |
 | :--- | :--- |
-| **Effet** | Les SCP remontent à la moitié de leur vie |
-| **Zombies de SCP-049** | Pas concernés |
+| **Effet** | Les SCP remontent à la moitié de leur vie max |
+| **Seuil** | 30 % de la vie max, pour **chaque** SCP |
+| **Zombies de SCP-049** | Ni comptés, ni soignés |
 
 ## Conseils
 

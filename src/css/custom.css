@@ -73,3 +73,15 @@ h1, h2, h3 {
   content: 'désactivé';
   background: #e08600;
 }
+
+/* Liens automatiques vers le glossaire (src/plugins/remark-glossary.js) : discrets, soulignés en pointillés. */
+.markdown a.glossary-link {
+  color: inherit;
+  text-decoration: underline dotted;
+  text-decoration-color: var(--ifm-color-primary);
+  text-underline-offset: 3px;
+  cursor: help;
+}
+.markdown a.glossary-link:hover {
+  color: var(--ifm-color-primary);
+}

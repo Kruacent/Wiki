@@ -117,27 +117,38 @@ function chanceMiddleTexte(ev: MiddleEventData): string {
   return avec === sans ? pct(avec) : `${pct(avec)} à ${pct(sans)}`;
 }
 
+/** Chance d'arriver en second, en bonus, dans les parties à deux Global Events. */
+function chanceDuo(ev: GlobalEventData): number {
+  return CHANCE_DEUX_GE * chanceSecond(ev);
+}
+
 /** Fiche « En bref » d'un Global Event. */
 export function GlobalEventStats({ id }: { id: string }) {
   const ev = trouverGE(id);
-  const chance = chanceGlobalEvent(ev);
+  const premier = chancePremier(ev);
+  const duo = chanceDuo(ev);
   return (
     <table>
       <tbody>
         <tr><td><strong>Annonce</strong></td><td><Annonces annonces={ev.annonces} /></td></tr>
         <tr><td><strong>Impact</strong></td><td>{ev.impact} <strong>{IMPACT_PREFIX[ev.impact]}</strong></td></tr>
-        <tr><td><strong>Chance par partie</strong></td><td><strong>{pct(chance)}</strong> (environ {unSur(chance)})</td></tr>
-        {ev.seul && <tr><td><strong>Cumul</strong></td><td>Toujours seul, jamais avec un autre Global Event</td></tr>}
+        <tr><td><strong>Chance d'être tiré</strong></td><td><strong>{pct(premier)}</strong> (environ {unSur(premier)}), poids {ev.poids} sur {total()}</td></tr>
+        {ev.seul ? (
+          <tr><td><strong>Cumul</strong></td><td>Toujours seul, jamais avec un autre Global Event</td></tr>
+        ) : (
+          <tr><td><strong>En duo</strong></td><td>+ {pct(duo)} : quand une partie tire un second Global Event, ça peut être lui</td></tr>
+        )}
       </tbody>
     </table>
   );
 }
 
-/** Tableau de tous les Global Events, du plus courant au plus rare. */
+/** Tableau de tous les Global Events, du plus courant au plus rare. La colonne « Chance » fait 100 %. */
 export function GlobalEventTable() {
   const liste = actifs()
-    .map((e) => ({ e, c: chanceGlobalEvent(e) }))
+    .map((e) => ({ e, c: chancePremier(e) }))
     .sort((a, b) => b.c - a.c || a.e.id.localeCompare(b.e.id));
+  const somme = liste.reduce((s, { c }) => s + c, 0);
   return (
     <table>
       <thead>
@@ -145,6 +156,7 @@ export function GlobalEventTable() {
           <th>Global Event</th>
           <th>Ce que ça fait</th>
           <th>Impact</th>
+          <th>Poids</th>
           <th>Chance</th>
         </tr>
       </thead>
@@ -154,9 +166,15 @@ export function GlobalEventTable() {
             <td><Link to={e.page}><strong>{e.id}</strong></Link></td>
             <td>{e.resume}</td>
             <td><strong>{IMPACT_PREFIX[e.impact]}</strong></td>
+            <td style={{ textAlign: 'center' }}>{e.poids}</td>
             <td style={{ whiteSpace: 'nowrap' }}><strong>{pct(c)}</strong></td>
           </tr>
         ))}
+        <tr>
+          <td colSpan={3}><strong>Total</strong></td>
+          <td style={{ textAlign: 'center' }}><strong>{total()}</strong></td>
+          <td style={{ whiteSpace: 'nowrap' }}><strong>{pct(somme)}</strong></td>
+        </tr>
       </tbody>
     </table>
   );
@@ -166,7 +184,9 @@ export function GlobalEventTable() {
 export function GlobalEventTirage() {
   return (
     <ul>
-      <li>En général <strong>un seul</strong> Global Event par partie. Environ <strong>{unSur(chanceDeuxEvents())}</strong> en a deux.</li>
+      <li>Chaque Global Event a un <strong>poids</strong>. Sa chance d'être tiré, c'est son poids divisé par le total des poids (<strong>{total()}</strong>). C'est la colonne « Chance » du tableau, qui fait bien 100 %.</li>
+      <li>En général <strong>un seul</strong> Global Event par partie. Une fois sur dix, la partie en tire un <strong>second</strong> : au final, environ <strong>{unSur(chanceDeuxEvents())}</strong> a deux Global Events différents. Ce bonus n'est pas compté dans la colonne « Chance », pour qu'elle reste à 100 %. Il est indiqué sur la page de chaque event, à la ligne « En duo ».</li>
+      <li><strong>nothing</strong> ne se cumule jamais : s'il est tiré, la partie n'a pas d'autre Global Event.</li>
       <li>L'annonce s'affiche au début de la partie avec le niveau d'impact. Environ une fois sur dix, le nom est caché derrière <strong>[REDACTED]</strong>.</li>
     </ul>
   );
@@ -181,7 +201,7 @@ export function MiddleEventStats({ id }: { id: string }) {
         <tr><td><strong>Annonce</strong></td><td><Annonces annonces={ev.annonces} /></td></tr>
         {ev.condition && <tr><td><strong>Condition</strong></td><td>{ev.condition}</td></tr>}
         <tr><td><strong>Chance par partie</strong></td><td><strong>{chanceMiddleTexte(ev)}</strong></td></tr>
-        <tr><td><strong>Quand</strong></td><td>Vers 10 à 15 minutes de jeu, jusqu'à la fin de la partie</td></tr>
+        <tr><td><strong>Quand</strong></td><td>Entre 10 et 16 minutes de jeu, et il dure jusqu'à la fin de la partie</td></tr>
       </tbody>
     </table>
   );

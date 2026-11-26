@@ -12,6 +12,7 @@ hide_table_of_contents: true
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ItemImage from '@site/static/img/doc/WormholePistol.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1068-KR" 
@@ -60,6 +61,8 @@ Après **2 tirs**, l'arme doit refroidir pendant **1 minute** : un message indiq
 | **Salle de l'ogive (HCZ)** | 25 % |
 | **Confinement de SCP-939 (HCZ)** | 25 % |
 | **Abri (Entrance Zone)** | 25 % |
+
+<SpawnRule limit={1} lieux={4} />
 
 ## Conseils
 

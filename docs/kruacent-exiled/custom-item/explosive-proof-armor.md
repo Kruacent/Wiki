@@ -12,6 +12,7 @@ hide_table_of_contents: true
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ItemImage from '@site/static/img/doc/ExplosiveProofArmor.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1058-KR" 
@@ -51,6 +52,8 @@ L'**Armure Anti Explosion** est une armure légère qui divise par **3** les dé
 | Lieu | Chance d'apparition |
 | :--- | :--- |
 | **Confinement de SCP-079** | 100 % |
+
+<SpawnRule limit={1} lieux={1} />
 
 ## Conseils
 

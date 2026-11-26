@@ -70,24 +70,57 @@ module.exports = function (context, options) {
     return patchnotes;
   }
 
-  /** Lignes de changements d'une patchnote : { section, text } en texte brut. */
+  /**
+   * Lignes de changements d'une patchnote : { section, text } en texte brut.
+   * Une puce qui se termine par « : » et qui a des sous-puces (« - SCP-035 : » puis « - Vie augmentée »)
+   * n'est pas gardée seule : son nom est ajouté devant chaque sous-puce (« SCP-035 : Vie augmentée »).
+   * Sans ça, l'historique des pages affichait des puces vides.
+   */
   function extractLines(content) {
     const lines = [];
     let section = '';
+    /** Puces parentes en cours : { indent, label, hasChild, sectionAtPush }. */
+    let parents = [];
+
+    const flushParent = (parent) => {
+      // Une puce « Titre : » sans sous-puce reste une ligne normale.
+      if (!parent.hasChild) lines.push({ section: parent.section, text: `${parent.label} :` });
+    };
+    const closeParents = (indent) => {
+      while (parents.length && parents[parents.length - 1].indent >= indent) {
+        flushParent(parents.pop());
+      }
+    };
+
     for (const raw of content.split(/\r?\n/)) {
       const heading = raw.match(/^##\s+(.+?)\s*:?\s*$/);
       if (heading && !raw.startsWith('###')) {
+        closeParents(-1);
         section = heading[1].replace(/\s*:$/, '');
         continue;
       }
-      const item = raw.match(/^\s*[-*]\s+(.+)$/);
+      const item = raw.match(/^(\s*)[-*]\s+(.+)$/);
       if (!item) continue;
-      const text = item[1]
+      const indent = item[1].replace(/\t/g, '    ').length;
+      const text = item[2]
         .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
         .replace(/[*_`]/g, '')
         .trim();
-      if (text) lines.push({ section, text });
+      if (!text) continue;
+
+      closeParents(indent);
+      // Le label de la dernière puce parente contient déjà ceux de ses propres parents.
+      const prefix = parents.length ? parents[parents.length - 1].label : '';
+      parents.forEach((p) => { p.hasChild = true; });
+
+      if (/:\s*$/.test(text)) {
+        const label = text.replace(/\s*:\s*$/, '');
+        parents.push({ indent, label: prefix ? `${prefix} › ${label}` : label, hasChild: false, section });
+        continue;
+      }
+      lines.push({ section, text: prefix ? `${prefix} : ${text}` : text });
     }
+    closeParents(-1);
     return lines;
   }
 

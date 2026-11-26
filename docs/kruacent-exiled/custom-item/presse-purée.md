@@ -11,6 +11,7 @@ hide_table_of_contents: true
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import PressePureeItem from '@site/static/img/doc/PressePurée.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 
 <ACSHeader 
@@ -51,7 +52,6 @@ Cependant, lors de la réunion de validation, le Dr. Patrique a fait remarquer q
 ### Localisation
 
 Stockage standard dans les armureries.
-**Limite :** 5 Unités.
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
@@ -59,6 +59,8 @@ Stockage standard dans les armureries.
 | **Armureries de LCZ** | 50 % |
 | **Armureries à côté de SCP-049** | 50 % |
 | **Salle SCP-914** | 5 % |
+
+<SpawnRule limit={5} lieux={4} />
 
 ---
 

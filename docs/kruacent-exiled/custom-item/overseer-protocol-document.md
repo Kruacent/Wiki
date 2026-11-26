@@ -12,6 +12,7 @@ hide_table_of_contents: true
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ItemImage from '@site/static/img/doc/O5ProtocolDocument.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1064-KR" 
@@ -54,6 +55,8 @@ L'équipe qui gagne la vague dépend du rôle du joueur au moment de l'évasion 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
 | **Confinement de SCP-079** | 100 % |
+
+<SpawnRule limit={1} lieux={1} />
 
 ---
 

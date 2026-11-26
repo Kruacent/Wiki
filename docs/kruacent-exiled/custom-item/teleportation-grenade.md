@@ -11,6 +11,7 @@ hide_table_of_contents: true
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import TPGrenadeItem from '@site/static/img/doc/TeleportationGrenade.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1045-KR" 
@@ -49,7 +50,6 @@ Le dispositif n'a aucun système de guidage GPS. Lorsqu'il détone, il ne télé
 ### Localisation
 
 Stockage limité. Le personnel a peur de toucher cet objet.
-**Limite :** 3 Unités.
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
@@ -57,6 +57,8 @@ Stockage limité. Le personnel a peur de toucher cet objet.
 | **Armurerie 049** | 50 % |
 | **Armurerie LCZ** | 50 % |
 | **Salle 914** | 2 % |
+
+<SpawnRule limit={3} lieux={4} />
 
 ---
 

@@ -12,6 +12,7 @@ hide_table_of_contents: true
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ItemImage from '@site/static/img/doc/PortableIntercom.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1065-KR" 
@@ -58,6 +59,8 @@ L'**Intercom Portable** est une radio qui permet de parler **à toute la facilit
 | Lieu | Chance d'apparition |
 | :--- | :--- |
 | **Cafétéria (LCZ)** | 100 % |
+
+<SpawnRule limit={1} lieux={1} />
 
 ---
 

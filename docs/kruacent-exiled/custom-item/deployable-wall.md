@@ -15,6 +15,7 @@ import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import DeployableWallsItem from '@site/static/img/doc/DeployableWall.jpg'
 import DeployableWallInHand from '@site/static/img/doc/DeployableWall-InHand.jpg'
 import DeployableWallDeployed from '@site/static/img/doc/DeployableWall-WallDeployed.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1048-KR" 
@@ -43,18 +44,19 @@ import DeployableWallDeployed from '@site/static/img/doc/DeployableWall-WallDepl
 
 **SCP-1048-KR** apparaît, à l'œil nu, comme une carte d'accès standard de niveau 1 (Janitor Keycard) émettant une légère luminescente <span style={{color: '#4caf50', fontWeight: 'bold'}}>VERTE</span>.
 
-En réalité, il s'agit d'un conteneur compact de nanobots à déploiement rapide développé par le **Dr. Patrique**. Lorsqu'il est activé, l'objet libère une structure polymère durcie qui s'expanse instantanément pour former une barricade physique capable de stopper les projectiles balistiques et de bloquer le passage de toutes entités.
+En réalité, il s'agit d'un conteneur compact de nanobots à déploiement rapide développé par le **Dr. Patrique**. Lorsqu'il est activé, l'objet libère une structure polymère durcie qui s'expanse instantanément pour former une barricade physique capable de stopper les projectiles balistiques et de bloquer le passage de toute entité.
 
 ### Localisation
 
 Cet objet est considéré comme de l'équipement militaire expérimental.
-**Limite :** 2 Unités.
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
 | **Casier conteneur d'arme** | 50 % |
 | **Armurerie à côté de SCP-049** | 25 % |
 | **Armurerie de LCZ** | 25 % |
+
+<SpawnRule limit={2} lieux={3} />
 
 ---
 

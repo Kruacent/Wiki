@@ -2,7 +2,7 @@
  * Global Events et Middle Events du serveur, avec leur poids de tirage.
  * Les chances affichées sur le wiki sont calculées automatiquement à partir de ces poids :
  * changez un poids ici et toutes les pages se mettent à jour.
- */
+*/
 
 export type Impact = 'VeryLow' | 'Low' | 'Medium' | 'High' | 'VeryHigh' | 'Insane';
 
@@ -69,7 +69,7 @@ export const globalEvents: GlobalEventData[] = [
 
 export const middleEvents: MiddleEventData[] = [
   { id: 'EGamble', resume: "Une pièce pour chaque humain", page: '/docs/kruacent-exiled/global-event/middle-event/EveryoneGamble', poids: 1, annonces: ['Everyone, throw the game now!'] },
-  { id: 'HealSCPM', resume: "Les SCP à bout de souffle remontent à la moitié de leur vie", page: '/docs/kruacent-exiled/global-event/middle-event/HealSCP', poids: 1, annonces: ['Bon aller on rallonge un peu la game'], condition: 'Tous les SCP sont presque morts (30 % de vie ou moins)' },
+  { id: 'HealSCPM', resume: "Les SCP à bout de souffle remontent à la moitié de leur vie", page: '/docs/kruacent-exiled/global-event/middle-event/HealSCP', poids: 1, annonces: ['Bon aller on rallonge un peu la game'], condition: 'Au moment du tirage, tous les SCP en vie (sauf les zombies) sont à 30 % de leur vie max ou moins' },
   { id: 'MShuffleP', resume: "Tous les joueurs échangent leur place", page: '/docs/kruacent-exiled/global-event/middle-event/ShufflePosition', poids: 1, annonces: ['Aller on change de place'] },
   { id: 'SpeedM', resume: "Tout le monde accélère jusqu'à la fin", page: '/docs/kruacent-exiled/global-event/middle-event/SpeedM', poids: 1, annonces: ['Gas! gas! gas!'] },
   { id: 'WallHack', resume: "Tout le monde voit à travers les murs", page: '/docs/kruacent-exiled/global-event/middle-event/WallHackM', poids: 1, annonces: ['Tout le monde wallhack yippee!!!!!'] },

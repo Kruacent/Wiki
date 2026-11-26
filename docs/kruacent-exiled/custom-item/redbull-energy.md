@@ -12,6 +12,7 @@ hide_table_of_contents: true
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ItemImage from '@site/static/img/doc/RedBullEnergy.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1066-KR" 
@@ -70,6 +71,8 @@ On ne peut pas boire une deuxième canette tant que les 50 secondes ne sont pas 
 | **Serre (LCZ)** | 25 % |
 | **Casiers médicaux d'Entrance Zone** | 20 % |
 | **Casiers divers de LCZ** | 30 % |
+
+<SpawnRule limit={2} lieux={4} />
 
 ## Conseils
 

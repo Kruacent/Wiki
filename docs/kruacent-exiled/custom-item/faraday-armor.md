@@ -12,6 +12,7 @@ hide_table_of_contents: true
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ItemImage from '@site/static/img/doc/FaradayArmor.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1059-KR" 
@@ -58,6 +59,8 @@ En contrepartie, elle est lourde : tant qu'elle est dans l'inventaire, le joueur
 | Lieu | Chance d'apparition |
 | :--- | :--- |
 | **Confinement de SCP-079** | 70 % |
+
+<SpawnRule limit={1} lieux={1} />
 
 ---
 

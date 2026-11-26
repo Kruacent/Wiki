@@ -61,7 +61,7 @@ export default function ServerAchievementFramework() {
             GitHub ↗
           </Link>
 
-          <Link to="/Wiki/" style={{
+          <Link to="/" style={{
             color: '#666',
             textDecoration: 'none',
             fontSize: '0.9rem',

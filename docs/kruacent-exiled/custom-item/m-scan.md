@@ -12,6 +12,7 @@ hide_table_of_contents: true
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ItemImage from '@site/static/img/doc/MScan.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1063-KR" 
@@ -66,6 +67,8 @@ Le capteur est détruit (*"SCANNER DÉTRUIT"*) :
 | **Salle GR-18 (LCZ)** | 25 % |
 | **Confinement de SCP-127 (HCZ)** | 25 % |
 | **Cafétéria (LCZ)** | 25 % |
+
+<SpawnRule limit={2} lieux={3} />
 
 ## Conseils
 

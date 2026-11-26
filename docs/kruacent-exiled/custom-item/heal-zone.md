@@ -13,6 +13,7 @@ import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import HealZoneItem from '@site/static/img/doc/HealZone.jpg'
 import HealZoneDetonated from '@site/static/img/doc/HealZone-Exploded.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1051-KR" 
@@ -46,15 +47,16 @@ Il ne s'agit pas d'un explosif conventionnel. Le **Dr. Omer** a remplacé la cha
 ### Localisation
 
 Cet objet est largement distribué dans les zones de haute sécurité pour soutenir les équipes d'intervention.
-**Limite :** 3 Unités.
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
 | **Casier médical de HCZ** | 100 % |
 | **Casier médical de LCZ** | 50 % |
-| **Casier médical de Entrance** | 75 % |
+| **Casier médical d'Entrance** | 75 % |
 | **Couloir du Micro H.I.D** | 75 % |
 | **Couloir à côté ascenseur de la Nuke** | 50 % |
+
+<SpawnRule limit={3} lieux={5} />
 
 ---
 

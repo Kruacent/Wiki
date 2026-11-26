@@ -29,7 +29,9 @@ Du plus courant au plus rare.
 
 ## Middle Events
 
-Les surprises de mi-temps. Dans un peu plus d'**une partie sur trois** (<ChanceMiddleEvent />), un Middle Event tombe **vers 10 à 15 minutes** de jeu pour relancer la partie. Un seul par partie, et il dure jusqu'à la fin.
+Les surprises de mi-temps. Dans un peu plus d'**une partie sur trois** (<ChanceMiddleEvent />), un Middle Event tombe **entre 10 et 16 minutes** de jeu pour relancer la partie. Un seul par partie, et il dure jusqu'à la fin.
+
+Le Middle Event est tiré au sort **au moment où il tombe**. Un event soumis à une condition, comme [HealSCPM](/docs/kruacent-exiled/global-event/middle-event/HealSCP), n'entre dans le tirage que si sa condition est remplie à cet instant précis. Sinon, il est retiré du tirage et les autres se partagent sa chance.
 
 <MiddleEventTable />
 
@@ -41,7 +43,7 @@ Les surprises de mi-temps. Dans un peu plus d'**une partie sur trois** (<ChanceM
 
 ## Liste des Global Events Disponibles
 
-Ci-dessous se trouve la liste des Global Events présent sur le serveur :
+Ci-dessous se trouve la liste des Global Events présents sur le serveur :
 
 export const RoleList = () => {
   const {items} = useCurrentSidebarCategory();

@@ -11,6 +11,7 @@ hide_table_of_contents: true
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import LowGravItem from '@site/static/img/doc/LowGravityGrenade.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1072-KR" 
@@ -47,12 +48,13 @@ La version actuelle (Mk-IV) est le résultat de plusieurs échecs critiques :
 ### Localisation
 
 En raison de son instabilité potentielle, cet objet est confiné dans la **Heavy Containment Zone (HCZ)**.
-**Limite :** 2 Unités.
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
 | **Salle de SCP-127** | 25 % |
 | **Salle de SCP-939** | 25 % |
+
+<SpawnRule limit={2} lieux={2} />
 
 ---
 

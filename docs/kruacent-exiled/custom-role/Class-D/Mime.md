@@ -68,7 +68,7 @@ Il ne possède pas d'équipement particulier.
 <GenerateLinksToAbilities abilities={frontMatter.abilities} />
 
 :::info Information
-Le mime à une marche silencieuse rendant ses bruits de pas pratiquement inaudibles pour les autres joueurs.
+Le mime a une marche silencieuse rendant ses bruits de pas pratiquement inaudibles pour les autres joueurs.
 :::
 
 ---
@@ -93,4 +93,4 @@ Le mime à une marche silencieuse rendant ses bruits de pas pratiquement inaudib
 
 ## Trivia
 
-- Dans d'anciennes versions, le mime ne pouvait pas parler. Jugé trop punitif par la communauté, la parole lui a donc été rendu.
+- Dans d'anciennes versions, le mime ne pouvait pas parler. Jugé trop punitif par la communauté, la parole lui a donc été rendue.

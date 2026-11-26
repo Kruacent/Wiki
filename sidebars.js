@@ -19,8 +19,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Kruaçent Exiled',
-      link: { type: 'doc', id: 'kruacent-exiled/index' }, 
+      link: { type: 'doc', id: 'kruacent-exiled/index' },
       items: [
+        'kruacent-exiled/bien-demarrer',
+        'kruacent-exiled/glossaire',
         {
           type: 'category',
           label: 'Custom Item',

@@ -14,6 +14,7 @@ import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import SCPVideo from '@site/src/components/docs/SCPVideo.tsx'
 import DefibrilatorItem from '@site/static/img/doc/defibrillator.jpg'
 import DefibrilatorAction from '@site/static/video/DefibrillatorUse.mp4'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1041-KR" 
@@ -52,8 +53,10 @@ Contrairement à un défibrillateur conventionnel qui relance un cœur arrêté,
 | **Confinement de SCP-096** | 10 % |
 | **Confinement de SCP-330** | 10 % |
 | **Confinement de SCP-939** | 10 % |
-| **Casiers médical de n'importe quelle zone** | 50 % |
+| **Casiers médicaux de n'importe quelle zone** | 50 % |
 | **Casiers divers de n'importe quelle zone** | 20 % |
+
+<SpawnRule limit={4} lieux={6} />
 
 **Limite :** 4 Unités.
 

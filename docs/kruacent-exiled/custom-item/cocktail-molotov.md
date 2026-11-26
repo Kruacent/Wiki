@@ -15,6 +15,7 @@ import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import MolotovItem from '@site/static/img/doc/CocktailMolotov.jpg'
 import MolotovZone from '@site/static/img/doc/CocktailMolotov-Exploded.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1049-KR" 
@@ -61,7 +62,6 @@ L'objet ressemble à une bouteille de spiritueux remplie d'un liquide visqueux o
 ### Distribution Logistique
 
 Le commandement a dispersé ces objets dans les zones à haut risque d'infection.
-**Limite :** 2 Unités.
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
@@ -71,6 +71,10 @@ Le commandement a dispersé ces objets dans les zones à haut risque d'infection
 | **Salle GR-18 de LCZ** | 75 % |
 | **Armurerie de HCZ** | 80 % |
 | **Salle de SCP-049 (HCZ)** | 80 % |
+
+<SpawnRule limit={2} lieux={6} />
+
+{/* TODO : d'après le code (KECustomItem.Spawn ne traite que les salles, pas les casiers), les lignes « casier / armoire » ne semblent jamais apparaître en jeu. À vérifier, puis corriger le plugin ou retirer ces lignes. */}
 
 ---
 

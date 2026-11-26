@@ -12,6 +12,7 @@ hide_table_of_contents: true
 import SCPImage from '@site/src/components/docs/SCPImage.tsx'
 import ACSHeader from '@site/src/components/docs/ACSHeader.tsx'
 import SmokeItem from '@site/static/img/doc/SmokeGrenade.jpg'
+import SpawnRule from '@site/src/components/docs/SpawnRule';
 
 <ACSHeader 
   item="SCP-1071-KR" 
@@ -50,12 +51,13 @@ La description gravée sur le prototype *"We finally put your grandma inside thi
 ### Localisation
 
 L'objet est souvent trouvé dans les zones de maintenance ou près des sorties, là où les "déchets" sont traités.
-**Limite :** 2 Unités.
 
 | Lieu | Chance d'apparition |
 | :--- | :--- |
-| **Coulour tuyaux HCZ** | 35 % |
+| **Couloir des tuyaux (HCZ)** | 35 % |
 | **Surface** | 35 % |
+
+<SpawnRule limit={2} lieux={2} />
 
 ---
 
