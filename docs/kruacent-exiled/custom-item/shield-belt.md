@@ -105,3 +105,9 @@ Pour l'instant, aucune ceinture n'apparaît sur le Site. Les prototypes sont sto
 :::warning L'avis de Maël
 « La Shield Belt n'est pas distribuée. Elle coûte le prix d'un hélicoptère, et la seule personne capable de tirer avec, c'est le Sergent Caedit. Je refuse de construire un hélicoptère pour une seule personne. Surtout pour lui. »
 :::
+
+---
+
+## Trivia
+
+- ShieldBelt est un objet présent dans le jeu vidéo [Rimworld](https://rimworldwiki.com/wiki/Shield_belt).

@@ -134,3 +134,9 @@ Transcription des communications radio lors de l'incident de brèche 1041-Delta.
 :::warning AVIS TACTIQUE DE MAËL
 "N'utilisez pas cet objet sous un feu nourri. Le sujet réapparaît avec seulement 20 % de sa vie (et un peu de bouclier). Si vous le ramenez pour qu'il prenne une balle perdue 0.5 seconde plus tard, vous avez gaspillé une ressource inestimable. Sécurisez la zone, puis réanimez."
 :::
+
+---
+
+## Trivia
+
+- La faute de la traduction anglaise "re**sus**citate" est une référence à [Among US](https://fr.wikipedia.org/wiki/Among_Us).

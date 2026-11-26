@@ -125,3 +125,9 @@ Si placé dans la cabine d'entrée avec le sélecteur sur **Very Fine** :
 Le Facility Manager Maël est déclaré inapte à la gestion financière. Cependant, la commande de grenades **Presse-Purée** ne peut être annulée (le bon de commande est taché de sauce tomate et collé au bureau).
 **Consigne aux joueurs :** Débrouillez-vous avec ça. L'administration décline toute responsabilité.
 :::
+
+---
+
+## Trivia
+
+- Le nom de l'item est une référence au nom que les Français donnaient aux grenades allemandes.

@@ -113,3 +113,9 @@ Le Dr. Omer a demandé à la goûter « pour la science ». Il a traversé trois
 :::warning Le mémo de Maël
 « Une canette par personne. Pas deux. Votre cœur ne supporterait pas une deuxième canette, et le service de réparation des portes non plus. »
 :::
+
+---
+
+## Trivia
+
+- L'item est une référence à la boisson énergisante de la marque [RedBull](https://fr.wikipedia.org/wiki/Red_Bull).

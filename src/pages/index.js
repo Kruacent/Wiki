@@ -8,6 +8,7 @@ import styles from './index.module.css';
 
 const CATEGORIES = [
   { key: 'custom-role', title: 'Rôles', text: 'Les rôles personnalisés des humains et des SCP.', to: '/docs/articles/CustomRole' },
+  { key: 'scp', title: 'SCP', text: 'Les SCP du serveur, ce qui change et comment les battre.', to: '/docs/articles/scp' },
   { key: 'custom-item', title: 'Objets', text: 'Les objets anormaux que l’on trouve dans la facilité.', to: '/docs/articles/CustomItem' },
   { key: 'custom-ability', title: 'Abilités', text: 'Les abilités actives et passives des rôles.', to: '/docs/articles/CustomAbility' },
   { key: 'global-event', title: 'Global Events', text: 'La règle spéciale tirée au début de chaque partie.', to: '/docs/articles/global-events' },
@@ -21,6 +22,7 @@ const CATEGORY_LABELS = {
   'middle-event': 'Middle Event',
   'custom-item': 'Objet',
   'custom-ability': 'Capacité',
+  scp: 'SCP',
   miscellaneous: 'Misc',
   map: 'Map',
   lore: 'Lore',

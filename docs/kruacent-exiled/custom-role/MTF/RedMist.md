@@ -90,3 +90,9 @@ Les compétences de la Red Mist s'articulent autour de l'activation de son armur
 ---
 
 <PatchNoteBanner name="Redmist" tag="redmist" />
+
+---
+
+## Trivia
+
+- Ce rôle n'est pas du tout voler de [Library of Ruina](https://libraryofruina.wiki.gg/wiki/The_Red_Mist_(reception)).

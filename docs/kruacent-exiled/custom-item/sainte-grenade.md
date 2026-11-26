@@ -111,3 +111,9 @@ Qui a autorisé Patrique à recréer des armes de *Worms* ? C'est quoi la procha
 
 L'utilisation de la Sainte Grenade est strictement interdite dans les ascenseurs. La dernière fois, les sous-munitions ont rebondi et tué toute l'escouade de renfort. Si vous voulez jouer à la guerre, faites-le dehors."
 :::
+
+---
+
+## Trivia
+
+- L'item vient de la Sainte Grenade présente dans [Worms W.M.D](https://fr.wikipedia.org/wiki/Worms_W.M.D).

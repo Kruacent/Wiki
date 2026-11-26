@@ -11,6 +11,8 @@ import ItemLink from '@site/src/components/docs/ItemLink';
 import { GenerateLinksToAbilities } from '@site/src/components/docs/Ability.tsx';
 import PatchNoteBanner from '@site/src/components/docs/PatchnoteBanner';
 import SpawnImg from '@site/static/img/doc/facility/surface/mtf_helicopter.gif';
+import Capture from '@site/src/components/docs/Capture';
+import TerroristeLight from '@site/static/video/TerroristeLight.mp4'
 
 # Terroriste
 
@@ -25,6 +27,8 @@ import SpawnImg from '@site/static/img/doc/facility/surface/mtf_helicopter.gif';
 > **EN :** *"Kaboom!"*
 
 Le **Terroriste** est un spécialiste de la démolition. Déployé pour nettoyer les zones infestées par les anomalies, il possède un arsenal explosif bien supérieur à celui de ses camarades. Sa présence est souvent synonyme de dégâts collatéraux majeurs.
+
+<Capture video src={TerroristeLight} caption="Terroriste attendant devant l'ascenseur de Gate B." />
 
 ---
 

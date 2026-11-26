@@ -11,6 +11,9 @@ import { SearchRolesByAbility } from '@site/src/components/docs/Ability.tsx';
 import AbilityIcon from '@site/src/components/docs/AbilityIcon';
 import PatchnoteBanner from '@site/src/components/docs/PatchnoteBanner';
 import Icone from '@site/static/img/doc/abilities/airstrike.png';
+import Capture from '@site/src/components/docs/Capture';
+import AirstrikeUse from '@site/static/video/AirstrikeUse.mp4'
+
 
 # AirStrike
 
@@ -38,6 +41,8 @@ L'utilisation de cette abilité se décompose en plusieurs phases :
 2. **Activation :** Une fois que la position est sauvegardée, vous pouvez désormais utiliser AirStrike.
 3. **Pré-Impact :** Une lumière rouge simulant du fumigène apparaît durant 1,5 seconde (la lumière est visible pour tout le monde). Si un obstacle se trouve à moins d'un mètre au-dessus du point, l'abilité échoue avec le message *"Quelque chose gêne"*.
 4. **Explosion :** Après 1,5 seconde, une grenade est lâchée juste au-dessus du point et explose dès qu'elle touche une surface.
+
+<Capture video src={AirstrikeUse} caption="L'abilité en action" />
 
 ---
 

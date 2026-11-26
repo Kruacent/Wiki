@@ -1,0 +1,117 @@
+---
+sidebar_position: 49
+title: SCP-049
+description: Le docteur à masque d'oiseau. Moins de zombies sur Kruaçent, mais une version qui dévore les corps.
+date: 2026-11-25
+keywords: [scp-049, 049, docteur, peste, zombie, scp-049-2, scp-049-c, scp, vie, pv]
+---
+
+# SCP-049
+
+<div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }}>
+  <div>
+    <span style={{ backgroundColor: '#FF0000', color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase' }}>SCP</span>
+  </div>
+</div>
+
+Le « docteur de la peste ». Il touche, vous mourez, et il vous relève en zombie pour « vous guérir ». Sur Kruaçent, il a un peu plus de vie quand il est seul, mais il ne peut plus lever une armée entière.
+
+## En bref
+
+| | |
+| :--- | :--- |
+| **Vie dans le jeu de base** | 2 500 PV |
+| **Vie sur Kruaçent, seul** | **3 125 PV** (+25 %) |
+| **Vie sur Kruaçent, avec d'autres SCP** | **2 500 PV** (comme dans le jeu de base) |
+| **Zombies** | **2 au maximum** en même temps |
+| **Rôle** | Attaquant : il peut être le premier SCP de la partie |
+| **Variante possible** | [SCP-049-C](/docs/kruacent-exiled/custom-role/SCP/SCP049C), qui dévore les corps au lieu de les relever |
+| **Confinement** | Heavy |
+
+## Ce qui change sur Kruaçent
+
+- **Ses zombies sont limités.** Il ne peut pas avoir plus de **2 zombies en vie**. Au-delà, il ne peut plus relever de corps tant qu'un zombie n'est pas tombé, et un message le prévient : *« Trop de zombie! 2/2 »*.
+- **Il est moins renforcé que les autres.** Seul, il a un quart de vie en plus. Mais s'il y a d'autres SCP dans la partie, il revient à sa vie normale : ses zombies compensent.
+- **Il peut devenir SCP-049-C.** Une version qui ne fait **jamais** de zombies : elle mange les corps, gagne des niveaux et choisit des améliorations.
+- **Sa salle a une porte blindée.** Elle se referme toute seule 20 secondes après avoir été ouverte. Voir [Porte blindée de SCP-049](/docs/kruacent-exiled/map/porte-049).
+- **Il peut changer de SCP dans SCP-914** :
+
+| Réglage | Il ressort en… |
+| :--- | :--- |
+| Rough | SCP-939 |
+| 1:1 | SCP-106 |
+
+Ça ne marche pas à tous les coups : la plupart du temps, c'est une fois sur deux. Voir [SCP-914](/docs/kruacent-exiled/miscellaneous/914).
+
+## Les events qui le touchent
+
+| Event | Ce qui lui arrive |
+| :--- | :--- |
+| [KIWIS](/docs/kruacent-exiled/global-event/KIWIS) | **+1/3 de vie max** à 15 minutes, et encore +1/3 à 30 minutes ou à l'explosion de l'ogive. Pas ses zombies |
+| [HealSCPM](/docs/kruacent-exiled/global-event/middle-event/HealSCP) | S'il est presque mort (comme tous les autres SCP), il remonte à la moitié de sa vie. Pas ses zombies |
+| [RandomSpawn](/docs/kruacent-exiled/global-event/RandomSpawn) | Il commence la partie dans une salle au hasard |
+| [Impostor](/docs/kruacent-exiled/global-event/Impostor) | Il peut prendre l'apparence d'un humain |
+| [OpenBar](/docs/kruacent-exiled/global-event/OpenBar) | L'armurerie de SCP-049 peut faire partie des portes ouvertes toute la partie |
+| [Kaboom](/docs/kruacent-exiled/global-event/Kaboom) | Les grenades des portes piégées lui font moitié moins mal |
+
+## Contre lui : ce qui marche
+
+| Objet ou rôle | Pourquoi |
+| :--- | :--- |
+| [Cocktail Molotov](/docs/kruacent-exiled/custom-item/cocktail-molotov) | 40 PV par seconde à SCP-049, et **100 PV par seconde à ses zombies**. La meilleure arme contre une horde |
+| [Friend Maker™](/docs/kruacent-exiled/custom-item/friend-maker) | Il ne convertit pas SCP-049… mais ses **zombies**, si. Ils rejoignent votre camp |
+| [Négociateur](/docs/kruacent-exiled/custom-role/ChaosInsurgency/Negotiator) | Il peut recruter les zombies |
+| [Deployable Wall](/docs/kruacent-exiled/custom-item/deployable-wall) | Coupe le couloir le temps de fuir |
+| [Proximity Grenade](/docs/kruacent-exiled/custom-item/proximity-grenade) | Montre où sont le docteur et ses zombies, pendant 20 secondes |
+
+## Contre lui : ce qui ne marche pas
+
+| Objet | Pourquoi |
+| :--- | :--- |
+| [TP Grenade](/docs/kruacent-exiled/custom-item/teleportation-grenade) | Ni SCP-049 ni ses zombies ne sont téléportés |
+| [Presse-Purée](/docs/kruacent-exiled/custom-item/presse-purée) | Trois fois moins de dégâts aux SCP |
+| [M-Scan](/docs/kruacent-exiled/custom-item/m-scan) | Une attaque de SCP-049 à côté du capteur le détruit |
+
+## Conseils
+
+**Si vous jouez contre lui :**
+- Tuez les zombies d'abord : tant qu'il en a deux, il ne peut plus en relever.
+- Un Molotov au milieu des zombies, et le problème est réglé en quelques secondes.
+- Ne laissez pas traîner les corps de vos coéquipiers à côté de lui.
+
+**Si vous le jouez :**
+- Choisissez bien vos deux zombies : ce sont vos seuls renforts.
+- Si vous êtes SCP-049-C, chaque corps compte : il vous fait monter de niveau.
+- Quand il ne reste qu'un humain, vous savez dans quelle zone il se cache (voir [Dernier humain](/docs/kruacent-exiled/miscellaneous/dernier-humain)).
+
+---
+
+## Rapport d'incident : « La consultation »
+
+> **Dr. Omer :** "Capitaine, je demande l'autorisation de parler avec SCP-049. Entre docteurs."
+>
+> **Cpt. Romain :** "Refusé."
+>
+> **Dr. Omer :** "Il a peut-être découvert un vrai remède !"
+>
+> **Cpt. Romain :** "Il a découvert comment transformer mon escouade en zombies, Docteur. Deux fois."
+>
+> *[Plus tard. SCP-049 sort de son confinement avec deux zombies. Un troisième corps est au sol.]*
+>
+> **SCP-049 :** *[tend la main vers le corps. Rien ne se passe.]*
+>
+> **Message à l'écran :** *« Trop de zombie! 2/2 »*
+>
+> **Sgt. Caedit :** "Il a atteint la limite. Il ne peut plus en relever."
+>
+> *[Le Sergent Caedit lance un Molotov entre les deux zombies, recharge, et abat SCP-049 avant qu'il ait le temps de s'écarter du feu. Trois cibles, quatre secondes.]*
+>
+> **Sgt. Dorian :** "…Tu as attendu qu'il atteigne la limite exprès ?"
+>
+> **Sgt. Caedit :** "Évidemment. Un docteur qui n'a plus de place dans sa salle d'attente, c'est un docteur sans renforts."
+>
+> **Dr. Omer :** *[dans le fond]* "Donc il n'avait pas de remède ?"
+
+:::warning L'avis de Maël
+« La limite de deux zombies n'est pas négociable. Chaque zombie supplémentaire coûte une combinaison de décontamination, un formulaire de décès, et un deuxième formulaire quand il re-meurt. L'Assistant Noé a fait le calcul. Je n'ai pas aimé le calcul. »
+:::

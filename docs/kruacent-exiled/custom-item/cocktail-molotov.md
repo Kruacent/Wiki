@@ -146,3 +146,9 @@ Archives de la FIM Epsilon-11.
 2.  **Contre les Hordes :** Si vous voyez des zombies, c'est votre meilleure arme. Ils disparaîtront en quelques secondes.
 3.  **Attention :** Le feu brûle aussi les amis. Ne bloquez pas la seule sortie de votre équipe."
 :::
+
+---
+
+## Trivia
+
+- La description française est une référence au molotov utilisée contre les soviétiques durant [la guerre d'hiver](https://fr.wikipedia.org/wiki/Guerre_d%27Hiver).
