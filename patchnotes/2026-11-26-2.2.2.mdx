@@ -1,0 +1,32 @@
+---
+slug: v2.2.2
+title: Version 2.2.2
+authors: [patrique, omergs]
+tags: [scp, custom-role, custom-item, misc, bug-fix, rebalance, features]
+---
+
+## Ajout :
+- Chat de proximité des SCP : les SCP (sauf SCP-079) peuvent activer une touche pour que les humains proches les entendent. La touche se règle dans les paramètres du serveur, la touche de noclip marche aussi.
+- Dox, nouvel effet de pièce négatif : une fausse adresse IP s'affiche à l'écran et votre position est signalée aux SCP.
+- SetPosition affiche maintenant la distance qui vous sépare de votre point.
+- Nouveaux points d'apparition personnalisés dans certaines salles.
+
+## Modification :
+- Le Medic ne peut plus ramasser d'arme lourde : Jailbird, Particle Disruptor, Micro-HID, FR-MG-0, Logicer, AK et E-11-SR.
+- Le nombre maximum de zombies de SCP-049 dépend du nombre de joueurs : 1 zombie pour 3 joueurs connectés, avec un minimum de 2.
+- Le Wormhole Pistol a maintenant un temps de recharge : 1 minute après 2 tirs.
+- Parry : le temps de recharge passe de 120 à 60 secondes.
+- SCP-049-C : l'amélioration « Deflect Damages » est remplacée par Parry, qui donne vraiment la capacité. L'amélioration « More shield » monte le Hume Shield à 800 au lieu de 1100.
+- AirStrike et Téléportation : si aucun point n'est enregistré, la capacité enregistre votre position actuelle au lieu de ne rien faire.
+- Le Pilote a ses capacités dans un nouvel ordre : AirStrike d'abord, puis SetPosition.
+- SpeedM : SCP-173 cligne 3 fois plus souvent, comme pendant Speed (au lieu de 4).
+- Passer dans SCP-914 pour changer de rôle ne soigne plus complètement, vous gardez donc le même pourcentage de vie.
+- Introvert : ses munitions sont maintenant des 9x19mm (70).
+
+## Correction :
+- SCP-035 peut désormais parler à l'Intercom, à la radio et en chat de proximité.
+- Le bonus de vie des SCP s'applique bien dès le début de la partie.
+- Les True Divine Pills ne peuvent plus être dupliquées, et affichent le nombre de joueurs ramenés.
+- Le Defibrilator ne redonne plus l'équipement de départ au joueur réanimé, et sa couleur de texte a été corrigée.
+- La lumière des customs items posés au sol ne disparaît plus de temps en temps.
+- Plusieurs memory leak ont été corrigées.

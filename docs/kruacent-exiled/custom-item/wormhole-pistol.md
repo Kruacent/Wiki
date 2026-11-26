@@ -36,6 +36,8 @@ Le **Wormhole Pistol** échange les positions : quand une de ses balles touche u
 
 L'échange n'a lieu que si le tireur **a les pieds au sol** au moment du tir, et si les deux joueurs sont vivants.
 
+Après **2 tirs**, l'arme doit refroidir pendant **1 minute** : un message indique le temps restant (*« Tu dois attendre … secondes avant de pouvoir l'utiliser à nouveau »*).
+
 ## Caractéristiques
 
 | Paramètre | Valeur |
@@ -45,6 +47,7 @@ L'échange n'a lieu que si le tireur **a les pieds au sol** au moment du tir, et
 | **Objet de base** | COM-18 |
 | **Chargeur** | 2 balles |
 | **Dégâts** | 1 |
+| **Recharge** | 1 minute après 2 tirs |
 | **Poids** | 1 |
 | **Rareté** | Épique |
 | **Limite** | 1 |

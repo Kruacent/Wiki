@@ -92,7 +92,7 @@ Lors de l'activation :
   <div style={{flex: '1', backgroundColor: 'rgba(33, 150, 243, 0.1)', border: '1px solid #2196f3', borderRadius: '8px', padding: '15px'}}>
     <h4 style={{marginTop: 0, color: '#64b5f6'}}>RÔLE CONSERVÉ</h4>
     <p style={{fontSize: '0.9em', margin: 0}}>
-      Le sujet réanimé revient avec <strong>le rôle qu'il avait au moment de sa mort</strong>.
+      Le sujet réanimé revient avec <strong>le rôle qu'il avait au moment de sa mort</strong>, mais <strong>sans l'équipement de départ</strong> de ce rôle : ses affaires sont restées sur son cadavre.
     </p>
     <p style={{fontSize: '0.8em', fontStyle: 'italic', marginTop: '5px', color: '#aaa'}}>
       Exemple : Si un Chaos Insurgency réanime un garde mort, ce dernier revient à la vie en tant que garde.

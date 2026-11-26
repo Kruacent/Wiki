@@ -55,6 +55,7 @@ export const gamblingCoinEffects: CoinEffect[] = [
   // ───────────── Mauvais tirages ─────────────
   { nom: 'Shit', type: 'negatif', poids: 40, message: 'The tacos of the otherday was not passed very good', effet: 'Une flaque de SCP-173 apparaît sous vous.' },
   { nom: 'DetonatedFlash', type: 'negatif', poids: 30, message: 'a gift for your eyes', effet: 'Une grenade flash vous explose à la figure.' },
+  { nom: 'Dox', type: 'negatif', poids: 10, message: "You've been doxxed : …", effet: "Une fausse adresse IP s'affiche à l'écran. Pire : votre position est signalée à tous les SCP." },
   { nom: 'TeleportToEnemy', type: 'negatif', poids: 30, message: 'You were teleported to an enemy !!', effet: "Vous atterrissez à côté d'un ennemi ou d'un SCP." },
   { nom: 'InventoryReset', type: 'negatif', poids: 20, message: 'have you ever got item in your inventory ?', effet: "Votre inventaire disparaît (sauf l'objet en main, qui tombe)." },
   { nom: 'PrimedVase', type: 'negatif', poids: 20, message: "You're grandma come to visit you", effet: 'Un vase SCP-244 déjà activé à vos pieds. Ça caille.' },

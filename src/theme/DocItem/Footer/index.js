@@ -5,7 +5,7 @@ import { usePluginData } from '@docusaurus/useGlobalData';
 import PatchnoteHistory from '@site/src/components/docs/PatchnoteHistory';
 
 /** Catégories du wiki qui affichent l'historique des mises à jour. */
-const CATEGORIES = ['custom-item', 'custom-role', 'custom-ability', 'global-event', 'map', 'miscellaneous'];
+const CATEGORIES = ['custom-item', 'custom-role', 'custom-ability', 'scp', 'global-event', 'map', 'miscellaneous'];
 
 /**
  * Ajoute l'historique des patchnotes en bas des pages du wiki,

@@ -69,16 +69,17 @@ Pour changer de mode, appuyez sur la touche **Lâcher l'item (Drop)**.
 
 | Mode | Message affiché | Effet au moment du soin |
 | :--- | :--- | :--- |
-| **TP ACTIVÉ** | *"Players will spawn to you"* | Les spectateurs apparaissent **SUR VOUS**. (Idéal pour un assaut immédiat). |
-| **TP DÉSACTIVÉ** (Défaut) | *"Players won't spawn to you"* | Les spectateurs apparaissent à leur **Spawn Naturel** (Surface ou Base). |
+| **TP ACTIVÉ** | *« Les joueurs vont apparaître sur toi »* | Les spectateurs apparaissent **SUR VOUS**. |
+| **TP DÉSACTIVÉ** (Défaut) | *« Les joueurs ne vont pas apparaître sur toi »* | Les spectateurs apparaissent à leur **Spawn Naturel** |
 
 ### B. La Consommation
 Une fois mangée (Clic Gauche) :
-1.  **Vérification :** S'il n'y a aucun spectateur, l'item n'est pas consommé (*"No one to respawn"*).
+1.  **Vérification :** S'il n'y a aucun spectateur, l'item n'est pas consommé (*« Pas de joueur à faire réapparaître »*).
 2.  **Résurrection :** **100% des morts** reviennent à la vie.
 3.  **Recrutement :** Ils rejoignent VOTRE équipe.
     * Si vous êtes **MTF** ➔ Ils deviennent **NTF Private**.
     * Si vous êtes **Chaos** ➔ Ils deviennent **Chaos Rifleman**.
+4.  **Bilan :** un message vous indique combien de joueurs vous avez ramenés (*« Tu as fait réapparaître 12 »*). La pilule disparaît, une seule utilisation.
 
 ---
 
